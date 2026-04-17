@@ -88,7 +88,7 @@ export default function Home() {
         display: 'flex', gap: 40, justifyContent: 'center'
       }}>
         <div style={{ display: 'flex', gap: 40, justifyContent: 'center', flexWrap: 'wrap' }}>
-          {['Почти не мнётся', 'Сохнет за час', 'В ней не жарко', '4-way stretch'].map((item) => (
+          {['Почти не мнётся', 'Сохнет за час', 'В ней не жарко'].map((item) => (
             <span key={item} style={{ fontSize: 12, color: '#fff', fontWeight: 500, letterSpacing: '0.06em', whiteSpace: 'nowrap' }}>{item}</span>
           ))}
         </div>
