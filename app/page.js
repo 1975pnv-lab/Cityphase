@@ -131,7 +131,7 @@ export default function Home() {
               Трикотажная рубашка из LYONEX для длинного дня — не мнётся, тянется, сохнет за час.
             </p>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span style={{ fontSize: 16, fontWeight: 500, color: '#1B3A6B' }}>13 900 руб.</span>
+              <span style={{ fontSize: 16, fontWeight: 500, color: '#1B3A6B' }}>13 900 ₽.</span>
               <a href="/12-hours" style={{
                 border: '1.5px solid #1B3A6B', color: '#1B3A6B', background: 'transparent',
                 padding: '8px 16px', fontSize: 12, fontWeight: 500,
