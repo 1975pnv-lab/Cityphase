@@ -2,19 +2,21 @@ export default function Home() {
   return (
     <main><style>{`
         .nav-links { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; }
-        .hero-section { display: flex; align-items: flex-start; justify-content: space-between; gap: 40px; }
-        .hero-photo { width: 240px; flex-shrink: 0; height: 300px; }
-        .btn-row { display: flex; gap: 12px; }
-        .strip-inner { display: flex; gap: 40px; justify-content: center; }
-        @media (max-width: 768px) {
-          .nav-links { display: none; }
-          .hero-section { flex-direction: column; }
-          .hero-photo { width: 100% !important; height: 220px !important; }
-          .btn-row { flex-direction: column; }
-          .btn-row a { text-align: center; }
-          .strip-inner { gap: 8px 20px; flex-wrap: wrap; }
-          .strip-inner span { font-size: 11px !important; white-space: nowrap; }
-        }
+.hero-section { display: flex; align-items: flex-start; justify-content: space-between; gap: 40px; }
+.hero-photo { width: 240px; flex-shrink: 0; height: 300px; }
+.btn-row { display: flex; gap: 12px; }
+.strip-inner { display: flex; gap: 40px; justify-content: center; }
+.strip-wrap { display: block; }
+.footer-inner { display: flex; justify-content: space-between; align-items: center; }
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hero-section { flex-direction: column; }
+  .hero-photo { width: 100% !important; height: 220px !important; }
+  .btn-row { flex-direction: column; }
+  .btn-row a { text-align: center; }
+  .strip-wrap { display: none; }
+  .footer-inner { flex-direction: column; align-items: center; gap: 12px; text-align: center; }
+}
       `}</style>
       {/* NAV */}
       <nav style={{
@@ -49,7 +51,7 @@ export default function Home() {
           <p style={{ fontSize: 15, color: '#5A6478', lineHeight: 1.7, marginBottom: 36, maxWidth: 380 }}>
             Для тех, кто хочет выглядеть безупречно — и больше не думать об этом
           </p>
-          <div style={{ display: 'flex', gap: 12 }}>
+          <div className="btn-row">
             <a href="/shop" style={{
               background: '#1B3A6B', color: '#fff', border: 'none',
               padding: '14px 28px', fontSize: 14, fontWeight: 500,
@@ -81,7 +83,7 @@ export default function Home() {
       </section>
 
       {/* STRIP */}
-      <div style={{
+      <div className="strip-wrap" style={{
         background: '#1B3A6B', padding: '14px 40px',
         display: 'flex', gap: 40, justifyContent: 'center'
       }}>
