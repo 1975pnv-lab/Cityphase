@@ -77,14 +77,21 @@ export default function Home() {
         </div>
       </section>
 
-      <footer style={{ padding: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: '0.5px solid #DDE1E9', background: '#fff', flexWrap: 'wrap', gap: 12 }}>
+      <footer className="footer-wrap" style={{ padding: '24px', borderTop: '0.5px solid #DDE1E9', background: '#fff' }}>
+        <style>{`
+          .footer-wrap { display: flex; justify-content: space-between; align-items: center; }
+          .footer-copy { font-size: 11px; color: #5A6478; }
+          @media (max-width: 768px) {
+            .footer-wrap { flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+          }
+        `}</style>
         <span style={{ fontSize: 12, fontWeight: 500, letterSpacing: '0.16em', color: '#1B3A6B' }}>CITYPHASE</span>
         <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
           <a href="https://t.me/cityphase_ru" style={{ fontSize: 12, color: '#5A6478', textDecoration: 'none' }}>@cityphase_ru</a>
           <span style={{ fontSize: 12, color: '#DDE1E9' }}>·</span>
           <a href="mailto:hello@cityphase.ru" style={{ fontSize: 12, color: '#5A6478', textDecoration: 'none' }}>hello@cityphase.ru</a>
         </div>
-        <span style={{ fontSize: 11, color: '#5A6478' }}>© 2026 CityPhase</span>
+        <span className="footer-copy">© 2026 CityPhase</span>
       </footer>
     </main>
   );
