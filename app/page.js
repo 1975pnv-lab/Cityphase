@@ -1,6 +1,20 @@
 export default function Home() {
   return (
-    <main>
+    <main><style>{`
+        .nav-links { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; }
+        .hero-section { display: flex; align-items: flex-start; justify-content: space-between; gap: 40px; }
+        .hero-photo { width: 240px; flex-shrink: 0; height: 300px; }
+        .btn-row { display: flex; gap: 12px; }
+        .strip-inner { display: flex; gap: 40px; justify-content: center; }
+        @media (max-width: 768px) {
+          .nav-links { display: none; }
+          .hero-section { flex-direction: column; }
+          .hero-photo { width: 100% !important; height: 220px !important; }
+          .btn-row { flex-direction: column; }
+          .btn-row a { text-align: center; }
+          .strip-inner { gap: 16px; flex-wrap: wrap; }
+        }
+      `}</style>
       {/* NAV */}
       <nav style={{
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
