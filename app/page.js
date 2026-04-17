@@ -12,8 +12,8 @@ export default function Home() {
           .hero-photo { width: 100% !important; height: 220px !important; }
           .btn-row { flex-direction: column; }
           .btn-row a { text-align: center; }
-          .strip-inner { gap: 12px; flex-wrap: nowrap; }
-          .strip-inner span { font-size: 10px !important; }
+          .strip-inner { gap: 8px 20px; flex-wrap: wrap; }
+          .strip-inner span { font-size: 11px !important; white-space: nowrap; }
         }
       `}</style>
       {/* NAV */}
