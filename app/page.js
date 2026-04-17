@@ -8,7 +8,7 @@ export default function Home() {
 .strip-inner { display: flex; gap: 40px; justify-content: center; }
 .strip-wrap { display: block; }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; }
-@media (max-width: 768px) {
+@media (max-width: 860px) {
   .nav-links { display: none; }
   .hero-section { flex-direction: column; }
   .hero-photo { width: 100% !important; height: 220px !important; }
@@ -165,7 +165,7 @@ export default function Home() {
       <footer style={{ padding: '24px', borderTop: '0.5px solid #DDE1E9', background: '#fff' }}>
         <style>{`
           .footer-inner { display: flex; justify-content: space-between; align-items: center; }
-          @media (max-width: 768px) { .footer-inner { flex-direction: column; align-items: center; gap: 12px; text-align: center; } }
+          @media (max-width: 860px) { .footer-inner { flex-direction: column; align-items: center; gap: 12px; text-align: center; } }
         `}</style>
         <div className="footer-inner">
           <span style={{ fontSize: 12, fontWeight: 500, letterSpacing: '0.16em', color: '#1B3A6B' }}>CITYPHASE</span>
