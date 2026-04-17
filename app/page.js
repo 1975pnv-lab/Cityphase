@@ -83,15 +83,15 @@ export default function Home() {
       </section>
 
       {/* STRIP */}
-      <div className="strip-wrap" style={{
-        background: '#1B3A6B', padding: '14px 40px',
+      <div style={{
+        background: '#1B3A6B', padding: '14px 24px',
         display: 'flex', gap: 40, justifyContent: 'center'
       }}>
-        {['Почти не мнётся', 'Сохнет за час', 'В ней не жарко', '4-way stretch'].map((item) => (
-          <span key={item} style={{ fontSize: 12, color: '#fff', fontWeight: 500, letterSpacing: '0.06em' }}>
-            {item}
-          </span>
-        ))}
+        <div style={{ display: 'flex', gap: 40, justifyContent: 'center', flexWrap: 'wrap' }}>
+          {['Почти не мнётся', 'Сохнет за час', 'В ней не жарко', '4-way stretch'].map((item) => (
+            <span key={item} style={{ fontSize: 12, color: '#fff', fontWeight: 500, letterSpacing: '0.06em', whiteSpace: 'nowrap' }}>{item}</span>
+          ))}
+        </div>
       </div>
 
       {/* ФИЛОСОФИЯ */}
