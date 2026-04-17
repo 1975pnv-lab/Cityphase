@@ -46,7 +46,7 @@ export default function Home() {
             Бренд · 2026
           </div>
           <h1 style={{ fontSize: 32, fontWeight: 500, color: '#1B3A6B', lineHeight: 1.25, marginBottom: 20, letterSpacing: '-0.01em' }}>
-            Одежда, созданная инженерами, для длинного дня
+            Деловая одежда для длинного дня. Создана инженерами.
           </h1>
           <p style={{ fontSize: 15, color: '#5A6478', lineHeight: 1.7, marginBottom: 36, maxWidth: 380 }}>
             Для тех, кто хочет выглядеть безупречно — и больше не думать об этом
