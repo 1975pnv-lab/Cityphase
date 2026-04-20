@@ -9,7 +9,7 @@ export default function TwelveHours() {
         <a href="/" style={{ fontSize: 13, fontWeight: 500, letterSpacing: '0.18em', color: '#1B3A6B', textDecoration: 'none' }}>
           CITYPHASE
         </a>
-        <ul style={{ display: 'flex', gap: 28, listStyle: 'none', margin: 0, padding: 0 }}>
+        <ul className="nav-links" style={{ display: 'flex', gap: 28, listStyle: 'none', margin: 0, padding: 0 }}>
           <li><a href="/shop" style={{ fontSize: 13, color: '#5A6478', textDecoration: 'none' }}>Коллекция</a></li>
           <li><a href="/technology" style={{ fontSize: 13, color: '#5A6478', textDecoration: 'none' }}>Технология</a></li>
           <li><a href="/about" style={{ fontSize: 13, color: '#5A6478', textDecoration: 'none' }}>О бренде</a></li>
