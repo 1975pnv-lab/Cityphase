@@ -43,3 +43,47 @@ body {
     display: none !important;
   }
 }
+/* ── Sticky навбар ── */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* ── Hover на кнопках ── */
+button, a[href] {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+button:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+/* ── Hover на nav-ссылках ── */
+nav a:hover {
+  color: #1B3A6B !important;
+  opacity: 0.7;
+}
+
+/* ── Fade-in анимация ── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeInUp 0.6s ease both;
+}
+
+/* ── Плавный скролл ── */
+html {
+  scroll-behavior: smooth;
+}
