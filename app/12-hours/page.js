@@ -205,7 +205,7 @@ export default function TwelveHours() {
 
       {/* S10 ФОРМА */}
       <section id="order" style={{ background: '#1B3A6B', padding: '64px 40px' }}>
-        <div style={{ maxWidth: 480 }}>
+        <div style={{ maxWidth: 480, margin: '0 auto' }}>
           <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 16 }}>
             Предзаказ
           </div>
