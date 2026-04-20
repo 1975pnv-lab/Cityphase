@@ -214,7 +214,10 @@ export default function TwelveHours() {
           </h2>
           <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.65)', marginBottom: 32, lineHeight: 1.6 }}>
             Запись открыта до 25 августа. Оплата после подтверждения заявки.
-          </p>
+          </p> 
+          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', marginBottom: 24, marginTop: -16 }}>
+  Осталось 200 из 200 мест
+</p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             <input type="text" placeholder="Имя" style={{
               padding: '12px 16px', fontSize: 14, borderRadius: 4,
