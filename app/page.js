@@ -179,7 +179,7 @@ export default function Home() {
               hello@cityphase.ru
             </a>
           </div>
-          <span style={{ fontSize: 11, color: '#5A6478' }}>© 2026 CityPhase</span>
+          <span style={{ fontSize: 11, color: '#5A6478' }}>© 2026 CITYPHASE</span>
         </div>
       </footer>
     </main>
