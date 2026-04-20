@@ -275,3 +275,6 @@ export default function TwelveHours() {
     <span style={{ fontSize: 12, color: '#5A6478' }}>© 2026 CITYPHASE</span>
   </div>
 </footer>
+</main>
+  )
+}
