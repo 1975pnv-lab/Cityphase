@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <main>
+    <main style={{ background: '#fff', minHeight: '100vh' }}>
       {/* NAV */}
       <nav style={{
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
