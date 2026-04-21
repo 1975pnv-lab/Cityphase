@@ -41,9 +41,10 @@ export default function Home() {
       {/* HERO */}
       <section style={{
         background: '#fff', padding: '80px 40px 72px',
+        minHeight: 'calc(100vh - 57px)',
         display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 40
       }}>
-        <div style={{ flex: 1, maxWidth: 560 }}>
+        <div style={{ flex: 1 }}>
           <div style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', fontWeight: 500, marginBottom: 20 }}>
             Бренд · 2026
           </div>
