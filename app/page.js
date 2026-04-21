@@ -45,12 +45,12 @@ export default function Home() {
           <div style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', fontWeight: 500, marginBottom: 20 }}>
             Бренд · 2026
           </div>
-         <h1 style={{ fontSize: 44, fontWeight: 600, color: '#1B3A6B', lineHeight: 1.15, marginBottom: 20, letterSpacing: '-0.02em' }}>
-            Деловая одежда для длинного дня. Создана инженерами.
-          </h1>
-          <p style={{ fontSize: 18, color: '#3D4558', lineHeight: 1.7, marginBottom: 36, maxWidth: 420 }}>
-            Для тех, кто хочет выглядеть безупречно — и больше не думать об этом
-          </p>
+         <h1 <h1 style={{ fontSize: 44, fontWeight: 600, color: '#1B3A6B', lineHeight: 1.15, marginBottom: 12, letterSpacing: '-0.02em' }}>
+  Деловая одежда для длинного дня.
+</h1>
+<p style={{ fontSize: 22, fontWeight: 400, color: '#5A6478', lineHeight: 1.4, marginBottom: 36 }}>
+  Создана инженерами.
+</p>
           <div className="btn-row">
             <a href="/shop" style={{
               background: '#1B3A6B', color: '#fff', border: 'none',
