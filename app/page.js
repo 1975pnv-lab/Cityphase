@@ -42,7 +42,9 @@ export default function Home() {
       <section style={{
         position: 'relative',
         minHeight: 'calc(100vh - 57px)',
-        display: 'flex', alignItems: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
         overflow: 'hidden'
       }}>
         <img
