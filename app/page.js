@@ -86,7 +86,7 @@ export default function Home() {
       </section>
 
       {/* ПРОДУКТ */}
-      <section style={{ padding: '64px 40px', background: '#F2F3F6' }}>
+      <section style={{ padding: '64px 40px', background: '#F2F3F6', minHeight: '100vh' }}>
         <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 24 }}>
           Продукт
         </div>
