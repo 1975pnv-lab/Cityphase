@@ -51,9 +51,6 @@ export default function Home() {
 <p style={{ fontSize: 22, fontWeight: 400, color: '#5A6478', lineHeight: 1.4, marginBottom: 36 }}>
   Создана инженерами.
 </p>
-<p style={{ fontSize: 22, fontWeight: 400, color: '#5A6478', lineHeight: 1.4, marginBottom: 36 }}>
-  Создана инженерами.
-</p>
           <div className="btn-row">
             <a href="/shop" style={{
               background: '#1B3A6B', color: '#fff', border: 'none',
