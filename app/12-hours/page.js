@@ -1,4 +1,21 @@
 export default function TwelveHours() {
+  const [submitted, setSubmitted] = React.useState(false);
+  const [submitting, setSubmitting] = React.useState(false);
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setSubmitting(true);
+    const form = e.target;
+    const data = new FormData(form);
+    await fetch('https://formspree.io/f/mykldvkv', {
+      method: 'POST',
+      body: data,
+      headers: { Accept: 'application/json' }
+    });
+    setSubmitting(false);
+    setSubmitted(true);
+    form.reset();
+  }
   return (
     <main>
       {/* NAV */}
@@ -202,9 +219,18 @@ export default function TwelveHours() {
           <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', marginBottom: 24, marginTop: -16 }}>
             Осталось 200 из 200 мест
           </p>
+          {submitted ? (
+            <div style={{ textAlign: 'center', padding: '40px 0' }}>
+              <div style={{ fontSize: 20, fontWeight: 600, color: '#fff', marginBottom: 12 }}>
+                Заявка принята ✓
+              </div>
+              <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.65)', lineHeight: 1.6 }}>
+                Мы сообщим вам, когда откроется возможность для оплаты.
+              </div>
+            </div>
+          ) : (
           <form
-            action="https://formspree.io/f/mykldvkv"
-            method="POST"
+            onSubmit={handleSubmit}
             style={{ display: 'flex', flexDirection: 'column', gap: 12 }}
           >
             <input
@@ -264,9 +290,10 @@ export default function TwelveHours() {
                 borderRadius: 4, cursor: 'pointer', marginTop: 4
               }}
             >
-              Записаться
+              {submitting ? 'Отправляем...' : 'Записаться'}
             </button>
           </form>
+          )}
         </div>
       </section>
 
