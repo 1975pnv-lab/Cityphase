@@ -74,15 +74,6 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div style={{
-          width: 240, flexShrink: 0, background: '#F2F3F6',
-          borderRadius: 8, height: 300,
-          display: 'flex', alignItems: 'center', justifyContent: 'center'
-        }}>
-          <span style={{ fontSize: 11, letterSpacing: '0.1em', color: '#5A6478', textTransform: 'uppercase' }}>
-            Фото после семпла
-          </span>
-        </div>
       </section>
 
       {/* ПРОДУКТ */}
