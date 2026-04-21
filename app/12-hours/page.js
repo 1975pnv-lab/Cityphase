@@ -187,7 +187,7 @@ export default function TwelveHours() {
 </a>
       </section>
 
-      {/* S10 ФОРМА */}
+     {/* S10 ФОРМА */}
       <section id="order" style={{ background: '#1B3A6B', padding: '64px 40px' }}>
         <div style={{ maxWidth: 480, margin: '0 auto' }}>
           <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 16 }}>
@@ -198,48 +198,75 @@ export default function TwelveHours() {
           </h2>
           <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.65)', marginBottom: 32, lineHeight: 1.6 }}>
             Запись открыта до 25 августа. Оплата после подтверждения заявки.
-          </p> 
+          </p>
           <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', marginBottom: 24, marginTop: -16 }}>
-  Осталось 200 из 200 мест
-</p>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-            <input type="text" placeholder="Имя" style={{
-              padding: '12px 16px', fontSize: 14, borderRadius: 4,
-              border: '0.5px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.1)',
-              color: '#fff', outline: 'none', width: '100%'
-            }} />
-            <input type="email" placeholder="Email" style={{
-              padding: '12px 16px', fontSize: 14, borderRadius: 4,
-              border: '0.5px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.1)',
-              color: '#fff', outline: 'none', width: '100%'
-            }} />
-            <select style={{
-              padding: '12px 16px', fontSize: 14, borderRadius: 4,
-              border: '0.5px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.1)',
-              color: '#fff', outline: 'none', width: '100%'
-            }}>
+            Осталось 200 из 200 мест
+          </p>
+          <form
+            action="https://formspree.io/f/mykldvkv"
+            method="POST"
+            style={{ display: 'flex', flexDirection: 'column', gap: 12 }}
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Имя"
+              required
+              style={{
+                padding: '12px 16px', fontSize: 14, borderRadius: 4,
+                border: '0.5px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.1)',
+                color: '#fff', outline: 'none', width: '100%'
+              }}
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              style={{
+                padding: '12px 16px', fontSize: 14, borderRadius: 4,
+                border: '0.5px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.1)',
+                color: '#fff', outline: 'none', width: '100%'
+              }}
+            />
+            <select
+              name="size"
+              required
+              style={{
+                padding: '12px 16px', fontSize: 14, borderRadius: 4,
+                border: '0.5px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.1)',
+                color: '#fff', outline: 'none', width: '100%'
+              }}
+            >
               <option value="" style={{ color: '#1A1F2E' }}>Размер</option>
               <option value="M" style={{ color: '#1A1F2E' }}>M</option>
               <option value="L" style={{ color: '#1A1F2E' }}>L</option>
               <option value="XL" style={{ color: '#1A1F2E' }}>XL</option>
             </select>
-            <select style={{
-              padding: '12px 16px', fontSize: 14, borderRadius: 4,
-              border: '0.5px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.1)',
-              color: '#fff', outline: 'none', width: '100%'
-            }}>
+            <select
+              name="color"
+              required
+              style={{
+                padding: '12px 16px', fontSize: 14, borderRadius: 4,
+                border: '0.5px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.1)',
+                color: '#fff', outline: 'none', width: '100%'
+              }}
+            >
               <option value="" style={{ color: '#1A1F2E' }}>Цвет</option>
-              <option value="white" style={{ color: '#1A1F2E' }}>Белый</option>
-              <option value="blue" style={{ color: '#1A1F2E' }}>Голубой</option>
+              <option value="Белый" style={{ color: '#1A1F2E' }}>Белый</option>
+              <option value="Голубой" style={{ color: '#1A1F2E' }}>Голубой</option>
             </select>
-            <button style={{
-              background: '#1D9E75', color: '#fff', border: 'none',
-              padding: '14px 28px', fontSize: 14, fontWeight: 500,
-              borderRadius: 4, cursor: 'pointer', marginTop: 4
-            }}>
+            <button
+              type="submit"
+              style={{
+                background: '#1D9E75', color: '#fff', border: 'none',
+                padding: '14px 28px', fontSize: 14, fontWeight: 500,
+                borderRadius: 4, cursor: 'pointer', marginTop: 4
+              }}
+            >
               Записаться
             </button>
-          </div>
+          </form>
         </div>
       </section>
 
