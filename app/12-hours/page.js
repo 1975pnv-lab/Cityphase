@@ -1,3 +1,5 @@
+'use client';
+import React from 'react';
 export default function TwelveHours() {
   const [submitted, setSubmitted] = React.useState(false);
   const [submitting, setSubmitting] = React.useState(false);
