@@ -90,41 +90,43 @@ export default function Home() {
         padding: '64px 40px', background: '#F2F3F6', minHeight: '100vh',
         display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'
       }}>
-        <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 24, alignSelf: 'flex-start', width: '100%', maxWidth: 300 }}>
-          Продукт
-        </div>
-        <div style={{
-          border: '0.5px solid #DDE1E9', borderRadius: 8,
-          overflow: 'hidden', width: 300, background: '#fff'
-        }}>
-          <div style={{
-            background: '#F2F3F6', height: 200,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            borderBottom: '0.5px solid #DDE1E9'
-          }}>
-            <span style={{ fontSize: 11, letterSpacing: '0.08em', color: '#5A6478', textTransform: 'uppercase' }}>
-              Фото после семпла
-            </span>
+        <div style={{ width: 300 }}>
+          <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 16 }}>
+            Продукт
           </div>
-          <div style={{ padding: '20px 20px 24px' }}>
-            <div style={{ fontSize: 10, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#1D9E75', fontWeight: 500, marginBottom: 6 }}>
-              Флагман линейки Long Day
+          <div style={{
+            border: '0.5px solid #DDE1E9', borderRadius: 8,
+            overflow: 'hidden', background: '#fff'
+          }}>
+            <div style={{
+              background: '#E8EAED', height: 200,
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              borderBottom: '0.5px solid #DDE1E9'
+            }}>
+              <span style={{ fontSize: 11, letterSpacing: '0.08em', color: '#5A6478', textTransform: 'uppercase' }}>
+                Фото после семпла
+              </span>
             </div>
-            <div style={{ fontSize: 17, fontWeight: 500, color: '#1A1F2E', marginBottom: 6 }}>
-              12 Hours ★
-            </div>
-            <p style={{ fontSize: 13, color: '#5A6478', lineHeight: 1.55, marginBottom: 18 }}>
-              Трикотажная рубашка из LYONEX для длинного дня — не мнётся, тянется, сохнет за час.
-            </p>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span style={{ fontSize: 16, fontWeight: 500, color: '#1B3A6B' }}>13 900 ₽</span>
-              <a href="/12-hours" style={{
-                border: '1.5px solid #1B3A6B', color: '#1B3A6B', background: 'transparent',
-                padding: '8px 16px', fontSize: 13, fontWeight: 500,
-                borderRadius: 4, textDecoration: 'none', display: 'inline-block'
-              }}>
-                Подробнее
-              </a>
+            <div style={{ padding: '20px 20px 24px' }}>
+              <div style={{ fontSize: 10, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#1D9E75', fontWeight: 500, marginBottom: 6 }}>
+                Флагман линейки Long Day
+              </div>
+              <div style={{ fontSize: 17, fontWeight: 500, color: '#1A1F2E', marginBottom: 6 }}>
+                12 Hours ★
+              </div>
+              <p style={{ fontSize: 13, color: '#5A6478', lineHeight: 1.55, marginBottom: 18 }}>
+                Трикотажная рубашка из LYONEX для длинного дня — не мнётся, тянется, сохнет за час.
+              </p>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <span style={{ fontSize: 16, fontWeight: 500, color: '#1B3A6B' }}>13 900 ₽</span>
+                <a href="/12-hours" style={{
+                  border: '1.5px solid #1B3A6B', color: '#1B3A6B', background: 'transparent',
+                  padding: '8px 16px', fontSize: 13, fontWeight: 500,
+                  borderRadius: 4, textDecoration: 'none', display: 'inline-block'
+                }}>
+                  Подробнее
+                </a>
+              </div>
             </div>
           </div>
         </div>
