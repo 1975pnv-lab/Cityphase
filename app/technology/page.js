@@ -93,8 +93,8 @@ export default function Technology() {
 {/* CTA */}
       <section style={{ background: '#1B3A6B', padding: '60px 40px' }}>
         <div style={{ maxWidth: 640, margin: '0 auto' }}>
-          <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.8)', lineHeight: 1.7, marginBottom: 32 }}>
-            LYONEX — основа рубашки 12 Hours ★. Первая партия 200 единиц, открыт предзаказ.
+          <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.8)', whiteSpace: 'nowrap', marginBottom: 32 }}>
+           LYONEX — основа рубашки 12 Hours ★. Первая партия 200 единиц, открыт предзаказ.
           </p>
           <a href="/12-hours" style={{
             display: 'inline-block', background: '#1D9E75', color: '#fff',
@@ -105,7 +105,7 @@ export default function Technology() {
           </a>
         </div>
       </section>
-      
+
       {/* FOOTER */}
       <footer style={{ padding: '24px 16px', borderTop: '0.5px solid #DDE1E9', background: '#f1f2f4' }}>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, textAlign: 'center' }}>
