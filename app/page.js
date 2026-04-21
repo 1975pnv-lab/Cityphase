@@ -86,13 +86,16 @@ export default function Home() {
       </section>
 
       {/* ПРОДУКТ */}
-      <section style={{ padding: '64px 40px', background: '#F2F3F6', minHeight: '100vh' }}>
-        <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 24 }}>
+      <section style={{
+        padding: '64px 40px', background: '#F2F3F6', minHeight: '100vh',
+        display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'
+      }}>
+        <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 24, alignSelf: 'flex-start', width: '100%', maxWidth: 300 }}>
           Продукт
         </div>
         <div style={{
           border: '0.5px solid #DDE1E9', borderRadius: 8,
-          overflow: 'hidden', maxWidth: 300, background: '#fff'
+          overflow: 'hidden', width: 300, background: '#fff'
         }}>
           <div style={{
             background: '#F2F3F6', height: 200,
