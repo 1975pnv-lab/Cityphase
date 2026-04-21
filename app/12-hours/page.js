@@ -116,6 +116,25 @@ export default function TwelveHours() {
         </div>
       </section>
 
+ {/* S8 ДЕТАЛИ */}
+      <section style={{ background: '#F2F3F6', padding: '64px 40px' }}>
+        <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 32 }}>
+          Продумана каждая деталь
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 12, maxWidth: 560 }}>
+          {[
+            { name: 'Воротник', text: 'Spread collar — не валится без галстука, не душит в застёгнутом виде.' },
+            { name: 'Пуговицы', text: 'Логотип CityPhase. Запасная пуговица в комплекте.' },
+            { name: 'Тейп и петля', text: 'Жаккардовый тейп внутри стойки — белый логотип на тёмно-синем фоне и зелёная тканая петля. Детали которые видите только вы.' },
+          ].map((item) => (
+            <div key={item.name} style={{ display: 'flex', gap: 16, background: '#fff', border: '0.5px solid #DDE1E9', borderRadius: 8, padding: '14px 20px' }}>
+              <div style={{ fontSize: 13, fontWeight: 500, color: '#1B3A6B', minWidth: 100, flexShrink: 0 }}>{item.name}</div>
+              <div style={{ fontSize: 13, color: '#5A6478', lineHeight: 1.55 }}>{item.text}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* S6 LYONEX */}
       <section style={{ background: '#F2F3F6', padding: '64px 40px' }}>
         <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 16 }}>
@@ -138,42 +157,6 @@ export default function TwelveHours() {
         </div>
       </section>
 
-      {/* S7 ДЛЯ КОГО */}
-      <section style={{ background: '#fff', padding: '64px 40px' }}>
-        <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 16 }}>
-          Для тех, кто знает цену времени
-        </div>
-        <p style={{ fontSize: 15, color: '#5A6478', lineHeight: 1.75, maxWidth: 500, marginBottom: 24 }}>
-          Вы проводите длинные дни на встречах, в переговорах, в дороге. Внешний вид важен — но глажка в шесть утра и духота к обеду давно раздражают. Вы хотите выглядеть безупречно — и больше не думать об этом.
-        </p>
-        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-          {['Консалтинг, финансы, юриспруденция', 'Командировки и перелёты', 'Длинный рабочий день в городе'].map((tag) => (
-            <div key={tag} style={{ fontSize: 12, color: '#1B3A6B', border: '0.5px solid #1B3A6B', borderRadius: 20, padding: '6px 14px' }}>
-              {tag}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* S8 ДЕТАЛИ */}
-      <section style={{ background: '#F2F3F6', padding: '64px 40px' }}>
-        <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 32 }}>
-          Продумана каждая деталь
-        </div>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 12, maxWidth: 560 }}>
-          {[
-            { name: 'Воротник', text: 'Spread collar — не валится без галстука, не душит в застёгнутом виде.' },
-            { name: 'Пуговицы', text: 'Логотип CityPhase. Запасная пуговица в комплекте.' },
-            { name: 'Тейп и петля', text: 'Жаккардовый тейп внутри стойки — белый логотип на тёмно-синем фоне и зелёная тканая петля. Детали которые видите только вы.' },
-          ].map((item) => (
-            <div key={item.name} style={{ display: 'flex', gap: 16, background: '#fff', border: '0.5px solid #DDE1E9', borderRadius: 8, padding: '14px 20px' }}>
-              <div style={{ fontSize: 13, fontWeight: 500, color: '#1B3A6B', minWidth: 100, flexShrink: 0 }}>{item.name}</div>
-              <div style={{ fontSize: 13, color: '#5A6478', lineHeight: 1.55 }}>{item.text}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* S9 ЦЕНА */}
       <section style={{ background: '#fff', padding: '64px 40px' }}>
         <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 24 }}>
@@ -193,14 +176,15 @@ export default function TwelveHours() {
         <p style={{ fontSize: 13, color: '#5A6478', maxWidth: 440, lineHeight: 1.65, marginBottom: 28 }}>
           Премиальный материал, производство с контролем на каждом этапе и внимание к деталям. Ничего лишнего.
         </p>
-        <a href="#order" style={{
-          background: '#1B3A6B', color: '#fff', border: 'none',
-          padding: '14px 28px', fontSize: 14, fontWeight: 500,
-          borderRadius: 4, cursor: 'pointer', textDecoration: 'none',
-          letterSpacing: '0.03em', display: 'inline-block'
-        }}>
-          Записаться на предзаказ
-        </a>
+       <a href="#order" style={{
+  background: '#1D9E75', color: '#fff', border: 'none',
+  padding: '16px 32px', fontSize: 15, fontWeight: 500,
+  borderRadius: 4, cursor: 'pointer', textDecoration: 'none',
+  letterSpacing: '0.03em', display: 'block', textAlign: 'center',
+  maxWidth: 360
+}}>
+  Записаться на предзаказ →
+</a>
       </section>
 
       {/* S10 ФОРМА */}
