@@ -38,25 +38,39 @@ export default function Home() {
         </a>
       </nav>
 
-      {/* HERO */}
+    {/* HERO */}
       <section style={{
-        background: '#fff', padding: '80px 40px 72px',
+        position: 'relative',
         minHeight: 'calc(100vh - 57px)',
-        display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 40
+        display: 'flex', alignItems: 'center',
+        overflow: 'hidden'
       }}>
-        <div style={{ flex: 1 }}>
+        <img
+          src="/hero.webp"
+          alt=""
+          style={{
+            position: 'absolute', inset: 0,
+            width: '100%', height: '100%',
+            objectFit: 'cover', objectPosition: 'center'
+          }}
+        />
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'linear-gradient(to right, rgba(0,0,0,0.65) 40%, rgba(0,0,0,0.1) 100%)'
+        }} />
+        <div style={{ position: 'relative', zIndex: 1, padding: '80px 40px', flex: 1 }}>
           <div style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', fontWeight: 500, marginBottom: 20 }}>
             Бренд · 2026
           </div>
-          <h1 style={{ fontSize: 38, fontWeight: 600, color: '#1B3A6B', lineHeight: 1.15, marginBottom: 12, letterSpacing: '-0.02em', whiteSpace: 'nowrap' }}>
+          <h1 style={{ fontSize: 38, fontWeight: 600, color: '#fff', lineHeight: 1.15, marginBottom: 12, letterSpacing: '-0.02em', whiteSpace: 'nowrap' }}>
             Деловая одежда для длинного дня.
           </h1>
-          <p style={{ fontSize: 22, fontWeight: 400, color: '#5A6478', lineHeight: 1.4, marginBottom: 36 }}>
+          <p style={{ fontSize: 22, fontWeight: 400, color: 'rgba(255,255,255,0.8)', lineHeight: 1.4, marginBottom: 36 }}>
             Создана инженерами.
           </p>
           <div className="btn-row">
             <a href="/12-hours#order" style={{
-              background: '#1B3A6B', color: '#fff', border: 'none',
+              background: '#1D9E75', color: '#fff', border: 'none',
               padding: '14px 28px', fontSize: 14, fontWeight: 500,
               borderRadius: 4, cursor: 'pointer', textDecoration: 'none',
               letterSpacing: '0.03em', display: 'inline-block'
@@ -64,8 +78,8 @@ export default function Home() {
               Записаться на предзаказ
             </a>
             <a href="/about" style={{
-              background: '#fff', color: '#1B3A6B',
-              border: '1.5px solid #1B3A6B',
+              background: 'transparent', color: '#fff',
+              border: '1.5px solid rgba(255,255,255,0.6)',
               padding: '14px 24px', fontSize: 14, fontWeight: 500,
               borderRadius: 4, cursor: 'pointer', textDecoration: 'none',
               display: 'inline-block'
