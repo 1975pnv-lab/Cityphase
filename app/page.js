@@ -45,7 +45,7 @@ export default function Home() {
           <div style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', fontWeight: 500, marginBottom: 20 }}>
             Бренд · 2026
           </div>
-         <h1 style={{ fontSize: 38, fontWeight: 600, color: '#1B3A6B', lineHeight: 1.15, marginBottom: 12, letterSpacing: '-0.02em' }}>
+         <h1 style={{ fontSize: 38, fontWeight: 600, color: '#1B3A6B', lineHeight: 1.15, marginBottom: 12, letterSpacing: '-0.02em', whiteSpace: 'nowrap' }}>
   Деловая одежда для длинного дня.
 </h1>
 <p style={{ fontSize: 22, fontWeight: 400, color: '#5A6478', lineHeight: 1.4, marginBottom: 36 }}>
