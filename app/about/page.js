@@ -14,12 +14,12 @@ export default function About() {
           <li><a href="/technology" style={{ fontSize: 13, color: '#5A6478', textDecoration: 'none' }}>Технология</a></li>
           <li><a href="/about" style={{ fontSize: 13, color: '#1B3A6B', textDecoration: 'none', fontWeight: 500 }}>О бренде</a></li>
         </ul>
-        <a href="#order" style={{ fontSize: 12, color: '#1D9E75', fontWeight: 500, textDecoration: 'none' }}>
+        <a href="/12-hours#order" style={{ fontSize: 12, color: '#1D9E75', fontWeight: 500, textDecoration: 'none' }}>
           Предзаказ →
         </a>
       </nav>
 
-      {/* S1 HERO */}
+      {/* S1 О БРЕНДЕ */}
       <section style={{ background: '#fff', padding: '80px 40px', maxWidth: 640, margin: '0 auto' }}>
         <p style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 24 }}>
           О БРЕНДЕ
@@ -28,18 +28,47 @@ export default function About() {
           CityPhase
         </h1>
         <p style={{ fontSize: 16, color: '#3D4558', lineHeight: 1.7, marginBottom: 20 }}>
-          Мы задали себе вопрос: что если подойти к деловой одежде как к инженерной задаче — где каждое решение обосновано конкретной проблемой?
+          Деловая одежда давно не менялась. Она мнётся, в ней бывает жарко, она стесняет движения. Мы задали себе вопрос: что если подойти к ней как к инженерной задаче — где каждое решение обосновано конкретной проблемой? Так появился CityPhase.
         </p>
         <p style={{ fontSize: 16, color: '#3D4558', lineHeight: 1.7, marginBottom: 20 }}>
           Никакого хлопка, который мнётся. Никаких обещаний, которые нельзя проверить. Только то, что работает и доказуемо — на видео или дома самостоятельно.
         </p>
-        <p style={{ fontSize: 16, color: '#3D4558', lineHeight: 1.7 }}>
+        <p style={{ fontSize: 16, color: '#3D4558', lineHeight: 1.7, marginBottom: 40 }}>
           Первая партия — рубашка 12 Hours ★. Москва, 2026.
         </p>
+        <div style={{
+          marginBottom: 0, padding: '20px 24px',
+          borderLeft: '2px solid #1D9E75',
+          background: '#F2F3F6', borderRadius: '0 6px 6px 0'
+        }}>
+          <div style={{ fontSize: 13, fontWeight: 500, color: '#1A1F2E', marginBottom: 6 }}>
+            Только то, что можно доказать
+          </div>
+          <div style={{ fontSize: 13, color: '#5A6478', lineHeight: 1.65 }}>
+            Каждое свойство наших вещей можно проверить самостоятельно дома или снять на видео. Если нельзя — это не аргумент.
+          </div>
+        </div>
       </section>
 
-      {/* S2 КОНТАКТЫ */}
+      {/* S2 CTA */}
       <section style={{ background: '#F2F3F6', padding: '60px 40px' }}>
+        <div style={{ maxWidth: 640, margin: '0 auto' }}>
+          <p style={{ fontSize: 16, color: '#3D4558', lineHeight: 1.7, marginBottom: 32 }}>
+            Флагманская модель 12 Hours ★ — трикотажная рубашка из LYONEX для длинного дня. Открыт предзаказ на первую партию 200 единиц.
+          </p>
+          <a href="/12-hours" style={{
+            display: 'inline-block', background: '#1B3A6B', color: '#fff',
+            padding: '14px 28px', fontSize: 14, fontWeight: 500,
+            borderRadius: 4, textDecoration: 'none', letterSpacing: '0.03em',
+            marginBottom: 40
+          }}>
+            Смотреть 12 Hours ★ →
+          </a>
+        </div>
+      </section>
+
+      {/* S3 КОНТАКТЫ */}
+      <section style={{ background: '#fff', padding: '60px 40px' }}>
         <div style={{ maxWidth: 640, margin: '0 auto' }}>
           <p style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 24 }}>
             КОНТАКТЫ
