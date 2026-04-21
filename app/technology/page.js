@@ -90,6 +90,22 @@ export default function Technology() {
         </div>
       </section>
 
+{/* CTA */}
+      <section style={{ background: '#1B3A6B', padding: '60px 40px' }}>
+        <div style={{ maxWidth: 640, margin: '0 auto' }}>
+          <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.8)', lineHeight: 1.7, marginBottom: 32 }}>
+            LYONEX — основа рубашки 12 Hours ★. Первая партия 200 единиц, открыт предзаказ.
+          </p>
+          <a href="/12-hours" style={{
+            display: 'inline-block', background: '#1D9E75', color: '#fff',
+            padding: '14px 28px', fontSize: 14, fontWeight: 500,
+            borderRadius: 4, textDecoration: 'none', letterSpacing: '0.03em'
+          }}>
+            Смотреть 12 Hours ★ →
+          </a>
+        </div>
+      </section>
+      
       {/* FOOTER */}
       <footer style={{ padding: '24px 16px', borderTop: '0.5px solid #DDE1E9', background: '#f1f2f4' }}>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, textAlign: 'center' }}>
