@@ -58,7 +58,7 @@ export default function Home() {
           position: 'absolute', inset: 0,
           background: 'linear-gradient(to right, rgba(0,0,0,0.65) 40%, rgba(0,0,0,0.1) 100%)'
         }} />
-        <div style={{ position: 'relative', zIndex: 1, padding: '80px 40px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+        <div style={{ position: 'relative', zIndex: 1, padding: '0 40px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: 'calc(100vh - 57px)' }}>
           <div style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', fontWeight: 500, marginBottom: 20 }}>
             Бренд · 2026
           </div>
