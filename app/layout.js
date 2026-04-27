@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "CityPhase — одежда для длинного дня",
+  title: "CityPhase — деловая одежда для длинного дня",
   description: "Деловая одежда, созданная инженерами. Не мнётся, тянется, сохнет за час.",
 };
 
