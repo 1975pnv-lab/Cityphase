@@ -214,7 +214,7 @@ nav{
 ────────────────────────────── */
 #s2{padding:0;display:grid;grid-template-columns:1fr 1fr}
 .proof-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);
+  display:grid;grid-template-columns:repeat(4,1fr);
   gap:0;background:var(--fg);
   border-top:1px solid var(--mist);
   border-bottom:1px solid var(--mist);
@@ -629,17 +629,17 @@ nav{
 .faq-item{border-bottom:1px solid var(--mist)}
 .faq-q{
   width:100%;display:flex;justify-content:space-between;align-items:center;
-  padding:24px 0;background:none;border:none;cursor:pointer;
-  font-family:var(--body);font-size:clamp(16px,1.6vw,20px);font-weight:300;
+  padding:16px 0;background:none;border:none;cursor:pointer;
+  font-family:var(--body);font-size:clamp(14px,1.4vw,17px);font-weight:300;
   color:var(--fg);text-align:left;gap:16px;transition:color .2s;
 }
 .faq-q:hover{color:var(--navy)}
-.faq-arr{font-size:22px;font-weight:200;color:var(--teal);flex-shrink:0;transition:transform .25s}
+.faq-arr{font-size:18px;font-weight:200;color:var(--teal);flex-shrink:0;transition:transform .25s}
 .faq-q.open .faq-arr{transform:rotate(45deg)}
 .faq-a{
-  display:none;padding:0 0 24px;
-  font-family:var(--body);font-size:15px;font-weight:300;
-  color:var(--ink);line-height:1.8;max-width:720px;
+  display:none;padding:0 0 16px;
+  font-family:var(--body);font-size:14px;font-weight:300;
+  color:var(--ink);line-height:1.7;max-width:720px;
 }
 .faq-a.open{display:block}
 @media(max-width:900px){.faq-list{margin:0 32px}}
@@ -662,7 +662,7 @@ nav{
   .prob-q{padding:24px 32px 40px}
   .prob-photo{display:none}
   .s2-inner{padding:72px 32px}
-  .proof-grid{grid-template-columns:1fr}
+  .proof-grid{grid-template-columns:1fr 1fr}
   .proof-card{border-right:none;border-bottom:1px solid rgba(255,255,255,.06)}
   .prop-list{padding:24px 32px}
   .lyonex-3col,.lyonex-comp{grid-template-columns:1fr}
@@ -761,8 +761,9 @@ const PAGE_HTML = `<!-- NAV -->
         <strong>12:00</strong> — переговоры. &nbsp;
         <strong>19:30</strong> — ужин с партнёрами.
       </p>
-      <div style="height:28px"></div>
-      <p class="hero-sub r3"><span>Воздухопроницаемость трикотажа — дышит лучше обычной рубашки.</span><span>Тянется во всех направлениях — не сковывает движения.</span><span>Деловой вид с утра до вечера.</span></p>
+      <div style="height:20px"></div>
+      <p style="font-family:var(--display);font-size:clamp(13px,1.4vw,16px);font-weight:300;color:var(--navy);margin-bottom:16px;font-style:italic" class="r2">12 часов — столько должна выдерживать деловая рубашка без компромиссов.</p>
+      <p class="hero-sub r3"><span>Трикотажная структура пропускает воздух гораздо лучше обычной рубашки.</span><span>Свобода движений без потери делового вида.</span><span>Выглядит безупречно весь день.</span></p>
     </div>
     <div class="hero-btns r3">
       <a href="#s8" class="btn-primary">Предзаказ <span class="arr">→</span></a>
@@ -778,8 +779,8 @@ const PAGE_HTML = `<!-- NAV -->
 <!-- S1 SOLUTION — dark banner -->
 <section class="sec" id="s1">
   <div class="s2-inner">
-    <p class="s2-text r2">12 Hours ★ — рубашка, которая <strong>выдержит ваш темп.</strong> Трикотажная, из ткани LYONEX, спроектированная для полного дня.</p>
-    <p class="s2-note r3">Не мнётся в чемодане. Сохнет за час. Не впитывает запахи к концу дня. Тянется во всех направлениях — без потери делового вида.</p>
+    <p class="s2-text r2">12 Hours ★ — трикотажная рубашка из ткани LYONEX, которая <strong>выдержит ваш темп.</strong> Спроектирована для полного дня.</p>
+    <p class="s2-note r3">Дышит — трикотажная структура лучше пропускает воздух. Не мнётся в чемодане. Сохнет за час. Тянется во всех направлениях — без потери делового вида.</p>
   </div>
 </section>
 
@@ -787,7 +788,7 @@ const PAGE_HTML = `<!-- NAV -->
 <!-- S2 FOR WHOM — portrait left, scenarios right -->
 <section class="sec" id="s2">
   <div class="whom-banner rl">
-    <h2 class="whom-headline">Рубашка для тех,<br>кто весь день <em>в делах.</em></h2>
+    <h2 class="whom-headline">Рубашка для тех,<br>кто весь день <em>в делах.</em><br><span style="font-size:clamp(14px,1.6vw,22px);color:rgba(255,255,255,.45);font-style:italic">Статус или комфорт?</span></h2>
     <div style="display:flex;flex-direction:column;gap:16px;position:relative;z-index:1">
       <p style="font-family:var(--body);font-size:clamp(16px,1.6vw,20px);font-weight:300;color:rgba(255,255,255,.85);line-height:1.7">Руководитель с утренним рейсом и переговорами до вечера.</p>
       <p style="font-family:var(--body);font-size:clamp(16px,1.6vw,20px);font-weight:300;color:rgba(255,255,255,.85);line-height:1.7">Юрист с тремя встречами в разных форматах за день.</p>
@@ -813,7 +814,7 @@ const PAGE_HTML = `<!-- NAV -->
 
 <!-- S3 PROOF — dark overlay cards -->
 <section class="sec" id="s3">
-  <h2 class="sh r">Как проверить что наша рубашка <em>работает?</em></h2>
+  <h2 class="sh r">Четыре теста, которые не пройдёт <em>обычная рубашка</em></h2>
   <div class="proof-grid r">
     <div class="proof-card">
       <div class="proof-card-bg ph" style="background:linear-gradient(160deg,var(--navy-dark),#080f1e)">
@@ -821,8 +822,8 @@ const PAGE_HTML = `<!-- NAV -->
       </div>
       <div class="proof-body">
         <p class="proof-num">Тест 01</p>
-        <p class="proof-title">«Чемодан»</p>
-        <p class="proof-desc">Складываем рубашку, кладём в чемодан. Через 3 часа достаём рядом с обычной. Смотрим результат.</p>
+        <p class="proof-title">«Пар»</p>
+        <p class="proof-desc">Стакан с горячей водой. Накрываете тканью рубашки, сверху — зеркало. Рядом — обычная рубашка. Зеркало над рубашкой 12 Hours от CityPhase запотеет. Над обычной — нет.<br><br><em>Почему: трикотаж пропускает воздух.</em></p>
       </div>
     </div>
     <div class="proof-card">
@@ -831,8 +832,8 @@ const PAGE_HTML = `<!-- NAV -->
       </div>
       <div class="proof-body">
         <p class="proof-num">Тест 02</p>
-        <p class="proof-title">«Стирка»</p>
-        <p class="proof-desc">Стираем руками, вешаем на плечики. Таймер. Через час — готова к носке.</p>
+        <p class="proof-title">«Чемодан»</p>
+        <p class="proof-desc">Складываете рубашку в чемодан на 3 часа. Достаёте. Рубашка 12 Hours от CityPhase — почти без заломов. Обычная — гармошка.<br><br><em>Почему: нейлон + эластан возвращают форму.</em></p>
       </div>
     </div>
     <div class="proof-card">
@@ -841,8 +842,18 @@ const PAGE_HTML = `<!-- NAV -->
       </div>
       <div class="proof-body">
         <p class="proof-num">Тест 03</p>
+        <p class="proof-title">«Стирка»</p>
+        <p class="proof-desc">Стираете в раковине, вешаете на плечики, засекаете время. Рубашка 12 Hours от CityPhase готова к носке через час. Обычная — мокрая полдня.<br><br><em>Почему: лиоцелл отводит влагу быстрее хлопка.</em></p>
+      </div>
+    </div>
+    <div class="proof-card">
+      <div class="proof-card-bg ph" style="background:linear-gradient(160deg,var(--navy-dark),#080f1e)">
+        <div class="play-btn"></div>
+      </div>
+      <div class="proof-body">
+        <p class="proof-num">Тест 04</p>
         <p class="proof-title">«12 часов»</p>
-        <p class="proof-desc">Надеваем утром, снимаем вечером. Только рубашка и время.</p>
+        <p class="proof-desc">Надеваете утром. Снимаете видео в 9 утра и в 9 вечера. Воротник держит форму, ткань не помялась.<br><br><em>Почему: она спроектирована именно для этого.</em></p>
       </div>
     </div>
   </div>
@@ -855,9 +866,9 @@ const PAGE_HTML = `<!-- NAV -->
   <h2 class="sh r">Что вы <em>получаете.</em></h2>
   <div class="props-wrap r">
     <div class="prop-list">
-      <div class="prop-row"><span class="prop-dash">01</span><div class="prop-body"><p class="prop-name">Достали из чемодана — надели.</p><p class="prop-desc">Рубашка едет в сложенном виде. Достали — выглядит отлично. Гладить не нужно.</p></div></div>
-      <div class="prop-row"><span class="prop-dash">02</span><div class="prop-body"><p class="prop-name">Никакой скованности.</p><p class="prop-desc">Тянется в любом направлении. Поднять руку, сесть в машину, взять что-то с пола — рубашка не тянет и не сползает.</p></div></div>
-      <div class="prop-row"><span class="prop-dash">03</span><div class="prop-body"><p class="prop-name">Комфортно даже в духоте.</p><p class="prop-desc">Трикотажная структура пропускает воздух. В зале переговоров, в такси, в самолёте — не жарко.</p></div></div>
+      <div class="prop-row"><span class="prop-dash">01</span><div class="prop-body"><p class="prop-name">Отличная паропроницаемость — трикотажная структура лучше пропускает воздух</p><p class="prop-desc">Трикотажное плетение — это петельная структура, а не плотный слой нити. Воздух свободно циркулирует. Обычная рубашка так не работает — можно проверить тестом с зеркалом.</p></div></div>
+      <div class="prop-row"><span class="prop-dash">02</span><div class="prop-body"><p class="prop-name">Достали из чемодана — надели.</p><p class="prop-desc">Рубашка едет в сложенном виде. Достали — выглядит отлично. Гладить не нужно.</p></div></div>
+      <div class="prop-row"><span class="prop-dash">03</span><div class="prop-body"><p class="prop-name">Никакой скованности.</p><p class="prop-desc">Эластан обеспечивает свободу движений.</p></div></div>
       <div class="prop-row"><span class="prop-dash">04</span><div class="prop-body"><p class="prop-name">Постирали вечером — надели утром.</p><p class="prop-desc">Постирали руками, повесили на плечики. Через час рубашка готова к носке — без сушки и глажки.</p></div></div>
       <div class="prop-row"><span class="prop-dash">05</span><div class="prop-body"><p class="prop-name">К вечеру выглядит как утром.</p><p class="prop-desc">Лиоцелл не накапливает запахи в течение дня. Деловой ужин после рабочего дня — и выглядите уверенно.</p></div></div>
     </div>
@@ -867,35 +878,36 @@ const PAGE_HTML = `<!-- NAV -->
 <!-- S5 LYONEX -->
 <section class="sec" id="s5">
   <h2 class="sh r" style="padding-top:104px">LYONEX — три компонента,<br><em>каждый со своей задачей.</em></h2>
+  <p class="sh r" style="padding-top:0;font-size:clamp(14px,1.5vw,18px);color:var(--ink);font-weight:300;letter-spacing:0">Инженерный подход: каждый компонент решает одну задачу</p>
   <div class="lyonex-pairs r">
     <div class="lp-col">
       <span class="lp-plabel">Задача</span>
-      <p class="lp-ptext">Рубашка должна <strong>держать форму после сжатия</strong> — и восстанавливаться без глажки.</p>
+      <p class="lp-ptext"><strong>Не перегреваться в длинный день</strong></p>
+      <div class="lp-ph ph"><span>фото</span></div>
+      <div class="lp-divider"></div>
+      <p class="lp-comp-name">Трикотажное плетение</p>
+      <p class="lp-comp-desc">Воздух свободно циркулирует между петлями. Обычная рубашка так не умеет.</p>
+    </div>
+    <div class="lp-col">
+      <span class="lp-plabel">Задача</span>
+      <p class="lp-ptext"><strong>Не терять форму после многих стирок</strong></p>
       <div class="lp-ph ph"><span>фото</span></div>
       <div class="lp-divider"></div>
       <p class="lp-comp-name">Нейлон</p>
-      <p class="lp-comp-desc">Держит структуру волокна. Рубашка восстанавливается после чемодана — без утюга.</p>
+      <p class="lp-comp-desc">Держит форму там, где хлопок вытягивается и рвётся.</p>
     </div>
     <div class="lp-col">
       <span class="lp-plabel">Задача</span>
-      <p class="lp-ptext">Ткань должна <strong>выглядеть и ощущаться как натуральная</strong> — без синтетического блеска и запаха.</p>
+      <p class="lp-ptext"><strong>Не впитывать запахи к концу дня</strong></p>
       <div class="lp-ph ph"><span>фото</span></div>
       <div class="lp-divider"></div>
       <p class="lp-comp-name">Лиоцелл</p>
-      <p class="lp-comp-desc">Матовая поверхность и мягкость натурального волокна. Отводит влагу, не накапливает запахи в течение дня.</p>
-    </div>
-    <div class="lp-col">
-      <span class="lp-plabel">Задача</span>
-      <p class="lp-ptext">Рубашка не должна <strong>стеснять движения</strong> — и сохранять силуэт весь день.</p>
-      <div class="lp-ph ph"><span>фото</span></div>
-      <div class="lp-divider"></div>
-      <p class="lp-comp-name">Эластан</p>
-      <p class="lp-comp-desc">Тянется в четырёх направлениях и сохраняет силуэт.</p>
+      <p class="lp-comp-desc">Отводит влагу — рубашка остаётся свежей дольше. Матовая поверхность, мягкость натурального волокна.</p>
     </div>
   </div>
   <!-- ФОТО: макросъёмка текстуры ткани — будет добавлено после съёмки -->
   <div class="lyonex-foot r">
-    <p class="lyonex-note">Нейлон + лиоцелл + эластан. Каждый компонент — конкретная задача.</p>
+    <p class="lyonex-note">Никаких пропиток. Только физика. Проверяется тестами.</p>
     <a href="/technology" class="lyonex-link">Подробнее о LYONEX →</a>
   </div>
 </section>
@@ -904,16 +916,21 @@ const PAGE_HTML = `<!-- NAV -->
 <!-- S6 DETAILS -->
 <section class="sec" id="s6">
   <h2 class="sh r">Каждая деталь — <em>решение.</em></h2>
+  <p class="sh r" style="padding-top:0;font-size:clamp(13px,1.4vw,17px);color:var(--ink);font-weight:300;letter-spacing:0;margin-bottom:0">Ничего декоративного. Каждый элемент — ответ на вопрос «зачем».</p>
   <div class="det-wrap r">
     <div class="det-grid">
       <div class="det"><div class="det-text"><p class="det-t">Состав ткани</p><p class="det-d">LYONEX: нейлон + лиоцелл + эластан. Лиоцелл ощущается как натуральный материал — матовая поверхность, мягкость, дышимость.</p></div><div class="det-ph">фото</div></div>
-      <div class="det"><div class="det-text"><p class="det-t">Трикотажное плетение</p><p class="det-d">Петельная структура пропускает воздух и обеспечивает 4-way stretch — рубашка тянется в любом направлении.</p></div><div class="det-ph">фото</div></div>
+      <div class="det"><div class="det-text"><p class="det-t">Трикотажное плетение</p><p class="det-d">Петельная структура — не плотный слой нити, а система петель с воздухом между ними. Воздух свободно циркулирует, рубашка тянется в любом направлении. Проверяется тестом с зеркалом.</p></div><div class="det-ph">фото</div></div>
       <div class="det"><div class="det-text"><p class="det-t">Воротник</p><p class="det-d">Spread collar — не валится без галстука, не душит в застёгнутом виде.</p></div><div class="det-ph">фото</div></div>
       <div class="det"><div class="det-text"><p class="det-t">Манжеты</p><p class="det-d">Одинарные манжеты — комфортно облегают запястье, не ограничивают движения.</p></div><div class="det-ph">фото</div></div>
       <div class="det"><div class="det-text"><p class="det-t">Планка</p><p class="det-d">Аккуратная ровная планка, сохраняет форму в течение дня.</p></div><div class="det-ph">фото</div></div>
       <div class="det"><div class="det-text"><p class="det-t">Пуговицы</p><p class="det-d">Логотип CityPhase. Запасная пуговица в комплекте.</p></div><div class="det-ph">фото</div></div>
       <div class="det"><div class="det-text"><p class="det-t">Тейп</p><p class="det-d">Жаккардовый тейп внутри стойки — белый логотип CITYPHASE на тёмно-синем фоне.</p></div><div class="det-ph">фото</div></div>
       <div class="det"><div class="det-text"><p class="det-t">Петля</p><p class="det-d">Зелёная тканая петля для вешалки. Фирменный акцент, который видите только вы.</p></div><div class="det-ph">фото</div></div>
+    </div>
+    <div style="padding:20px 24px;border-top:1px solid var(--mist);font-family:var(--body);font-size:14px;font-weight:300;color:var(--ink);line-height:1.6">
+      <span style="font-family:var(--display);font-size:11px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--navy);margin-right:20px">Возврат</span>
+      30 дней с момента получения. Без объяснений — напишите на hello@cityphase.ru — все решим.
     </div>
   </div>
 </section>
@@ -933,7 +950,7 @@ const PAGE_HTML = `<!-- NAV -->
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">Что если размер не подойдёт? <span class="faq-arr">+</span></button>
-      <div class="faq-a">Проверьте <a href="/sizes" style="color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mist)">таблицу размеров</a> перед оформлением заявки. Если размер всё же не подойдёт — напишите на hello@cityphase.ru до момента оплаты: бронь можно скорректировать или отменить.</div>
+      <div class="faq-a">Проверьте <a href="/sizes" style="color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mist)">таблицу размеров</a> перед оформлением заявки. Если размер всё же не подойдёт после получения — напишите на hello@cityphase.ru. У вас 30 дней с момента получения — все решим.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">Как ухаживать за рубашкой? <span class="faq-arr">+</span></button>
@@ -941,7 +958,23 @@ const PAGE_HTML = `<!-- NAV -->
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">Доставка по всей России? <span class="faq-arr">+</span></button>
-      <div class="faq-a">Да. Доставляем по всей России СДЭКом. Стоимость доставки входит в стоимость товара.</div>
+      <div class="faq-a">Да, по всей России. Доставляем через СДЭК. Стоимость доставки берём на себя.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Что значит «Основатель #N из 200»? <span class="faq-arr">+</span></button>
+      <div class="faq-a">Первые 200 покупателей получают именной порядковый номер — навсегда. На email придёт цифровой сертификат и приглашение в закрытый Telegram-канал: фото с производства, голосования за следующий цвет, ранние анонсы.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Какой срок возврата? <span class="faq-arr">+</span></button>
+      <div class="faq-a">30 дней с момента получения. Без объяснений, без вопросов. Напишите на hello@cityphase.ru — все решим.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Будет ли вторая партия? <span class="faq-arr">+</span></button>
+      <div class="faq-a">Да. Серый и тёмно-синий цвета, расширенная сетка размеров. Первые 200 покупателей получат доступ к предзаказу второй партии за 30 дней до публичного старта.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Могу ли я порекомендовать рубашку коллеге с выгодой? <span class="faq-arr">+</span></button>
+      <div class="faq-a">Да. Через 7 дней после получения мы пришлём персональный промокод. Поделитесь с коллегой — оба получите приятный бонус на следующую покупку. Подробности — в письме.</div>
     </div>
     <div class="faq-item" style="border-bottom:none">
       <button class="faq-q" onclick="toggleFaq(this)">Есть ещё вопросы? <span class="faq-arr">+</span></button>
@@ -964,7 +997,8 @@ const PAGE_HTML = `<!-- NAV -->
     </div>
     <div id="form" class="form-right rr">
       <h3 class="form-title">Первая партия — 200 единиц</h3>
-      <p class="form-sub">Запись открыта до 25 августа. Оплата после подтверждения заявки.</p>
+      <p class="form-sub">Каждый покупатель получает именной статус «Основатель #N из 200». Запись открыта до 25 августа. Оплата после подтверждения заявки.</p>
+      <p class="form-sub" style="margin-top:-18px;margin-bottom:28px;opacity:.65;font-size:13px">Примерьте дома 30 дней — не подошло, вернём без вопросов.</p>
       <div class="form-bar">
         <div class="bar-track"><div class="bar-fill" id="barFill" style="width:0%"></div></div>
         <span class="bar-txt" id="barTxt">осталось <span id="spotsLeft">200</span> мест</span>
@@ -1001,7 +1035,7 @@ const PAGE_HTML = `<!-- NAV -->
           </a>
         </div>
       </div>
-      <div class="form-ok" id="fok">Заявка принята. Мы сообщим вам, когда откроется возможность для оплаты.</div>
+      <div class="form-ok" id="fok">Заявка принята. Мы пришлём письмо с вашим именным номером и деталями оплаты. Добро пожаловать в число первых.</div>
     </div>
   </div>
   <div class="footer-inner">
