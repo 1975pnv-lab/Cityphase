@@ -1,10 +1,11 @@
-import { Inter } from "next/font/google";
+import { Onest } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
-const inter = Inter({
+const onest = Onest({
   subsets: ["latin", "cyrillic"],
-  variable: "--font-inter",
+  weight: ["400", "500", "600"],
+  variable: "--font-onest",
 });
 
 export const metadata = {
@@ -16,14 +17,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru" translate="no">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Raleway:wght@300;400;500&display=swap"
-          rel="stylesheet"
-        />
       </head>
-      <body style={{ margin: 0, padding: 0, fontFamily: 'Inter, sans-serif' }}>
+      <body style={{ margin: 0, padding: 0, fontFamily: 'Onest, sans-serif' }}>
         {children}
         <Script id="metrika" strategy="afterInteractive">{`
           (function(m,e,t,r,i,k,a){
