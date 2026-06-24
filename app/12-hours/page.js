@@ -35,7 +35,7 @@ nav{
   backdrop-filter:blur(12px);
   border-bottom:1px solid var(--mist);
 }
-.nav-logo{font-family:'Raleway',sans-serif;font-size:15px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#1B3A6B;text-decoration:none;
+.nav-logo{font-family:'Raleway',sans-serif;font-size:15px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#1B3A6B;text-decoration:none;
   font-family:var(--display);font-size:13px;font-weight:500;
   letter-spacing:5px;text-transform:uppercase;color:var(--fg);text-decoration:none;
 }
@@ -730,7 +730,7 @@ const PAGE_HTML = `<!-- NAV -->
   <a href="/" class="nav-logo">CITYPHASE</a>
   <ul class="nav-links">
     <li><a href="/12-hours">Коллекция</a></li>
-    <li><a href="/technology">Технология</a></li>
+    <li><a href="/technology">Ткань LYONEX</a></li>
     <li><a href="/about">О бренде</a></li>
   </ul>
 </nav>
@@ -1005,7 +1005,7 @@ const PAGE_HTML = `<!-- NAV -->
         <span class="order-name-sub">длинный день — один выбор.</span>
       </div>
       <p class="order-tagline">Больше не нужно выбирать между статусом и комфортом.</p>
-      <p class="order-price-tag">13 900 ₽</p>
+      <p class="order-price-tag">15 900 ₽</p>
       <a href="/sizes" class="order-sizes-ref" target="_blank">Таблица размеров →</a>
     </div>
     <div id="form" class="form-right rr">
@@ -1054,7 +1054,7 @@ const PAGE_HTML = `<!-- NAV -->
   <footer style="background:#0F2240;padding:56px 60px 32px;">
     <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:48px;flex-wrap:wrap;gap:32px;">
       <div style="flex:1;min-width:200px;">
-        <div style="font-family:'Raleway',sans-serif;font-size:15px;font-weight:500;letter-spacing:0.15em;color:#fff;margin-bottom:12px;">CITYPHASE</div>
+        <div style="font-family:'Raleway',sans-serif;font-size:15px;font-weight:500;letter-spacing:0.22em;color:#fff;margin-bottom:12px;">CITYPHASE</div>
         <p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6;max-width:220px;">Деловая одежда для длинного дня. Право не выбирать между комфортом и статусом.</p>
       </div>
       <div style="display:flex;gap:64px;flex-wrap:wrap;">
