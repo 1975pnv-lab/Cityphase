@@ -1051,14 +1051,36 @@ const PAGE_HTML = `<!-- NAV -->
       <div class="form-ok" id="fok">Заявка принята. Мы пришлём письмо с вашим именным номером и деталями оплаты. Добро пожаловать в число первых.</div>
     </div>
   </div>
-  <div class="footer-inner">
-    <a href="/" class="fl">CITYPHASE</a>
-    <div class="flinks">
-      <a href="https://t.me/cityphase_ru"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 2L11 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>@cityphase_ru</a>
-      <a href="mailto:hello@cityphase.ru"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 8l10 6 10-6" stroke="currentColor" stroke-width="1.5"/></svg>hello@cityphase.ru</a>
+  <footer style="background:#0F2240;padding:56px 60px 32px;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:48px;flex-wrap:wrap;gap:32px;">
+      <div style="flex:1;min-width:200px;">
+        <div style="font-family:'Raleway',sans-serif;font-size:15px;font-weight:500;letter-spacing:0.15em;color:#fff;margin-bottom:12px;">CITYPHASE</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6;max-width:220px;">Деловая одежда для длинного дня. Право не выбирать между комфортом и статусом.</p>
+      </div>
+      <div style="display:flex;gap:64px;flex-wrap:wrap;">
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <span style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);">Продукт</span>
+          <a href="/12-hours" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">12 Hours ★</a>
+          <a href="/technology" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">Ткань LYONEX</a>
+          <a href="/sizes" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">Каталог</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <span style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);">Бренд</span>
+          <a href="/about" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">О бренде</a>
+          <a href="/about#how" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">Как мы делаем одежду</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <span style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);">Контакты</span>
+          <a href="mailto:hello@cityphase.ru" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">hello@cityphase.ru</a>
+          <a href="https://t.me/cityphase_ru" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">Telegram @cityphase_ru</a>
+        </div>
+      </div>
     </div>
-    <span class="fcp">© 2026 CITYPHASE</span>
-  </div>
+    <div style="border-top:0.5px solid rgba(255,255,255,0.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;">
+      <span style="font-size:12px;color:rgba(255,255,255,0.3);">© 2026 CityPhase</span>
+      <span style="font-size:12px;color:rgba(255,255,255,0.3);">cityphase.ru</span>
+    </div>
+  </footer>
 </section>
 
 </div><!-- /#pager -->
