@@ -6,7 +6,7 @@ export default function Technology() {
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
         padding: '18px 40px', borderBottom: '0.5px solid #DDE1E9', background: '#fff'
       }}>
-        <a href="/" style={{ fontSize: 13, fontWeight: 500, letterSpacing: '0.18em', color: '#1B3A6B', textDecoration: 'none' }}>
+        <a href="/" style={{ fontFamily: "'Raleway', sans-serif", fontSize: 15, fontWeight: 500, letterSpacing: '0.15em', color: '#1B3A6B', textDecoration: 'none' }}>
           CITYPHASE
         </a>
         <ul className="nav-links" style={{ display: 'flex', gap: 28, listStyle: 'none', margin: 0, padding: 0 }}>
