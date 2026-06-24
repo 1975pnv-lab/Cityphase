@@ -4,11 +4,11 @@ import { useEffect, useRef } from 'react';
 const PAGE_CSS = `*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --bg:#ffffff;--fg:#171717;
-  --navy:#1B3A6B;--navy2:#2E5299;--navy-dark:#111f3d;
-  --teal:#1D9E75;--teal-dark:#0F6E56;
+  --navy:#1B3A6B;--navy2:#2E5299;--navy-dark:#122847;
+  --teal:#1D9E75;--teal-dark:#178563;
   --ink:#5A6478;--fog:#F2F3F6;--mist:#DDE1E9;
-  --display:'Plus Jakarta Sans',Arial,sans-serif;
-  --body:'Raleway',Arial,sans-serif;
+  --display:'Raleway',system-ui,sans-serif;
+  --body:'Plus Jakarta Sans',system-ui,sans-serif;
 }
 html,body{height:100%;overflow:hidden}
 body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6;overflow:hidden;height:100vh}
