@@ -33,12 +33,12 @@ export default function Home() {
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
         padding: '18px 40px', borderBottom: '0.5px solid #DDE1E9', background: '#fff'
       }}>
-        <span style={{ fontFamily: "'Raleway', sans-serif", fontSize: 15, fontWeight: 500, letterSpacing: '0.15em', color: '#1B3A6B' }}>
+        <span style={{ fontFamily: "'Raleway', sans-serif", fontSize: 15, fontWeight: 500, letterSpacing: '0.22em', color: '#1B3A6B' }}>
           CITYPHASE
         </span>
         <ul className="nav-links">
           <li><a href="/12-hours" style={{ fontSize: 13, color: '#5A6478', textDecoration: 'none' }}>Коллекция</a></li>
-          <li><a href="/technology" style={{ fontSize: 13, color: '#5A6478', textDecoration: 'none' }}>Технология</a></li>
+          <li><a href="/technology" style={{ fontSize: 13, color: '#5A6478', textDecoration: 'none' }}>Ткань LYONEX</a></li>
           <li><a href="/about" style={{ fontSize: 13, color: '#5A6478', textDecoration: 'none' }}>О бренде</a></li>
         </ul>
         <a href="/12-hours#order" style={{
@@ -174,7 +174,7 @@ export default function Home() {
               Флагман. Не мнётся, тянется, сохнет за час. Утром на встречу, днём в самолёт, вечером на ужин — один выбор.
             </p>
             <div style={{ display: 'flex', alignItems: 'center', gap: 20, marginTop: 8 }}>
-              <span style={{ fontSize: 24, fontWeight: 600, color: '#1B3A6B' }}>13 900 ₽</span>
+              <span style={{ fontSize: 24, fontWeight: 600, color: '#1B3A6B' }}>15 900 ₽</span>
               <a href="/12-hours" style={{
                 background: '#1B3A6B', color: '#fff',
                 padding: '12px 24px', fontSize: 14, fontWeight: 500,
