@@ -68,7 +68,7 @@ export default function About() {
       {/* FOOTER */}
       <footer style={{ background: '#0F2240', padding: '56px 40px 32px' }}>
         <div>
-          <div className="footer-inner" style={{ marginBottom: 48 }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 32, marginBottom: 48 }} style={{ marginBottom: 48 }}>
             <div style={{ flex: 1 }}>
               <div style={{ fontSize: 14, fontWeight: 500, letterSpacing: '0.18em', color: '#fff', marginBottom: 12 }}>
                 CITYPHASE
@@ -78,27 +78,27 @@ export default function About() {
               </p>
             </div>
             <div style={{ display: 'flex', gap: 64 }}>
-              <div className="footer-col">
+              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
                   Продукт
                 </span>
-                <a href="/12-hours" className="footer-link">12 Hours ★</a>
-                <a href="/technology" className="footer-link">Ткань LYONEX</a>
-                <a href="/sizes" className="footer-link">Каталог</a>
+                <a href="/12-hours" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>12 Hours ★</a>
+                <a href="/technology" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Ткань LYONEX</a>
+                <a href="/sizes" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Каталог</a>
               </div>
-              <div className="footer-col">
+              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
                   Бренд
                 </span>
-                <a href="/about" className="footer-link">О бренде</a>
-                <a href="/about#how" className="footer-link">Как мы делаем одежду</a>
+                <a href="/about" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>О бренде</a>
+                <a href="/about#how" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Как мы делаем одежду</a>
               </div>
-              <div className="footer-col">
+              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
                   Контакты
                 </span>
-                <a href="mailto:hello@cityphase.ru" className="footer-link">hello@cityphase.ru</a>
-                <a href="https://t.me/cityphase_ru" className="footer-link">Telegram @cityphase_ru</a>
+                <a href="mailto:hello@cityphase.ru" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>hello@cityphase.ru</a>
+                <a href="https://t.me/cityphase_ru" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Telegram @cityphase_ru</a>
               </div>
             </div>
           </div>
