@@ -8,7 +8,7 @@ const PAGE_CSS = `*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   --teal:#1D9E75;--teal-dark:#178563;
   --ink:#5A6478;--fog:#F2F3F6;--mist:#DDE1E9;
   --display:'Raleway',system-ui,sans-serif;
-  --body:'Plus Jakarta Sans',system-ui,sans-serif;
+  --body:'Onest',system-ui,sans-serif;
 }
 html,body{height:100%;overflow:hidden}
 body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6;overflow:hidden;height:100vh}
@@ -40,7 +40,7 @@ nav{
   letter-spacing:5px;text-transform:uppercase;color:var(--fg);text-decoration:none;
 }
 .nav-links{display:flex;gap:32px;list-style:none}
-.nav-links a{font-family:var(--body);font-size:13px;font-weight:300;color:var(--fg);text-decoration:none;opacity:.6;transition:opacity .2s}
+.nav-links a{font-family:var(--body);font-size:13px;font-weight:400;color:var(--fg);text-decoration:none;opacity:.6;transition:opacity .2s}
 .nav-links a:hover{opacity:1;color:var(--navy)}
 .nav-cta{
   font-family:var(--display);font-size:12px;font-weight:500;
@@ -79,7 +79,7 @@ nav{
   background:linear-gradient(135deg,#e8ecf2 0%,#d4dbe6 100%);
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   gap:12px;color:var(--ink);font-size:13px;text-align:center;padding:24px;
-  font-family:var(--display);font-weight:300;
+  font-family:var(--display);font-weight:400;
 }
 .ph::before{content:'📷';font-size:32px}
 .ph span{font-size:12px;opacity:.7;max-width:220px;line-height:1.5}
@@ -112,13 +112,13 @@ nav{
 }
 .hero-times{
   font-family:var(--body);font-size:clamp(11px,1vw,13px);
-  font-weight:300;color:var(--ink);line-height:1.9;margin-bottom:0;
+  font-weight:400;color:var(--ink);line-height:1.9;margin-bottom:0;
   opacity:.7;letter-spacing:.3px;
 }
 .hero-times strong{color:var(--ink);font-weight:400}
 .hero-h1{
   font-family:var(--display);font-size:clamp(24px,3.2vw,44px);
-  font-weight:300;color:var(--fg);line-height:1.1;
+  font-weight:400;color:var(--fg);line-height:1.1;
   letter-spacing:-1.5px;margin-bottom:16px;white-space:nowrap;
 }
 .hero-h1 em{font-style:normal;color:var(--teal);font-weight:500}
@@ -131,7 +131,7 @@ nav{
 .hero-sub span{
   display:flex;align-items:flex-start;gap:12px;
   padding:7px 0;
-  font-size:clamp(13px,1.2vw,15px);font-weight:300;color:var(--ink);line-height:1.5;
+  font-size:clamp(13px,1.2vw,15px);font-weight:400;color:var(--ink);line-height:1.5;
 }
 .hero-sub span:first-child{border-top:none;}
 .hero-sub span::before{
@@ -147,7 +147,7 @@ nav{
   transition:background .2s,transform .2s;
 }
 .btn-primary:hover{background:var(--navy2);transform:translateY(-1px)}
-.btn-primary .arr{font-size:16px;font-weight:300;transition:transform .2s}
+.btn-primary .arr{font-size:16px;font-weight:400;transition:transform .2s}
 .btn-primary:hover .arr{transform:translateX(4px)}
 .btn-ghost{
   display:inline-flex;align-items:center;gap:12px;
@@ -168,7 +168,7 @@ nav{
 ────────────────────────────── */
 .sh{
   font-family:var(--display);font-size:clamp(22px,2.5vw,36px);
-  font-weight:300;color:var(--fg);line-height:1.15;
+  font-weight:400;color:var(--fg);line-height:1.15;
   letter-spacing:-1px;padding:80px 64px 0;margin-bottom:20px;
 }
 .sh em{font-style:normal;color:var(--teal);font-weight:400}
@@ -201,11 +201,11 @@ nav{
 }
 .s2-text{
   font-family:var(--display);font-size:clamp(24px,3vw,42px);
-  font-weight:300;color:#fff;line-height:1.5;margin-bottom:24px;
+  font-weight:400;color:#fff;line-height:1.5;margin-bottom:24px;
 }
 .s2-text strong{font-weight:500;color:var(--teal)}
 .s2-note{
-  font-family:var(--body);font-size:15px;font-weight:300;
+  font-family:var(--body);font-size:15px;font-weight:400;
   color:rgba(255,255,255,.5);max-width:540px;line-height:1.7;
 }
 
@@ -259,13 +259,13 @@ nav{
   margin-bottom:10px;
 }
 .proof-title{
-  font-family:var(--display);font-size:clamp(18px,1.8vw,22px);font-weight:300;
+  font-family:var(--display);font-size:clamp(18px,1.8vw,22px);font-weight:400;
   color:#fff;margin-bottom:12px;line-height:1.3;
 }
-.proof-desc{font-family:var(--body);font-size:14px;font-weight:300;color:rgba(255,255,255,.5);line-height:1.7}
+.proof-desc{font-family:var(--body);font-size:14px;font-weight:400;color:rgba(255,255,255,.5);line-height:1.7}
 .proof-note{
   padding:16px 64px;font-family:var(--body);
-  font-size:13px;font-weight:300;color:var(--ink);font-style:italic;
+  font-size:13px;font-weight:400;color:var(--ink);font-style:italic;
 }
 
 /* ──────────────────────────────
@@ -294,10 +294,10 @@ nav{
 .prop-body{}
 .prop-name{
   font-family:var(--body);font-size:clamp(16px,1.6vw,20px);
-  font-weight:300;color:var(--fg);line-height:1.4;
+  font-weight:400;color:var(--fg);line-height:1.4;
 }
 .prop-desc{
-  font-family:var(--body);font-size:14px;font-weight:300;
+  font-family:var(--body);font-size:14px;font-weight:400;
   color:var(--ink);line-height:1.6;margin-top:4px;
 }
 .prop-photo{border-left:1px solid var(--mist)}
@@ -324,7 +324,7 @@ nav{
 }
 .lstmt-text{
   font-family:var(--body);font-size:clamp(16px,1.6vw,20px);
-  font-weight:300;color:var(--fg);line-height:1.5;
+  font-weight:400;color:var(--fg);line-height:1.5;
 }
 .lstmt-text strong{font-weight:600;color:var(--navy)}
 
@@ -348,7 +348,7 @@ nav{
 }
 .lp-ptext{
   font-family:var(--body);font-size:clamp(16px,1.6vw,20px);
-  font-weight:300;color:var(--fg);line-height:1.5;
+  font-weight:400;color:var(--fg);line-height:1.5;
   padding-bottom:16px;
   min-height:80px;
 }
@@ -372,10 +372,10 @@ nav{
 }
 .lp-comp-name{
   font-family:var(--display);font-size:clamp(22px,2.4vw,30px);
-  font-weight:300;color:var(--navy);margin-bottom:12px;
+  font-weight:400;color:var(--navy);margin-bottom:12px;
 }
 .lp-comp-desc{
-  font-family:var(--body);font-size:14px;font-weight:300;
+  font-family:var(--body);font-size:14px;font-weight:400;
   color:var(--ink);line-height:1.7;
 }
 @media(max-width:900px){.lyonex-pairs{grid-template-columns:1fr}.lp-col{border-right:none;border-bottom:1px solid var(--mist)}}
@@ -406,14 +406,14 @@ nav{
   letter-spacing:4px;text-transform:uppercase;color:var(--teal);
   margin-bottom:12px;
 }
-.comp-name{font-family:var(--display);font-size:26px;font-weight:300;color:var(--navy);margin-bottom:14px}
-.comp-desc{font-family:var(--body);font-size:14px;font-weight:300;color:var(--ink);line-height:1.7}
+.comp-name{font-family:var(--display);font-size:26px;font-weight:400;color:var(--navy);margin-bottom:14px}
+.comp-desc{font-family:var(--body);font-size:14px;font-weight:400;color:var(--ink);line-height:1.7}
 .lyonex-foot{
   display:flex;align-items:center;justify-content:space-between;
   padding:12px 64px;flex-wrap:wrap;gap:12px;
   border-top:1px solid var(--mist);
 }
-.lyonex-note{font-family:var(--body);font-size:14px;font-weight:300;color:var(--ink);font-style:italic}
+.lyonex-note{font-family:var(--body);font-size:14px;font-weight:400;color:var(--ink);font-style:italic}
 .lyonex-link{
   font-family:var(--display);font-size:12px;font-weight:500;
   letter-spacing:2px;text-transform:uppercase;color:var(--navy);
@@ -445,7 +445,7 @@ nav{
 }
 .whom-headline{
   font-family:var(--display);font-size:clamp(22px,2.8vw,38px);
-  font-weight:300;color:#fff;line-height:1.2;
+  font-weight:400;color:#fff;line-height:1.2;
   letter-spacing:-1px;margin-bottom:28px;position:relative;z-index:1;
 }
 .whom-headline em{font-style:italic;color:var(--teal)}
@@ -466,7 +466,7 @@ nav{
   content:'◆';font-size:10px;color:var(--teal);
   font-family:var(--display);line-height:1;
 }
-.mtext{font-family:var(--body);font-size:clamp(16px,1.6vw,20px);font-weight:300;color:var(--fg);line-height:1.6}
+.mtext{font-family:var(--body);font-size:clamp(16px,1.6vw,20px);font-weight:400;color:var(--fg);line-height:1.6}
 
 /* ──────────────────────────────
    S7 DETAILS — 2-col grid + photo
@@ -502,7 +502,7 @@ nav{
   letter-spacing:4px;text-transform:uppercase;color:var(--navy);
   margin-bottom:12px;
 }
-.det-d{font-family:var(--body);font-size:14px;font-weight:300;color:var(--ink);line-height:1.7}
+.det-d{font-family:var(--body);font-size:14px;font-weight:400;color:var(--ink);line-height:1.7}
 .det-photo{border-top:1px solid var(--mist);border-bottom:1px solid var(--mist)}
 
 /* ──────────────────────────────
@@ -513,12 +513,12 @@ nav{
 .order-left{padding:60px 52px 32px;border-right:1px solid var(--mist);display:flex;flex-direction:column;justify-content:center}
 .order-name{
   font-family:var(--display);font-size:clamp(36px,4.5vw,56px);
-  font-weight:300;color:var(--fg);line-height:1;
+  font-weight:400;color:var(--fg);line-height:1;
   letter-spacing:-2px;margin-bottom:8px;
 }
 .order-star{color:var(--teal)}
 .order-price{
-  font-family:var(--display);font-size:36px;font-weight:300;
+  font-family:var(--display);font-size:36px;font-weight:400;
   color:var(--ink);margin-bottom:36px;letter-spacing:-1px;
 }
 .order-meta{display:flex;flex-direction:column;gap:18px;margin-bottom:36px}
@@ -529,11 +529,11 @@ nav{
 }
 .sw{display:flex;gap:8px;align-items:center}
 .swatch{width:22px;height:22px;border-radius:50%;border:1px solid var(--mist)}
-.swname{font-family:var(--body);font-size:14px;font-weight:300;color:var(--fg)}
+.swname{font-family:var(--body);font-size:14px;font-weight:400;color:var(--fg)}
 .spills{display:flex;gap:8px}
 .spill{
   padding:7px 20px;border:1.5px solid var(--mist);
-  font-family:var(--display);font-size:14px;font-weight:300;color:var(--fg);
+  font-family:var(--display);font-size:14px;font-weight:400;color:var(--fg);
   cursor:pointer;background:none;transition:all .2s;
 }
 .spill:hover,.spill.on{background:var(--navy);color:#fff;border-color:var(--navy)}
@@ -544,7 +544,7 @@ nav{
 }
 .order-tagline{
   font-family:var(--body);font-size:clamp(18px,2vw,24px);
-  font-weight:300;color:var(--navy);line-height:1.5;
+  font-weight:400;color:var(--navy);line-height:1.5;
   margin-bottom:36px;padding:24px 0;
   border-top:1px solid var(--mist);border-bottom:1px solid var(--mist);
 }
@@ -556,7 +556,7 @@ nav{
   color:var(--fg);margin-bottom:6px;
 }
 .form-sub{
-  font-family:var(--body);font-size:14px;font-weight:300;
+  font-family:var(--body);font-size:14px;font-weight:400;
   color:var(--ink);line-height:1.6;margin-bottom:28px;
 }
 .form-bar{display:flex;align-items:center;gap:16px;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--mist)}
@@ -564,12 +564,12 @@ nav{
 .bar-fill{height:100%;width:100%;background:var(--navy);border-radius:2px}
 .bar-txt{font-family:var(--display);font-size:13px;font-weight:400;color:var(--navy);white-space:nowrap}
 .urg{display:flex;justify-content:space-between;margin-bottom:20px}
-.urg-n{font-family:var(--display);font-size:28px;font-weight:300;color:var(--navy);display:block;line-height:1;letter-spacing:-1px}
+.urg-n{font-family:var(--display);font-size:28px;font-weight:400;color:var(--navy);display:block;line-height:1;letter-spacing:-1px}
 .urg-l{font-family:var(--display);font-size:11px;font-weight:500;letter-spacing:4px;text-transform:uppercase;color:var(--ink)}
 .fi,.fs{
   width:100%;padding:13px 16px;
   border:1.5px solid var(--mist);background:#fff;
-  font-family:var(--display);font-size:14px;font-weight:300;
+  font-family:var(--display);font-size:14px;font-weight:400;
   color:var(--fg);outline:none;appearance:none;-webkit-appearance:none;
   transition:border-color .2s;
 }
@@ -585,8 +585,8 @@ nav{
   transition:background .2s;
 }
 .fsub:hover{background:var(--navy2)}
-.fpriv{font-family:var(--body);font-size:12px;font-weight:300;color:var(--ink);margin-top:10px;line-height:1.6}
-.form-ok{display:none;padding:24px;border-left:3px solid var(--teal);background:#fff;font-family:var(--body);font-size:15px;font-weight:300;color:var(--fg);line-height:1.7}
+.fpriv{font-family:var(--body);font-size:12px;font-weight:400;color:var(--ink);margin-top:10px;line-height:1.6}
+.form-ok{display:none;padding:24px;border-left:3px solid var(--teal);background:#fff;font-family:var(--body);font-size:15px;font-weight:400;color:var(--fg);line-height:1.7}
 
 /* footer */
 .footer-inner{
@@ -596,7 +596,7 @@ nav{
 }
 .fl{font-family:var(--display);font-size:11px;letter-spacing:5px;text-transform:uppercase;color:var(--fg);text-decoration:none;opacity:.4}
 .flinks{display:flex;gap:24px}
-.flinks a{font-family:var(--body);font-size:13px;font-weight:300;color:var(--fg);text-decoration:none;opacity:.4;transition:opacity .2s;display:inline-flex;align-items:center;gap:6px}
+.flinks a{font-family:var(--body);font-size:13px;font-weight:400;color:var(--fg);text-decoration:none;opacity:.4;transition:opacity .2s;display:inline-flex;align-items:center;gap:6px}
 .flinks a:hover{opacity:.8}
 .fcp{font-family:var(--body);font-size:12px;color:var(--fg);opacity:.25}
 
@@ -608,9 +608,9 @@ nav{
 }
 .form-sw-item.on-sw{border-color:var(--navy)}
 .form-sw-dot{width:18px;height:18px;border-radius:50%;flex-shrink:0}
-.form-sw-name{font-family:var(--display);font-size:13px;font-weight:300;color:var(--fg)}
+.form-sw-name{font-family:var(--display);font-size:13px;font-weight:400;color:var(--fg)}
 .form-price{
-  font-family:var(--display);font-size:28px;font-weight:300;
+  font-family:var(--display);font-size:28px;font-weight:400;
   color:var(--fg);letter-spacing:-1px;margin-top:16px;margin-bottom:4px;
 }
 .tg-cta{display:flex;align-items:center;gap:16px;margin-top:20px;padding-top:20px;border-top:1px solid var(--mist)}
@@ -630,7 +630,7 @@ nav{
 .faq-q{
   width:100%;display:flex;justify-content:space-between;align-items:center;
   padding:16px 0;background:none;border:none;cursor:pointer;
-  font-family:var(--body);font-size:clamp(14px,1.4vw,17px);font-weight:300;
+  font-family:var(--body);font-size:clamp(14px,1.4vw,17px);font-weight:400;
   color:var(--fg);text-align:left;gap:16px;transition:color .2s;
 }
 .faq-q:hover{color:var(--navy)}
@@ -638,7 +638,7 @@ nav{
 .faq-q.open .faq-arr{transform:rotate(45deg)}
 .faq-a{
   display:none;padding:0 0 16px;
-  font-family:var(--body);font-size:14px;font-weight:300;
+  font-family:var(--body);font-size:14px;font-weight:400;
   color:var(--ink);line-height:1.7;max-width:720px;
 }
 .faq-a.open{display:block}
@@ -691,7 +691,7 @@ nav{
 /* ── ORDER — sizes link & price ── */
 .order-price-tag{
   font-family:var(--display);font-size:clamp(28px,3vw,40px);
-  font-weight:300;color:var(--fg);letter-spacing:-1px;
+  font-weight:400;color:var(--fg);letter-spacing:-1px;
   margin-bottom:12px;
 }
 .order-sizes-ref{
@@ -762,7 +762,7 @@ const PAGE_HTML = `<!-- NAV -->
         <strong>19:30</strong> — ужин с партнёрами.
       </p>
       <div style="height:20px"></div>
-      <p style="font-family:var(--display);font-size:clamp(13px,1.4vw,16px);font-weight:300;color:var(--navy);margin-bottom:16px;font-style:italic" class="r2">12 часов — столько должна выдерживать деловая рубашка без компромиссов.</p>
+      <p style="font-family:var(--display);font-size:clamp(13px,1.4vw,16px);font-weight:400;color:var(--navy);margin-bottom:16px;font-style:italic" class="r2">12 часов — столько должна выдерживать деловая рубашка без компромиссов.</p>
       <p class="hero-sub r3"><span>Трикотажная структура пропускает воздух гораздо лучше обычной рубашки.</span><span>Свобода движений без потери делового вида.</span><span>Выглядит безупречно весь день.</span></p>
     </div>
     <div class="hero-btns r3">
@@ -790,10 +790,10 @@ const PAGE_HTML = `<!-- NAV -->
   <div class="whom-banner rl">
     <h2 class="whom-headline">Рубашка для тех,<br>кто весь день <em>в делах.</em><br><span style="font-size:clamp(14px,1.6vw,22px);color:rgba(255,255,255,.45);font-style:italic">Статус или комфорт?</span></h2>
     <div style="display:flex;flex-direction:column;gap:16px;position:relative;z-index:1">
-      <p style="font-family:var(--body);font-size:clamp(16px,1.6vw,20px);font-weight:300;color:rgba(255,255,255,.85);line-height:1.7">Руководитель с утренним рейсом и переговорами до вечера.</p>
-      <p style="font-family:var(--body);font-size:clamp(16px,1.6vw,20px);font-weight:300;color:rgba(255,255,255,.85);line-height:1.7">Юрист с тремя встречами в разных форматах за день.</p>
-      <p style="font-family:var(--body);font-size:clamp(16px,1.6vw,20px);font-weight:300;color:rgba(255,255,255,.85);line-height:1.7">Предприниматель, у которого деловой ужин сразу после рабочего дня.</p>
-      <p style="font-family:var(--body);font-size:clamp(14px,1.2vw,15px);font-weight:300;color:rgba(255,255,255,.45);line-height:1.7;margin-top:8px">Один человек. Несколько форматов. Двенадцать часов.</p>
+      <p style="font-family:var(--body);font-size:clamp(16px,1.6vw,20px);font-weight:400;color:rgba(255,255,255,.85);line-height:1.7">Руководитель с утренним рейсом и переговорами до вечера.</p>
+      <p style="font-family:var(--body);font-size:clamp(16px,1.6vw,20px);font-weight:400;color:rgba(255,255,255,.85);line-height:1.7">Юрист с тремя встречами в разных форматах за день.</p>
+      <p style="font-family:var(--body);font-size:clamp(16px,1.6vw,20px);font-weight:400;color:rgba(255,255,255,.85);line-height:1.7">Предприниматель, у которого деловой ужин сразу после рабочего дня.</p>
+      <p style="font-family:var(--body);font-size:clamp(14px,1.2vw,15px);font-weight:400;color:rgba(255,255,255,.45);line-height:1.7;margin-top:8px">Один человек. Несколько форматов. Двенадцать часов.</p>
     </div>
   </div>
   <div class="whom-right rr">
@@ -878,7 +878,7 @@ const PAGE_HTML = `<!-- NAV -->
 <!-- S5 LYONEX -->
 <section class="sec" id="s5">
   <h2 class="sh r" style="padding-top:104px">LYONEX — три компонента,<br><em>каждый со своей задачей.</em></h2>
-  <p class="sh r" style="padding-top:0;font-size:clamp(14px,1.5vw,18px);color:var(--ink);font-weight:300;letter-spacing:0">Инженерный подход: каждый компонент решает одну задачу</p>
+  <p class="sh r" style="padding-top:0;font-size:clamp(14px,1.5vw,18px);color:var(--ink);font-weight:400;letter-spacing:0">Инженерный подход: каждый компонент решает одну задачу</p>
   <div class="lyonex-pairs r">
     <div class="lp-col">
       <span class="lp-plabel">Задача</span>
@@ -916,7 +916,7 @@ const PAGE_HTML = `<!-- NAV -->
 <!-- S6 DETAILS -->
 <section class="sec" id="s6">
   <h2 class="sh r">Каждая деталь — <em>решение.</em></h2>
-  <p class="sh r" style="padding-top:0;font-size:clamp(13px,1.4vw,17px);color:var(--ink);font-weight:300;letter-spacing:0;margin-bottom:0">Ничего декоративного. Каждый элемент — ответ на вопрос «зачем».</p>
+  <p class="sh r" style="padding-top:0;font-size:clamp(13px,1.4vw,17px);color:var(--ink);font-weight:400;letter-spacing:0;margin-bottom:0">Ничего декоративного. Каждый элемент — ответ на вопрос «зачем».</p>
   <div class="det-wrap r">
     <div class="det-grid">
       <div class="det"><div class="det-text"><p class="det-t">Состав ткани</p><p class="det-d">LYONEX: нейлон + лиоцелл + эластан. Лиоцелл ощущается как натуральный материал — матовая поверхность, мягкость, дышимость.</p></div><div class="det-ph">фото</div></div>
@@ -928,7 +928,7 @@ const PAGE_HTML = `<!-- NAV -->
       <div class="det"><div class="det-text"><p class="det-t">Тейп</p><p class="det-d">Жаккардовый тейп внутри стойки — белый логотип CITYPHASE на тёмно-синем фоне.</p></div><div class="det-ph">фото</div></div>
       <div class="det"><div class="det-text"><p class="det-t">Петля</p><p class="det-d">Зелёная тканая петля для вешалки. Фирменный акцент, который видите только вы.</p></div><div class="det-ph">фото</div></div>
     </div>
-    <div style="padding:20px 24px;border-top:1px solid var(--mist);font-family:var(--body);font-size:14px;font-weight:300;color:var(--ink);line-height:1.6">
+    <div style="padding:20px 24px;border-top:1px solid var(--mist);font-family:var(--body);font-size:14px;font-weight:400;color:var(--ink);line-height:1.6">
       <span style="font-family:var(--display);font-size:11px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--navy);margin-right:20px">Возврат</span>
       30 дней с момента получения. Без объяснений — напишите на hello@cityphase.ru — все решим.
     </div>
@@ -1305,3 +1305,4 @@ dots.forEach((d,i)=>{
     </>
   );
 }
+
