@@ -7,13 +7,21 @@ export default function Home() {
         .hero-photo { width: 240px; flex-shrink: 0; height: 300px; }
         .btn-row { display: flex; gap: 12px; }
         .footer-inner { display: flex; justify-content: space-between; align-items: center; }
+        .footer-col { display: flex; flex-direction: column; gap: 12px; }
+        .footer-link { font-size: 13px; color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.2s; }
+        .footer-link:hover { color: #fff; }
+        .product-card { display: flex; border: 0.5px solid #DDE1E9; border-radius: 12px; overflow: hidden; background: #fff; max-width: 860px; margin: 0 auto; }
+        .philosophy-text { font-size: 28px; font-weight: 500; color: #1B3A6B; line-height: 1.45; max-width: 700px; }
         @media (max-width: 860px) {
           .nav-links { display: none; }
           .hero-section { flex-direction: column; }
           .hero-photo { width: 100% !important; height: 220px !important; }
           .btn-row { flex-direction: column; }
           .btn-row a { text-align: center; }
-          .footer-inner { flex-direction: column; align-items: center; gap: 12px; text-align: center; }
+          .footer-inner { flex-direction: column; align-items: flex-start; gap: 32px; }
+          .product-card { flex-direction: column; }
+          .product-card-photo { width: 100% !important; height: 240px !important; }
+          .philosophy-text { font-size: 22px; }
         }
         @media (max-width: 640px) {
           .nav-links { display: none !important; }
@@ -33,12 +41,16 @@ export default function Home() {
           <li><a href="/technology" style={{ fontSize: 13, color: '#5A6478', textDecoration: 'none' }}>Технология</a></li>
           <li><a href="/about" style={{ fontSize: 13, color: '#5A6478', textDecoration: 'none' }}>О бренде</a></li>
         </ul>
-        <a href="/12-hours#order" style={{ fontSize: 12, color: '#1D9E75', fontWeight: 500, textDecoration: 'none', letterSpacing: '0.03em' }}>
-          Предзаказ →
+        <a href="/12-hours#order" style={{
+          fontSize: 13, color: '#fff', fontWeight: 500, textDecoration: 'none',
+          letterSpacing: '0.03em', background: '#1D9E75', padding: '8px 18px',
+          borderRadius: 4, display: 'inline-block'
+        }}>
+          Предзаказ
         </a>
       </nav>
 
-    {/* HERO */}
+      {/* HERO */}
       <section style={{
         position: 'relative',
         minHeight: 'calc(100vh - 57px)',
@@ -92,68 +104,128 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ПРОДУКТ */}
-      <section style={{
-        padding: '64px 40px', background: '#F2F3F6', minHeight: '100vh',
-        display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'
-      }}>
-        <div style={{ width: 300 }}>
-          <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 16 }}>
-            Продукт
-          </div>
-          <div style={{
-            border: '0.5px solid #DDE1E9', borderRadius: 8,
-            overflow: 'hidden', background: '#fff'
-          }}>
-            <div style={{
-              background: '#E8EAED', height: 200,
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              borderBottom: '0.5px solid #DDE1E9'
-            }}>
-              <span style={{ fontSize: 11, letterSpacing: '0.08em', color: '#5A6478', textTransform: 'uppercase' }}>
-                Фото после семпла
-              </span>
+      {/* ФИЛОСОФИЯ */}
+      <section style={{ padding: '80px 40px', background: '#fff' }}>
+        <div style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', fontWeight: 500, marginBottom: 24 }}>
+          Философия
+        </div>
+        <p className="philosophy-text">
+          Деловая одежда давно не менялась. Она мнётся, в ней бывает жарко, она стесняет движения.
+          Мы задали себе вопрос: что если подойти к ней как к инженерной задаче — где каждое решение
+          обосновано конкретной проблемой? Так появился CityPhase.
+        </p>
+      </section>
+
+      {/* КАК МЫ ДЕЛАЕМ ОДЕЖДУ */}
+      <section style={{ padding: '80px 40px', background: '#F2F3F6' }}>
+        <div style={{ display: 'flex', gap: 40, alignItems: 'center', maxWidth: 860, margin: '0 auto' }}>
+          <div style={{ flex: 1 }}>
+            <div style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', fontWeight: 500, marginBottom: 16 }}>
+              Как мы делаем одежду
             </div>
-            <div style={{ padding: '20px 20px 24px' }}>
-              <div style={{ fontSize: 10, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#1D9E75', fontWeight: 500, marginBottom: 6 }}>
-                Флагман линейки Long Day
-              </div>
-              <div style={{ fontSize: 17, fontWeight: 500, color: '#1A1F2E', marginBottom: 6 }}>
-                12 Hours ★
-              </div>
-              <p style={{ fontSize: 13, color: '#5A6478', lineHeight: 1.55, marginBottom: 18 }}>
-                Трикотажная рубашка из LYONEX для длинного дня — не мнётся, тянется, сохнет за час.
-              </p>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ fontSize: 16, fontWeight: 500, color: '#1B3A6B' }}>13 900 ₽</span>
-                <a href="/12-hours" style={{
-                  border: '1.5px solid #1B3A6B', color: '#1B3A6B', background: 'transparent',
-                  padding: '8px 16px', fontSize: 13, fontWeight: 500,
-                  borderRadius: 4, textDecoration: 'none', display: 'inline-block'
-                }}>
-                  Подробнее
-                </a>
-              </div>
+            <h2 style={{ fontSize: 28, fontWeight: 600, color: '#1B3A6B', marginBottom: 16, lineHeight: 1.3 }}>
+              Только то, что можно доказать
+            </h2>
+            <p style={{ fontSize: 15, color: '#5A6478', lineHeight: 1.65 }}>
+              Мы считаем, что каждое свойство наших вещей должно легко проверяться.
+              Его можно проверить самостоятельно дома или снять на видео. Если нельзя — это не аргумент.
+            </p>
+          </div>
+          <div className="product-card-photo" style={{
+            width: 340, flexShrink: 0, height: 280,
+            background: '#E8EAED', borderRadius: 8,
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            flexDirection: 'column', gap: 6
+          }}>
+            <span style={{ fontSize: 11, letterSpacing: '0.1em', color: '#5A6478', textTransform: 'uppercase' }}>CITYPHASE</span>
+            <span style={{ fontSize: 11, color: '#8A92A3' }}>Деталь · воротник и тейп</span>
+          </div>
+        </div>
+      </section>
+
+      {/* КАРТОЧКА ПРОДУКТА */}
+      <section style={{ padding: '80px 40px', background: '#fff' }}>
+        <div className="product-card">
+          <div className="product-card-photo" style={{
+            width: 360, flexShrink: 0, background: '#E8EAED',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            flexDirection: 'column', gap: 6, minHeight: 300
+          }}>
+            <span style={{ fontSize: 11, letterSpacing: '0.1em', color: '#5A6478', textTransform: 'uppercase' }}>CITYPHASE</span>
+            <span style={{ fontSize: 11, color: '#8A92A3' }}>12 Hours ★</span>
+          </div>
+          <div style={{ padding: '36px 40px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 16 }}>
+            <div style={{ display: 'flex', gap: 8 }}>
+              <span style={{
+                fontSize: 12, fontWeight: 500, background: '#1B3A6B', color: '#fff',
+                padding: '4px 12px', borderRadius: 20
+              }}>12 Hours ★</span>
+              <span style={{
+                fontSize: 12, fontWeight: 500, background: '#E6F5EF', color: '#1D9E75',
+                padding: '4px 12px', borderRadius: 20
+              }}>Открыт предзаказ</span>
+            </div>
+            <h2 style={{ fontSize: 24, fontWeight: 600, color: '#1B3A6B', lineHeight: 1.3, margin: 0 }}>
+              Трикотажная рубашка для длинного дня
+            </h2>
+            <p style={{ fontSize: 15, color: '#5A6478', lineHeight: 1.6, margin: 0 }}>
+              Флагман. Не мнётся, тянется, сохнет за час. Утром на встречу, днём в самолёт, вечером на ужин — один выбор.
+            </p>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 20, marginTop: 8 }}>
+              <span style={{ fontSize: 24, fontWeight: 600, color: '#1B3A6B' }}>13 900 ₽</span>
+              <a href="/12-hours" style={{
+                background: '#1B3A6B', color: '#fff',
+                padding: '12px 24px', fontSize: 14, fontWeight: 500,
+                borderRadius: 4, textDecoration: 'none', display: 'inline-block'
+              }}>
+                Подробнее →
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer style={{ padding: '24px', borderTop: '0.5px solid #DDE1E9', background: '#fff' }}>
-        <div className="footer-inner">
-          <span style={{ fontSize: 12, fontWeight: 500, letterSpacing: '0.16em', color: '#1B3A6B' }}>CITYPHASE</span>
-          <div style={{ display: 'flex', gap: 20, alignItems: 'center' }}>
-            <a href="https://t.me/cityphase_ru" style={{ fontSize: 12, color: '#5A6478', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="#5A6478"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-              @cityphase_ru
-            </a>
-            <a href="mailto:hello@cityphase.ru" style={{ fontSize: 12, color: '#5A6478', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5A6478" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              hello@cityphase.ru
-            </a>
+      <footer style={{ background: '#0F2240', padding: '56px 40px 32px' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <div className="footer-inner" style={{ marginBottom: 48 }}>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontSize: 14, fontWeight: 500, letterSpacing: '0.18em', color: '#fff', marginBottom: 12 }}>
+                CITYPHASE
+              </div>
+              <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.45)', lineHeight: 1.6, maxWidth: 220 }}>
+                Деловая одежда для длинного дня. Право не выбирать между комфортом и статусом.
+              </p>
+            </div>
+            <div style={{ display: 'flex', gap: 64 }}>
+              <div className="footer-col">
+                <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
+                  Продукт
+                </span>
+                <a href="/12-hours" className="footer-link">12 Hours ★</a>
+                <a href="/technology" className="footer-link">Ткань LYONEX</a>
+                <a href="/sizes" className="footer-link">Каталог</a>
+              </div>
+              <div className="footer-col">
+                <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
+                  Бренд
+                </span>
+                <a href="/about" className="footer-link">О бренде</a>
+                <a href="/about#how" className="footer-link">Как мы делаем одежду</a>
+              </div>
+              <div className="footer-col">
+                <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
+                  Контакты
+                </span>
+                <a href="mailto:hello@cityphase.ru" className="footer-link">hello@cityphase.ru</a>
+                <a href="https://t.me/cityphase_ru" className="footer-link">Telegram @cityphase_ru</a>
+              </div>
+            </div>
           </div>
-          <span style={{ fontSize: 12, color: '#5A6478' }}>© 2026 CITYPHASE</span>
+          <div style={{ borderTop: '0.5px solid rgba(255,255,255,0.1)', paddingTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ fontSize: 12, color: 'rgba(255,255,255,0.3)' }}>© 2026 CityPhase</span>
+            <span style={{ fontSize: 12, color: 'rgba(255,255,255,0.3)' }}>cityphase.ru</span>
+          </div>
         </div>
       </footer>
     </main>
