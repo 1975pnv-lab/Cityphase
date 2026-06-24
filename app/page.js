@@ -11,7 +11,7 @@ export default function Home() {
         .footer-link { font-size: 13px; color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.2s; }
         .footer-link:hover { color: #fff; }
         .product-card { display: flex; border: 0.5px solid #DDE1E9; border-radius: 12px; overflow: hidden; background: #fff; max-width: 860px; margin: 0 auto; }
-        .philosophy-text { font-size: 26px; font-weight: 400; color: #1B3A6B; line-height: 1.6; max-width: 560px; letter-spacing: -0.01em; }
+        .philosophy-text { font-size: 26px; font-weight: 400; color: #1B3A6B; line-height: 1.6; max-width: 720px; letter-spacing: -0.01em; }
         @media (max-width: 860px) {
           .nav-links { display: none; }
           .hero-section { flex-direction: column; }
@@ -106,6 +106,7 @@ export default function Home() {
 
       {/* ФИЛОСОФИЯ */}
       <section style={{ padding: '80px 40px', background: '#fff' }}>
+        <div style={{ maxWidth: 860, margin: '0 auto' }}>
         <div style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', fontWeight: 500, marginBottom: 24 }}>
           Философия
         </div>
@@ -114,6 +115,7 @@ export default function Home() {
           Мы задали себе вопрос: что если подойти к ней как к инженерной задаче — где каждое решение
           обосновано конкретной проблемой? Так появился CityPhase.
         </p>
+        </div>
       </section>
 
       {/* КАК МЫ ДЕЛАЕМ ОДЕЖДУ */}
@@ -231,5 +233,6 @@ export default function Home() {
     </main>
   );
 }
+
 
 
