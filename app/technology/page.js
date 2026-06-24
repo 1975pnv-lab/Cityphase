@@ -6,12 +6,12 @@ export default function Technology() {
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
         padding: '18px 40px', borderBottom: '0.5px solid #DDE1E9', background: '#fff'
       }}>
-        <a href="/" style={{ fontFamily: "'Raleway', sans-serif", fontSize: 15, fontWeight: 500, letterSpacing: '0.15em', color: '#1B3A6B', textDecoration: 'none' }}>
+        <a href="/" style={{ fontFamily: "'Raleway', sans-serif", fontSize: 15, fontWeight: 500, letterSpacing: '0.22em', color: '#1B3A6B', textDecoration: 'none' }}>
           CITYPHASE
         </a>
         <ul className="nav-links" style={{ display: 'flex', gap: 28, listStyle: 'none', margin: 0, padding: 0 }}>
           <li><a href="/12-hours" style={{ fontSize: 13, color: '#5A6478', textDecoration: 'none' }}>Коллекция</a></li>
-          <li><a href="/technology" style={{ fontSize: 13, color: '#1B3A6B', textDecoration: 'none', fontWeight: 500 }}>Технология</a></li>
+          <li><a href="/technology" style={{ fontSize: 13, color: '#1B3A6B', textDecoration: 'none', fontWeight: 500 }}>Ткань LYONEX</a></li>
           <li><a href="/about" style={{ fontSize: 13, color: '#5A6478', textDecoration: 'none' }}>О бренде</a></li>
         </ul>
         <a href="/12-hours#order" style={{ fontSize: 12, color: '#1D9E75', fontWeight: 500, textDecoration: 'none' }}>
