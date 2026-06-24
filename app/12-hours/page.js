@@ -35,7 +35,7 @@ nav{
   backdrop-filter:blur(12px);
   border-bottom:1px solid var(--mist);
 }
-.nav-logo{
+.nav-logo{font-family:'Raleway',sans-serif;font-size:15px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#1B3A6B;text-decoration:none;
   font-family:var(--display);font-size:13px;font-weight:500;
   letter-spacing:5px;text-transform:uppercase;color:var(--fg);text-decoration:none;
 }
@@ -727,7 +727,7 @@ nav{
 
 const PAGE_HTML = `<!-- NAV -->
 <nav>
-  <a href="/" class="nav-logo">CityPhase</a>
+  <a href="/" class="nav-logo">CITYPHASE</a>
   <ul class="nav-links">
     <li><a href="/12-hours">Коллекция</a></li>
     <li><a href="/technology">Технология</a></li>
@@ -1318,5 +1318,6 @@ dots.forEach((d,i)=>{
     </>
   );
 }
+
 
 
