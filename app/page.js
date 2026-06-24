@@ -11,7 +11,7 @@ export default function Home() {
         .footer-link { font-size: 13px; color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.2s; }
         .footer-link:hover { color: #fff; }
         .product-card { display: flex; border: 0.5px solid #DDE1E9; border-radius: 12px; overflow: hidden; background: #fff; max-width: 860px; margin: 0 auto; }
-        .philosophy-text { font-size: 28px; font-weight: 500; color: #1B3A6B; line-height: 1.45; max-width: 700px; }
+        .philosophy-text { font-size: 26px; font-weight: 400; color: #1B3A6B; line-height: 1.6; max-width: 560px; letter-spacing: -0.01em; }
         @media (max-width: 860px) {
           .nav-links { display: none; }
           .hero-section { flex-direction: column; }
@@ -231,3 +231,4 @@ export default function Home() {
     </main>
   );
 }
+
