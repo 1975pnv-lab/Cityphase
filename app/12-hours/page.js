@@ -35,20 +35,20 @@ nav{
   backdrop-filter:blur(12px);
   border-bottom:1px solid var(--mist);
 }
-.nav-logo{font-family:'Raleway',sans-serif;font-size:15px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#1B3A6B;text-decoration:none;
-  font-family:var(--display);font-size:13px;font-weight:500;
-  letter-spacing:5px;text-transform:uppercase;color:var(--fg);text-decoration:none;
+.nav-logo{
+  font-family:'Raleway',sans-serif;font-size:15px;font-weight:500;
+  letter-spacing:0.22em;text-transform:uppercase;color:#1B3A6B;text-decoration:none;
 }
-.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links{display:flex;gap:32px;list-style:none;position:absolute;left:50%;transform:translateX(-50%)}
 .nav-links a{font-family:var(--body);font-size:13px;font-weight:400;color:var(--fg);text-decoration:none;opacity:.6;transition:opacity .2s}
 .nav-links a:hover{opacity:1;color:var(--navy)}
 .nav-cta{
   font-family:var(--display);font-size:12px;font-weight:500;
   letter-spacing:2px;text-transform:uppercase;
-  color:var(--white);background:var(--navy);text-decoration:none;
-  padding:10px 24px;transition:background .2s;
+  color:#fff;background:#1D9E75;text-decoration:none;
+  padding:10px 22px;border-radius:6px;transition:background .2s;
 }
-.nav-cta:hover{background:var(--navy2)}
+.nav-cta:hover{background:#178563}
 
 /* ── STICKY CTA ── */
 .scta{
@@ -733,6 +733,7 @@ const PAGE_HTML = `<!-- NAV -->
     <li><a href="/technology">Ткань LYONEX</a></li>
     <li><a href="/about">О бренде</a></li>
   </ul>
+  <a href="#s8" class="nav-cta">Предзаказ</a>
 </nav>
 
 <a href="#s8" class="scta" id="scta">Предзаказ →</a>
