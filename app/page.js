@@ -33,7 +33,7 @@ export default function Home() {
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
         padding: '18px 40px', borderBottom: '0.5px solid #DDE1E9', background: '#fff'
       }}>
-        <span style={{ fontSize: 13, fontWeight: 500, letterSpacing: '0.18em', color: '#1B3A6B' }}>
+        <span style={{ fontFamily: "'Raleway', sans-serif", fontSize: 15, fontWeight: 500, letterSpacing: '0.15em', color: '#1B3A6B' }}>
           CITYPHASE
         </span>
         <ul className="nav-links">
@@ -233,6 +233,7 @@ export default function Home() {
     </main>
   );
 }
+
 
 
 
