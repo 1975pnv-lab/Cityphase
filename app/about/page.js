@@ -87,22 +87,47 @@ export default function About() {
       </section>
 
       {/* FOOTER */}
-      <footer style={{ padding: '24px 16px', borderTop: '0.5px solid #DDE1E9', background: '#f1f2f4' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, textAlign: 'center' }}>
-          <a href="/" style={{ fontSize: 12, fontWeight: 500, letterSpacing: '0.16em', color: '#1B3A6B', textDecoration: 'none' }}>
-            CITYPHASE
-          </a>
-          <div style={{ display: 'flex', gap: 20, alignItems: 'center' }}>
-            <a href="https://t.me/cityphase_ru" style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: '#5A6478', textDecoration: 'none' }}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="#5A6478"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-              @cityphase_ru
-            </a>
-            <a href="mailto:hello@cityphase.ru" style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: '#5A6478', textDecoration: 'none' }}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5A6478" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              hello@cityphase.ru
-            </a>
+      {/* FOOTER */}
+      <footer style={{ background: '#0F2240', padding: '56px 40px 32px' }}>
+        <div>
+          <div className="footer-inner" style={{ marginBottom: 48 }}>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontSize: 14, fontWeight: 500, letterSpacing: '0.18em', color: '#fff', marginBottom: 12 }}>
+                CITYPHASE
+              </div>
+              <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.45)', lineHeight: 1.6, maxWidth: 220 }}>
+                Деловая одежда для длинного дня. Право не выбирать между комфортом и статусом.
+              </p>
+            </div>
+            <div style={{ display: 'flex', gap: 64 }}>
+              <div className="footer-col">
+                <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
+                  Продукт
+                </span>
+                <a href="/12-hours" className="footer-link">12 Hours ★</a>
+                <a href="/technology" className="footer-link">Ткань LYONEX</a>
+                <a href="/sizes" className="footer-link">Каталог</a>
+              </div>
+              <div className="footer-col">
+                <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
+                  Бренд
+                </span>
+                <a href="/about" className="footer-link">О бренде</a>
+                <a href="/about#how" className="footer-link">Как мы делаем одежду</a>
+              </div>
+              <div className="footer-col">
+                <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
+                  Контакты
+                </span>
+                <a href="mailto:hello@cityphase.ru" className="footer-link">hello@cityphase.ru</a>
+                <a href="https://t.me/cityphase_ru" className="footer-link">Telegram @cityphase_ru</a>
+              </div>
+            </div>
           </div>
-          <span style={{ fontSize: 12, color: '#5A6478' }}>© 2026 CITYPHASE</span>
+          <div style={{ borderTop: '0.5px solid rgba(255,255,255,0.1)', paddingTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ fontSize: 12, color: 'rgba(255,255,255,0.3)' }}>© 2026 CityPhase</span>
+            <span style={{ fontSize: 12, color: 'rgba(255,255,255,0.3)' }}>cityphase.ru</span>
+          </div>
         </div>
       </footer>
     </main>
