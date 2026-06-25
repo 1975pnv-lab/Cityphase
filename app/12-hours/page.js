@@ -755,13 +755,12 @@ const PAGE_HTML = `<!-- NAV -->
 <section class="sec" id="s0">
   <div class="hero-content">
     <div class="hero-content-top">
-      <span class="hero-eyebrow r">День непредсказуем. Рубашка — нет.</span>
       <h1 class="hero-h1 r2">Длинный день — <em>один выбор.</em></h1>
       <p class="hero-times r2">
 
       </p>
       <div style="height:32px"></div>
-      <p style="font-family:var(--display);font-size:clamp(13px,1.4vw,16px);font-weight:400;color:var(--navy);margin-bottom:24px;font-style:italic" class="r2">12 часов напряжённого рабочего дня — столько должна выдерживать деловая рубашка. Без компромиссов!</p>
+      <p style="font-family:var(--display);font-size:clamp(13px,1.4vw,16px);font-weight:400;color:var(--navy);margin-bottom:24px;font-style:italic" class="r2">12 часов напряжённого рабочего дня — столько должна выдерживать деловая рубашка.<br>Без компромиссов!</p>
     </div>
     <div class="hero-btns r3">
       <a href="#s8" class="btn-primary">Предзаказ <span class="arr">→</span></a>
