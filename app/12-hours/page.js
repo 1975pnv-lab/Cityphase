@@ -781,6 +781,26 @@ const PAGE_HTML = `<!-- NAV -->
 </section>
 
 
+<!-- S1.5 PROBLEM — dark, mirrors S1 style -->
+<section class="sec" id="s1b" style="background:var(--navy-dark);display:flex;flex-direction:column;justify-content:center;padding:clamp(40px,6vw,80px) clamp(24px,6vw,80px)">
+  <p style="font-family:var(--body);font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--teal);margin-bottom:24px" class="r">ПРОБЛЕМА</p>
+  <h2 style="font-family:var(--display);font-size:clamp(28px,4vw,52px);font-weight:700;color:#fff;line-height:1.15;max-width:820px;margin-bottom:48px" class="r">Как выглядеть по-деловому<br>и чувствовать себя комфортно?</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;max-width:900px" class="r">
+    <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:20px">
+      <span style="font-size:11px;font-weight:500;color:rgba(255,255,255,0.35);letter-spacing:0.1em;display:block;margin-bottom:16px">01</span>
+      <p style="font-size:clamp(14px,1.3vw,16px);color:rgba(255,255,255,0.75);line-height:1.6;font-family:var(--body)">Утром погладил — к обеду уже мятая.</p>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:20px">
+      <span style="font-size:11px;font-weight:500;color:rgba(255,255,255,0.35);letter-spacing:0.1em;display:block;margin-bottom:16px">02</span>
+      <p style="font-size:clamp(14px,1.3vw,16px);color:rgba(255,255,255,0.75);line-height:1.6;font-family:var(--body)">Жарко. Торопишься на встречу. Ткань мокнет и липнет к телу.</p>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:20px">
+      <span style="font-size:11px;font-weight:500;color:rgba(255,255,255,0.35);letter-spacing:0.1em;display:block;margin-bottom:16px">03</span>
+      <p style="font-size:clamp(14px,1.3vw,16px);color:rgba(255,255,255,0.75);line-height:1.6;font-family:var(--body)">Деловой ужин после длинного дня. Рубашка выглядит несвежей.</p>
+    </div>
+  </div>
+</section>
+
 <!-- S2 FOR WHOM — portrait left, scenarios right -->
 <section class="sec" id="s2">
   <div class="whom-banner rl">
