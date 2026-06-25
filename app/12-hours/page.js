@@ -89,7 +89,7 @@ nav{
 ────────────────────────────── */
 #s0{
   height:100vh;padding:0;border-bottom:none;
-  display:grid;grid-template-columns:0.8fr 1.2fr;
+  display:grid;grid-template-columns:1.2fr 0.8fr;
 }
 .hero-photo{
   position:relative;overflow:hidden;
@@ -753,14 +753,12 @@ const PAGE_HTML = `<!-- NAV -->
 <div id="pager">
 <!-- S0 HERO -->
 <section class="sec" id="s0">
-  <!-- Левая часть: декоративная цифра 12 -->
-  <div style="position:relative;overflow:hidden;background:#F2F3F6;display:flex;align-items:center;justify-content:center;border-right:1px solid var(--mist)">
-    <span style="font-family:var(--display);font-size:clamp(180px,22vw,320px);font-weight:800;color:rgba(27,58,107,0.08);line-height:1;user-select:none;letter-spacing:-0.05em">12</span>
-  </div>
-  <!-- Правая часть: контент -->
   <div class="hero-content">
     <div class="hero-content-top">
       <h1 class="hero-h1 r2">Длинный день — <em>один выбор.</em></h1>
+      <p class="hero-times r2">
+
+      </p>
       <div style="height:32px"></div>
       <p style="font-family:var(--display);font-size:clamp(13px,1.4vw,16px);font-weight:400;color:var(--navy);margin-bottom:24px;font-style:italic" class="r2">12 часов напряжённого рабочего дня — столько должна выдерживать деловая рубашка.<br>Без компромиссов!</p>
     </div>
@@ -768,6 +766,10 @@ const PAGE_HTML = `<!-- NAV -->
       <a href="#s8" class="btn-primary">Предзаказ <span class="arr">→</span></a>
       <p class="hero-scarcity">Флагман · Первая партия · 200 единиц</p>
     </div>
+  </div>
+  <!-- ФОТО: рубашка на человеке, деловой контекст, вертикальный кадр -->
+  <div class="hero-photo ph r">
+    <span>Фото рубашки на человеке<br>деловой контекст, вертикальный кадр</span>
   </div>
 </section>
 
