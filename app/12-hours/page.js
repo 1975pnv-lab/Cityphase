@@ -773,18 +773,11 @@ const PAGE_HTML = `<!-- NAV -->
   </div>
 </section>
 
-<!-- S1 SOLUTION — dark banner -->
-<section class="sec" id="s1">
-  <div class="s2-inner">
-    <p class="s2-text r2">12 Hours ★ — трикотажная рубашка из ткани LYONEX, которая <strong>выдержит ваш темп.</strong> Спроектирована для полного дня.</p>
-  </div>
-</section>
-
 
 <!-- S1.5 PROBLEM — dark, mirrors S1 style -->
-<section class="sec" id="s1b" style="background:var(--navy-dark);display:flex;flex-direction:column;justify-content:center;padding:clamp(40px,6vw,80px) clamp(24px,6vw,80px)">
+<section class="sec" id="s1b" style="background:linear-gradient(135deg,#0a1628 0%,#0d1f3c 60%,#0f2a4a 100%);display:flex;flex-direction:column;justify-content:center;padding:clamp(40px,6vw,80px) clamp(24px,6vw,80px)">
   <p style="font-family:var(--body);font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--teal);margin-bottom:24px" class="r">ПРОБЛЕМА</p>
-  <h2 style="font-family:var(--display);font-size:clamp(28px,4vw,52px);font-weight:700;color:#fff;line-height:1.15;max-width:820px;margin-bottom:48px" class="r">Как выглядеть по-деловому<br>и чувствовать себя комфортно?</h2>
+  <h2 style="font-family:var(--display);font-size:clamp(28px,4vw,52px);font-weight:700;color:#fff;line-height:1.15;max-width:820px;margin-bottom:48px" class="r">Как выглядеть по-деловому<br>и чувствовать себя <span style="color:var(--teal)">комфортно?</span></h2>
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;max-width:900px" class="r">
     <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:20px">
       <span style="font-size:11px;font-weight:500;color:rgba(255,255,255,0.35);letter-spacing:0.1em;display:block;margin-bottom:16px">01</span>
@@ -800,6 +793,15 @@ const PAGE_HTML = `<!-- NAV -->
     </div>
   </div>
 </section>
+
+<!-- S1 SOLUTION — dark banner -->
+<section class="sec" id="s1">
+  <div class="s2-inner">
+    <p class="s2-text r2">12 Hours ★ — трикотажная рубашка из ткани LYONEX, которая <strong>выдержит ваш темп.</strong> Спроектирована для полного дня.</p>
+  </div>
+</section>
+
+
 
 <!-- S2 FOR WHOM — portrait left, scenarios right -->
 <section class="sec" id="s2">
