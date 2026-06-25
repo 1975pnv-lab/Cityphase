@@ -729,7 +729,7 @@ const PAGE_HTML = `<!-- NAV -->
 <nav>
   <a href="/" class="nav-logo">CITYPHASE</a>
   <ul class="nav-links">
-    <li><a href="/12-hours">Коллекция</a></li>
+    <li><a href="/12-hours">Рубашка 12 Hours</a></li>
     <li><a href="/technology">Ткань LYONEX</a></li>
     <li><a href="/about">О бренде</a></li>
   </ul>
@@ -758,26 +758,10 @@ const PAGE_HTML = `<!-- NAV -->
       <span class="hero-eyebrow r">День непредсказуем. Рубашка — нет.</span>
       <h1 class="hero-h1 r2">Длинный день — <em>один выбор.</em></h1>
       <p class="hero-times r2">
-        <strong>8:15</strong> — аэропорт. &nbsp;
-        <strong>12:00</strong> — переговоры. &nbsp;
-        <strong>19:30</strong> — ужин с партнёрами.
+
       </p>
       <div style="height:32px"></div>
-      <p style="font-family:var(--display);font-size:clamp(13px,1.4vw,16px);font-weight:400;color:var(--navy);margin-bottom:24px;font-style:italic" class="r2">12 часов — столько должна выдерживать деловая рубашка без компромиссов.</p>
-      <div class="r3" style="display:flex;flex-direction:column;gap:10px;max-width:420px">
-        <div style="display:flex;align-items:flex-start;gap:12px;padding:12px 16px;background:rgba(29,158,117,0.07);border-left:2px solid #1D9E75">
-          <span style="font-size:11px;font-weight:600;color:#1D9E75;margin-top:2px;flex-shrink:0">01</span>
-          <span style="font-size:14px;font-weight:400;color:#1B3A6B;line-height:1.5">Трикотажная структура пропускает воздух гораздо лучше обычной рубашки.</span>
-        </div>
-        <div style="display:flex;align-items:flex-start;gap:12px;padding:12px 16px;background:rgba(29,158,117,0.07);border-left:2px solid #1D9E75">
-          <span style="font-size:11px;font-weight:600;color:#1D9E75;margin-top:2px;flex-shrink:0">02</span>
-          <span style="font-size:14px;font-weight:400;color:#1B3A6B;line-height:1.5">Свобода движений без потери делового вида.</span>
-        </div>
-        <div style="display:flex;align-items:flex-start;gap:12px;padding:12px 16px;background:rgba(29,158,117,0.07);border-left:2px solid #1D9E75">
-          <span style="font-size:11px;font-weight:600;color:#1D9E75;margin-top:2px;flex-shrink:0">03</span>
-          <span style="font-size:14px;font-weight:400;color:#1B3A6B;line-height:1.5">Выглядит безупречно весь день.</span>
-        </div>
-      </div>
+      <p style="font-family:var(--display);font-size:clamp(13px,1.4vw,16px);font-weight:400;color:var(--navy);margin-bottom:24px;font-style:italic" class="r2">12 часов напряжённого рабочего дня — столько должна выдерживать деловая рубашка. Без компромиссов!</p>
     </div>
     <div class="hero-btns r3">
       <a href="#s8" class="btn-primary">Предзаказ <span class="arr">→</span></a>
