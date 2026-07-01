@@ -805,12 +805,10 @@ const PAGE_HTML = `<!-- NAV -->
 
 <!-- S2 FOR WHOM — portrait left, scenarios right -->
 <section class="sec" id="s2">
-  <div class="whom-banner rl" style="display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(40px,6vw,80px);">
-    <h2 class="whom-headline" style="font-size:clamp(28px,3.5vw,52px);line-height:1.2;margin-bottom:32px;font-weight:700;color:#fff;">
-      Один человек.<br>Несколько форматов.<br><span style="color:var(--teal);font-style:normal;">Двенадцать часов.</span>
-    </h2>
-    <p style="font-family:var(--body);font-size:clamp(15px,1.4vw,18px);font-weight:400;color:#fff;line-height:1.6;">Статус или комфорт? И то и другое...</p>
-  </div>  </div>
+  <div class="whom-banner rl">
+    <h2 class="whom-headline">Один человек.<br>Несколько форматов.<br><span style="color:var(--teal);font-style:normal;">Двенадцать часов.</span></h2>
+    <p style="font-family:var(--body);font-size:clamp(15px,1.4vw,18px);font-weight:400;color:#fff;line-height:1.6;margin-top:24px;">Статус или комфорт? И то и другое...</p>
+  </div>
   <div class="whom-right rr">
     <div class="scenario">
       <span class="sc-time">08:15 — Аэропорт</span>
