@@ -797,7 +797,7 @@ const PAGE_HTML = `<!-- NAV -->
 <!-- S1 SOLUTION — dark banner -->
 <section class="sec" id="s1">
   <div class="s2-inner">
-    <p class="s2-text r2">12 Hours ★ — трикотажная рубашка из ткани LYONEX, которая <strong>выдержит ваш темп.</strong> Спроектирована для полного дня.</p>
+    <p class="s2-text r2">12 Hours ★ — трикотажная рубашка из ткани LYONEX, которая <strong>выдержит ваш темп.</strong> Спроектирована для 12-часового рабочего дня.</p>
   </div>
 </section>
 
