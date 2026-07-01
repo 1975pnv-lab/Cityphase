@@ -892,41 +892,7 @@ const PAGE_HTML = `<!-- NAV -->
 </section>
 
 <!-- S5 LYONEX -->
-<section class="sec" id="s5">
-  <h2 class="sh r" style="padding-top:104px">LYONEX — три компонента,<br><em>каждый со своей задачей.</em></h2>
-  <p class="sh r" style="padding-top:0;font-size:clamp(14px,1.5vw,18px);color:var(--ink);font-weight:400;letter-spacing:0">Инженерный подход: каждый компонент решает одну задачу</p>
-  <div class="lyonex-pairs r">
-    <div class="lp-col">
-      <span class="lp-plabel">Задача</span>
-      <p class="lp-ptext"><strong>Не перегреваться в длинный день</strong></p>
-      <div class="lp-ph ph"><span>фото</span></div>
-      <div class="lp-divider"></div>
-      <p class="lp-comp-name">Трикотажное плетение</p>
-      <p class="lp-comp-desc">Воздух свободно циркулирует между петлями. Обычная рубашка так не умеет.</p>
-    </div>
-    <div class="lp-col">
-      <span class="lp-plabel">Задача</span>
-      <p class="lp-ptext"><strong>Не терять форму после многих стирок</strong></p>
-      <div class="lp-ph ph"><span>фото</span></div>
-      <div class="lp-divider"></div>
-      <p class="lp-comp-name">Нейлон</p>
-      <p class="lp-comp-desc">Держит форму там, где хлопок вытягивается и рвётся.</p>
-    </div>
-    <div class="lp-col">
-      <span class="lp-plabel">Задача</span>
-      <p class="lp-ptext"><strong>Не впитывать запахи к концу дня</strong></p>
-      <div class="lp-ph ph"><span>фото</span></div>
-      <div class="lp-divider"></div>
-      <p class="lp-comp-name">Лиоцелл</p>
-      <p class="lp-comp-desc">Отводит влагу — рубашка остаётся свежей дольше. Матовая поверхность, мягкость натурального волокна.</p>
-    </div>
-  </div>
-  <!-- ФОТО: макросъёмка текстуры ткани — будет добавлено после съёмки -->
-  <div class="lyonex-foot r">
-    <p class="lyonex-note">Никаких пропиток. Только физика. Проверяется тестами.</p>
-    <a href="/technology" class="lyonex-link">Подробнее о LYONEX →</a>
-  </div>
-</section>
+
 
 
 <!-- S6 DETAILS -->
