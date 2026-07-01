@@ -879,9 +879,9 @@ const PAGE_HTML = `<!-- NAV -->
   <h2 class="sh r">Что вы <em>получаете.</em></h2>
   <div class="props-wrap r">
     <div class="prop-list">
-      <div class="prop-row"><span class="prop-dash">01</span><div class="prop-body"><p class="prop-name">Отличная паропроницаемость — трикотажная структура лучше пропускает воздух</p><p class="prop-desc">Трикотажное плетение — это петельная структура, а не плотный слой нити. Воздух свободно циркулирует. Обычная рубашка так не работает — можно проверить тестом с зеркалом.</p></div></div>
+      <div class="prop-row"><span class="prop-dash">01</span><div class="prop-body"><p class="prop-name">Отличная паропроницаемость — трикотажная структура лучше пропускает воздух</p><p class="prop-desc">Трикотажное плетение — это петельная структура, а не плотный слой нити. Воздух свободно циркулирует.</p></div></div>
       <div class="prop-row"><span class="prop-dash">02</span><div class="prop-body"><p class="prop-name">Достали из чемодана — надели.</p><p class="prop-desc">Рубашка едет в сложенном виде. Достали — выглядит отлично. Гладить не нужно.</p></div></div>
-      <div class="prop-row"><span class="prop-dash">03</span><div class="prop-body"><p class="prop-name">Никакой скованности.</p><p class="prop-desc">Эластан обеспечивает свободу движений.</p></div></div>
+      <div class="prop-row"><span class="prop-dash">03</span><div class="prop-body"><p class="prop-name">Никакой скованности. Тянется в четырёх направлениях.</p><p class="prop-desc">Эластан обеспечивает свободу движений.</p></div></div>
       <div class="prop-row"><span class="prop-dash">04</span><div class="prop-body"><p class="prop-name">Постирали вечером — надели утром.</p><p class="prop-desc">Постирали руками, повесили на плечики. Через час рубашка готова к носке — без сушки и глажки.</p></div></div>
       <div class="prop-row"><span class="prop-dash">05</span><div class="prop-body"><p class="prop-name">К вечеру выглядит как утром.</p><p class="prop-desc">Лиоцелл не накапливает запахи в течение дня. Деловой ужин после рабочего дня — и выглядите уверенно.</p></div></div>
     </div>
