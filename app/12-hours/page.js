@@ -797,7 +797,7 @@ const PAGE_HTML = `<!-- NAV -->
 <!-- S1 SOLUTION — dark banner -->
 <section class="sec" id="s1">
   <div class="s2-inner">
-    <p class="s2-text r2">12 Hours ★ — трикотажная рубашка из ткани LYONEX, которая <strong>выдержит ваш темп.</strong> Спроектирована для 12-часового рабочего дня.</p>
+    <p class="s2-text r2">12 Hours ★ — трикотажная рубашка из ткани LYONEX, которая <strong>выдержит ваш темп.</strong> Спроектирована для полного дня.</p>
   </div>
 </section>
 
@@ -805,19 +805,22 @@ const PAGE_HTML = `<!-- NAV -->
 
 <!-- S2 FOR WHOM — portrait left, scenarios right -->
 <section class="sec" id="s2">
-  <div class="whom-banner rl" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
-    <h2 class="whom-headline" style="font-size:clamp(28px,3.5vw,52px);line-height:1.2;margin-bottom:32px;">
-      Один человек.<br>Несколько форматов.<br><em style="color:var(--teal);font-style:normal;">Двенадцать часов.</em>
-    </h2>
-    <p style="font-family:var(--body);font-size:clamp(15px,1.4vw,18px);font-weight:400;color:#fff;line-height:1.6;position:relative;z-index:1;">Статус или комфорт? И то и другое...</p>
-  </div>  </div>
+  <div class="whom-banner rl">
+    <h2 class="whom-headline">Рубашка для тех,<br>кто весь день <em>в делах.</em><br><span style="font-size:clamp(14px,1.6vw,22px);color:rgba(255,255,255,.45);font-style:italic">Статус или комфорт?</span></h2>
+    <div style="display:flex;flex-direction:column;gap:16px;position:relative;z-index:1">
+      <p style="font-family:var(--body);font-size:clamp(16px,1.6vw,20px);font-weight:400;color:rgba(255,255,255,.85);line-height:1.7">Руководитель с утренним рейсом и переговорами до вечера.</p>
+      <p style="font-family:var(--body);font-size:clamp(16px,1.6vw,20px);font-weight:400;color:rgba(255,255,255,.85);line-height:1.7">Юрист с тремя встречами в разных форматах за день.</p>
+      <p style="font-family:var(--body);font-size:clamp(16px,1.6vw,20px);font-weight:400;color:rgba(255,255,255,.85);line-height:1.7">Предприниматель, у которого деловой ужин сразу после рабочего дня.</p>
+      <p style="font-family:var(--body);font-size:clamp(14px,1.2vw,15px);font-weight:400;color:rgba(255,255,255,.45);line-height:1.7;margin-top:8px">Один человек. Несколько форматов. Двенадцать часов.</p>
+    </div>
+  </div>
   <div class="whom-right rr">
     <div class="scenario">
       <span class="sc-time">08:15 — Аэропорт</span>
       <p class="mtext">Утренний рейс. Переговоры в 12:00. Рубашка провела несколько часов в чемодане — достали, надели.</p>
     </div>
     <div class="scenario">
-      <span class="sc-time">16:30 — Третья встреча</span>
+      <span class="sc-time">14:30 — Третья встреча</span>
       <p class="mtext">Позади три встречи — вас ждёт важный клиент. Рубашка не должна выдавать напряжение.</p>
     </div>
     <div class="scenario">
