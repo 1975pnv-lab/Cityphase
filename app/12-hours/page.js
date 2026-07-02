@@ -754,17 +754,10 @@ const PAGE_HTML = `<!-- NAV -->
 <!-- S0 HERO -->
 <section class="sec" id="s0">
   <div class="hero-content">
-    <div class="hero-content-top">
-      <h1 class="hero-h1 r2">Длинный день — <em>один выбор.</em></h1>
-      <p class="hero-times r2">
-
-      </p>
-      <div style="height:32px"></div>
-      <p style="font-family:var(--display);font-size:clamp(13px,1.4vw,16px);font-weight:400;color:var(--navy);margin-bottom:24px;font-style:italic" class="r2">12 часов напряжённого рабочего дня — столько должна выдерживать деловая рубашка.<br>Без компромиссов!</p>
+    <div class="hero-content-top"><h1 class="hero-h1 r2">Длинный день — <em>один выбор.</em></h1><p class="hero-times r2">
+</p><div style="height:32px"></div><p style="font-family:var(--display);font-size:clamp(13px,1.4vw,16px);font-weight:400;color:var(--navy);margin-bottom:24px;font-style:italic" class="r2">12 часов напряжённого рабочего дня — столько должна выдерживать деловая рубашка.<br>Без компромиссов!</p>
     </div>
-    <div class="hero-btns r3">
-      <a href="#s8" class="btn-primary">Предзаказ <span class="arr">→</span></a>
-      <p class="hero-scarcity">Флагман · Первая партия · 200 единиц</p>
+    <div class="hero-btns r3"><a href="#s8" class="btn-primary">Предзаказ <span class="arr">→</span></a><p class="hero-scarcity">Флагман · Первая партия · 200 единиц</p>
     </div>
   </div>
   <!-- ФОТО: рубашка на человеке, деловой контекст, вертикальный кадр -->
@@ -779,17 +772,11 @@ const PAGE_HTML = `<!-- NAV -->
   <p style="font-family:var(--body);font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--teal);margin-bottom:24px" class="r">ПРОБЛЕМА</p>
   <p class="s2-text r" style="max-width:820px;margin-bottom:48px;color:#fff">Как выглядеть по-деловому<br>и чувствовать себя <span style="color:var(--teal)">комфортно?</span></p>
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;max-width:900px" class="r">
-    <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:20px">
-      <span style="font-size:11px;font-weight:500;color:rgba(255,255,255,0.35);letter-spacing:0.1em;display:block;margin-bottom:16px">01</span>
-      <p style="font-size:clamp(14px,1.3vw,16px);color:rgba(255,255,255,0.75);line-height:1.6;font-family:var(--body)">Утром погладил — к обеду уже мятая.</p>
+    <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:20px"><span style="font-size:11px;font-weight:500;color:rgba(255,255,255,0.35);letter-spacing:0.1em;display:block;margin-bottom:16px">01</span><p style="font-size:clamp(14px,1.3vw,16px);color:rgba(255,255,255,0.75);line-height:1.6;font-family:var(--body)">Утром погладил — к обеду уже мятая.</p>
     </div>
-    <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:20px">
-      <span style="font-size:11px;font-weight:500;color:rgba(255,255,255,0.35);letter-spacing:0.1em;display:block;margin-bottom:16px">02</span>
-      <p style="font-size:clamp(14px,1.3vw,16px);color:rgba(255,255,255,0.75);line-height:1.6;font-family:var(--body)">Жарко. Торопишься на встречу. Ткань мокнет и липнет к телу.</p>
+    <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:20px"><span style="font-size:11px;font-weight:500;color:rgba(255,255,255,0.35);letter-spacing:0.1em;display:block;margin-bottom:16px">02</span><p style="font-size:clamp(14px,1.3vw,16px);color:rgba(255,255,255,0.75);line-height:1.6;font-family:var(--body)">Жарко. Торопишься на встречу. Ткань мокнет и липнет к телу.</p>
     </div>
-    <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:20px">
-      <span style="font-size:11px;font-weight:500;color:rgba(255,255,255,0.35);letter-spacing:0.1em;display:block;margin-bottom:16px">03</span>
-      <p style="font-size:clamp(14px,1.3vw,16px);color:rgba(255,255,255,0.75);line-height:1.6;font-family:var(--body)">Деловой ужин после длинного дня. Рубашка выглядит несвежей.</p>
+    <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:20px"><span style="font-size:11px;font-weight:500;color:rgba(255,255,255,0.35);letter-spacing:0.1em;display:block;margin-bottom:16px">03</span><p style="font-size:clamp(14px,1.3vw,16px);color:rgba(255,255,255,0.75);line-height:1.6;font-family:var(--body)">Деловой ужин после длинного дня. Рубашка выглядит несвежей.</p>
     </div>
   </div>
 </section>
@@ -810,17 +797,11 @@ const PAGE_HTML = `<!-- NAV -->
     <p style="font-family:var(--body);font-size:clamp(15px,1.4vw,18px);font-weight:400;color:#fff;line-height:1.6;margin-top:24px;">Статус или комфорт? И то и другое...</p>
   </div>
   <div class="whom-right rr">
-    <div class="scenario">
-      <span class="sc-time">08:15 — Аэропорт</span>
-      <p class="mtext">Утренний рейс. Переговоры в 12:00. Рубашка провела несколько часов в чемодане — достали, надели.</p>
+    <div class="scenario"><span class="sc-time">08:15 — Аэропорт</span><p class="mtext">Утренний рейс. Переговоры в 12:00. Рубашка провела несколько часов в чемодане — достали, надели.</p>
     </div>
-    <div class="scenario">
-      <span class="sc-time">16:30 — Третья встреча</span>
-      <p class="mtext">Позади три встречи — вас ждёт важный клиент. Рубашка не должна выдавать напряжение.</p>
+    <div class="scenario"><span class="sc-time">16:30 — Третья встреча</span><p class="mtext">Позади три встречи — вас ждёт важный клиент. Рубашка не должна выдавать напряжение.</p>
     </div>
-    <div class="scenario">
-      <span class="sc-time">19:30 — Деловой ужин</span>
-      <p class="mtext">Переодеться некогда. Та же рубашка что и утром — и выглядит так же.</p>
+    <div class="scenario"><span class="sc-time">19:30 — Деловой ужин</span><p class="mtext">Переодеться некогда. Та же рубашка что и утром — и выглядит так же.</p>
     </div>
   </div>
 </section>
@@ -829,45 +810,13 @@ const PAGE_HTML = `<!-- NAV -->
 <section class="sec" id="s3">
   <h2 class="sh r">Четыре теста, которые не пройдёт <em>обычная рубашка</em></h2>
   <div class="proof-grid r">
-    <div class="proof-card">
-      <div class="proof-card-bg ph" style="background:linear-gradient(160deg,var(--navy-dark),#080f1e)">
-        <div class="play-btn"></div>
-      </div>
-      <div class="proof-body">
-        <p class="proof-num">Тест 01</p>
-        <p class="proof-title">«Пар»</p>
-        <p class="proof-desc">Стакан с горячей водой. Накрываете тканью рубашки, сверху — зеркало. Рядом — обычная рубашка. Зеркало над рубашкой 12 Hours от CityPhase запотеет. Над обычной — нет.<br><br><em>Почему: трикотаж лучше дышит.</em></p>
-      </div>
+    <div class="proof-card"><div class="proof-card-bg ph" style="background:linear-gradient(160deg,var(--navy-dark),#080f1e)">  <div class="play-btn"></div></div><div class="proof-body">  <p class="proof-num">Тест 01</p>  <p class="proof-title">«Пар»</p>  <p class="proof-desc">Стакан с горячей водой. Накрываете тканью рубашки, сверху — зеркало. Рядом — обычная рубашка. Зеркало над рубашкой 12 Hours от CityPhase запотеет. Над обычной — нет.<br><br><em>Почему: трикотаж лучше дышит.</em></p></div>
     </div>
-    <div class="proof-card">
-      <div class="proof-card-bg ph" style="background:linear-gradient(160deg,var(--navy-dark),#080f1e)">
-        <div class="play-btn"></div>
-      </div>
-      <div class="proof-body">
-        <p class="proof-num">Тест 02</p>
-        <p class="proof-title">«Чемодан»</p>
-        <p class="proof-desc">Складываете рубашку в чемодан на 3 часа. Достаёте. Рубашка 12 Hours от CityPhase — почти не помялась.<br><br><em>Почему: нейлон + эластан возвращают форму.</em></p>
-      </div>
+    <div class="proof-card"><div class="proof-card-bg ph" style="background:linear-gradient(160deg,var(--navy-dark),#080f1e)">  <div class="play-btn"></div></div><div class="proof-body">  <p class="proof-num">Тест 02</p>  <p class="proof-title">«Чемодан»</p>  <p class="proof-desc">Складываете рубашку в чемодан на 3 часа. Достаёте. Рубашка 12 Hours от CityPhase — почти не помялась.<br><br><em>Почему: нейлон + эластан возвращают форму.</em></p></div>
     </div>
-    <div class="proof-card">
-      <div class="proof-card-bg ph" style="background:linear-gradient(160deg,var(--navy-dark),#080f1e)">
-        <div class="play-btn"></div>
-      </div>
-      <div class="proof-body">
-        <p class="proof-num">Тест 03</p>
-        <p class="proof-title">«Стирка»</p>
-        <p class="proof-desc">Стираете в раковине, вешаете на плечики, засекаете время. Рубашка 12 Hours от CityPhase готова к носке через час. Обычная — мокрая полдня.<br><br><em>Почему: лиоцелл быстрее отводит влагу.</em></p>
-      </div>
+    <div class="proof-card"><div class="proof-card-bg ph" style="background:linear-gradient(160deg,var(--navy-dark),#080f1e)">  <div class="play-btn"></div></div><div class="proof-body">  <p class="proof-num">Тест 03</p>  <p class="proof-title">«Стирка»</p>  <p class="proof-desc">Стираете в раковине, вешаете на плечики, засекаете время. Рубашка 12 Hours от CityPhase готова к носке через час. Обычная — мокрая полдня.<br><br><em>Почему: лиоцелл быстрее отводит влагу.</em></p></div>
     </div>
-    <div class="proof-card">
-      <div class="proof-card-bg ph" style="background:linear-gradient(160deg,var(--navy-dark),#080f1e)">
-        <div class="play-btn"></div>
-      </div>
-      <div class="proof-body">
-        <p class="proof-num">Тест 04</p>
-        <p class="proof-title">«12 часов»</p>
-        <p class="proof-desc">Надеваете утром. Снимаете видео в 9 утра и в 9 вечера. Воротник держит форму, ткань не помялась.<br><br><em>Почему: она спроектирована именно для этого.</em></p>
-      </div>
+    <div class="proof-card"><div class="proof-card-bg ph" style="background:linear-gradient(160deg,var(--navy-dark),#080f1e)">  <div class="play-btn"></div></div><div class="proof-body">  <p class="proof-num">Тест 04</p>  <p class="proof-title">«12 часов»</p>  <p class="proof-desc">Надеваете утром. Снимаете видео в 9 утра и в 9 вечера. Воротник держит форму, ткань не помялась.<br><br><em>Почему: она спроектирована именно для этого.</em></p></div>
     </div>
   </div>
   <p class="proof-note r">Видео появятся после получения первых образцов ткани.</p>
@@ -878,12 +827,7 @@ const PAGE_HTML = `<!-- NAV -->
   <div style="margin-top:28px"></div>
   <h2 class="sh r" style="padding-top:8vh;margin-bottom:48px;">Трикотажная рубашка <em style="color:var(--teal)">12 Hours ★</em></h2>
   <div class="props-wrap r">
-    <div class="prop-list">
-      <div class="prop-row"><span class="prop-dash">01</span><div class="prop-body"><p class="prop-name">Отличная паропроницаемость — трикотажная структура лучше пропускает воздух</p><p class="prop-desc">Трикотажное плетение — это петельная структура, а не плотный слой нити. Воздух свободно циркулирует.</p></div></div>
-      <div class="prop-row"><span class="prop-dash">02</span><div class="prop-body"><p class="prop-name">Достали из чемодана — надели.</p><p class="prop-desc">Рубашка едет в сложенном виде. Достали — выглядит отлично. Гладить не нужно.</p></div></div>
-      <div class="prop-row"><span class="prop-dash">03</span><div class="prop-body"><p class="prop-name">Никакой скованности. Тянется в четырёх направлениях.</p><p class="prop-desc">Эластан обеспечивает свободу движений.</p></div></div>
-      <div class="prop-row"><span class="prop-dash">04</span><div class="prop-body"><p class="prop-name">Постирали вечером — надели утром.</p><p class="prop-desc">Постирали руками, повесили на плечики. Через час рубашка готова к носке — без сушки и глажки.</p></div></div>
-      <div class="prop-row"><span class="prop-dash">05</span><div class="prop-body"><p class="prop-name">К вечеру выглядит как утром.</p><p class="prop-desc">Лиоцелл не накапливает запахи в течение дня. Деловой ужин после рабочего дня — и выглядите уверенно.</p></div></div>
+    <div class="prop-list"><div class="prop-row"><span class="prop-dash">01</span><div class="prop-body"><p class="prop-name">Отличная паропроницаемость — трикотажная структура лучше пропускает воздух</p><p class="prop-desc">Трикотажное плетение — это петельная структура, а не плотный слой нити. Воздух свободно циркулирует.</p></div></div><div class="prop-row"><span class="prop-dash">02</span><div class="prop-body"><p class="prop-name">Достали из чемодана — надели.</p><p class="prop-desc">Рубашка едет в сложенном виде. Достали — выглядит отлично. Гладить не нужно.</p></div></div><div class="prop-row"><span class="prop-dash">03</span><div class="prop-body"><p class="prop-name">Никакой скованности. Тянется в четырёх направлениях.</p><p class="prop-desc">Эластан обеспечивает свободу движений.</p></div></div><div class="prop-row"><span class="prop-dash">04</span><div class="prop-body"><p class="prop-name">Постирали вечером — надели утром.</p><p class="prop-desc">Постирали руками, повесили на плечики. Через час рубашка готова к носке — без сушки и глажки.</p></div></div><div class="prop-row"><span class="prop-dash">05</span><div class="prop-body"><p class="prop-name">К вечеру выглядит как утром.</p><p class="prop-desc">Лиоцелл не накапливает запахи в течение дня. Деловой ужин после рабочего дня — и выглядите уверенно.</p></div></div>
     </div>
   </div>
 </section>
@@ -893,18 +837,12 @@ const PAGE_HTML = `<!-- NAV -->
 <section class="sec" id="s6">
   <h2 class="sh r">Каждая деталь — <em>решение.</em></h2>
   <div class="det-wrap r">
-    <div class="det-grid">
-      <div class="det"><div class="det-text"><p class="det-t">Ткань</p><p class="det-d">LYONEX: нейлон + лиоцелл + эластан. Лиоцелл ощущается как натуральный материал — не блестит, мягкий, прекрасно дышит.</p></div><div class="det-ph">фото</div></div>
-      <div class="det"><div class="det-text"><p class="det-t">Трикотажное плетение</p><p class="det-d">Петельная структура — не плотный слой нити, а система петель с воздухом между ними. Воздух свободно циркулирует, рубашка тянется в любом направлении.</p></div><div class="det-ph">фото</div></div>
-      <div class="det"><div class="det-text"><p class="det-t">Воротник</p><p class="det-d">Semi Spread — не валится без галстука, не душит в застёгнутом виде.</p></div><div class="det-ph">фото</div></div>
-      <div class="det"><div class="det-text"><p class="det-t">Манжеты</p><p class="det-d">Одинарные манжеты — комфортно облегают запястье, не ограничивают движения.</p></div><div class="det-ph">фото</div></div>
-      <div class="det"><div class="det-text"><p class="det-t">Планка</p><p class="det-d">Аккуратная ровная планка, сохраняет форму в течение дня.</p></div><div class="det-ph">фото</div></div>
-      <div class="det"><div class="det-text"><p class="det-t">Пуговицы</p><p class="det-d">Логотип CityPhase. Запасная пуговица в комплекте.</p></div><div class="det-ph">фото</div></div>
-      <div class="det"><div class="det-text"><p class="det-t">Петля</p><p class="det-d">Зелёная тканая петля для вешалки. Фирменный акцент, который видите только вы.</p></div><div class="det-ph">фото</div></div>
+    <div style="border-bottom:1px solid var(--mist);border-right:1px solid var(--mist)">
+      <div class="det" style="max-width:100%"><div class="det-text"><p class="det-t">Ткань</p><p class="det-d">LYONEX: нейлон + лиоцелл + эластан. Лиоцелл ощущается как натуральный материал — не блестит, мягкий, прекрасно дышит.</p></div><div class="det-ph">фото</div></div>
     </div>
-    <div style="padding:20px 24px;border-top:1px solid var(--mist);font-family:var(--body);font-size:14px;font-weight:400;color:var(--ink);line-height:1.6">
-      <span style="font-family:var(--display);font-size:11px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--navy);margin-right:20px">Возврат</span>
-      30 дней с момента получения. Без объяснений — напишите на hello@cityphase.ru — все решим.
+    <div class="det-grid"><div class="det"><div class="det-text"><p class="det-t">Ткань</p><p class="det-d">LYONEX: нейлон + лиоцелл + эластан. Лиоцелл ощущается как натуральный материал — не блестит, мягкий, прекрасно дышит.</p></div><div class="det-ph">фото</div></div><div class="det"><div class="det-text"><p class="det-t">Трикотажное плетение</p><p class="det-d">Петельная структура — не плотный слой нити, а система петель с воздухом между ними. Воздух свободно циркулирует, рубашка тянется в любом направлении.</p></div><div class="det-ph">фото</div></div><div class="det"><div class="det-text"><p class="det-t">Воротник</p><p class="det-d">Semi Spread — не валится без галстука, не душит в застёгнутом виде.</p></div><div class="det-ph">фото</div></div><div class="det"><div class="det-text"><p class="det-t">Манжеты</p><p class="det-d">Одинарные манжеты — комфортно облегают запястье, не ограничивают движения.</p></div><div class="det-ph">фото</div></div><div class="det"><div class="det-text"><p class="det-t">Планка</p><p class="det-d">Аккуратная ровная планка, сохраняет форму в течение дня.</p></div><div class="det-ph">фото</div></div><div class="det"><div class="det-text"><p class="det-t">Пуговицы</p><p class="det-d">Логотип CityPhase. Запасная пуговица в комплекте.</p></div><div class="det-ph">фото</div></div><div class="det"><div class="det-text"><p class="det-t">Петля</p><p class="det-d">Зелёная тканая петля для вешалки. Фирменный акцент, который видите только вы.</p></div><div class="det-ph">фото</div></div>
+    </div>
+    <div style="padding:20px 24px;border-top:1px solid var(--mist);font-family:var(--body);font-size:14px;font-weight:400;color:var(--ink);line-height:1.6"><span style="font-family:var(--display);font-size:11px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--navy);margin-right:20px">Возврат</span>30 дней с момента получения. Без объяснений — напишите на hello@cityphase.ru — все решим.
     </div>
   </div>
 </section>
@@ -914,45 +852,25 @@ const PAGE_HTML = `<!-- NAV -->
 <section class="sec" id="s7" style="height:auto;min-height:100vh;overflow:visible">
   <h2 class="sh r">Частые <em>вопросы.</em></h2>
   <div class="faq-list r">
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Когда будет готова рубашка? <span class="faq-arr">+</span></button>
-      <div class="faq-a">Первая партия — 200 единиц. Производство планируется завершить к сентябрю 2026. За всеми этапами производства и доставки можно следить в нашем Телеграм-канале: <a href="https://t.me/cityphase_ru" style="color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mist)">@cityphase_ru</a>. После поступления товара на склад вы получите счёт на оплату.</div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Когда будет готова рубашка? <span class="faq-arr">+</span></button><div class="faq-a">Первая партия — 200 единиц. Производство планируется завершить к сентябрю 2026. За всеми этапами производства и доставки можно следить в нашем Телеграм-канале: <a href="https://t.me/cityphase_ru" style="color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mist)">@cityphase_ru</a>. После поступления товара на склад вы получите счёт на оплату.</div>
     </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Нужна ли предоплата? <span class="faq-arr">+</span></button>
-      <div class="faq-a">Нет. Вы оставляете заявку — мы подтверждаем бронь письмом. Оплата только после того, как партия готова к отправке. Отказаться можно в любой момент до оплаты.</div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Нужна ли предоплата? <span class="faq-arr">+</span></button><div class="faq-a">Нет. Вы оставляете заявку — мы подтверждаем бронь письмом. Оплата только после того, как партия готова к отправке. Отказаться можно в любой момент до оплаты.</div>
     </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Что если размер не подойдёт? <span class="faq-arr">+</span></button>
-      <div class="faq-a">Проверьте <a href="/sizes" style="color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mist)">таблицу размеров</a> перед оформлением заявки. Если размер всё же не подойдёт после получения — напишите на hello@cityphase.ru. У вас 30 дней с момента получения — все решим.</div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Что если размер не подойдёт? <span class="faq-arr">+</span></button><div class="faq-a">Проверьте <a href="/sizes" style="color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mist)">таблицу размеров</a> перед оформлением заявки. Если размер всё же не подойдёт после получения — напишите на hello@cityphase.ru. У вас 30 дней с момента получения — все решим.</div>
     </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Как ухаживать за рубашкой? <span class="faq-arr">+</span></button>
-      <div class="faq-a">Стирка руками или деликатный режим до 30°C. Сушить на плечиках — рубашка сама восстанавливает форму. Гладить не нужно.</div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Как ухаживать за рубашкой? <span class="faq-arr">+</span></button><div class="faq-a">Стирка руками или деликатный режим до 30°C. Сушить на плечиках — рубашка сама восстанавливает форму. Гладить не нужно.</div>
     </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Доставка по всей России? <span class="faq-arr">+</span></button>
-      <div class="faq-a">Да, по всей России. Доставляем через СДЭК. Стоимость доставки берём на себя.</div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Доставка по всей России? <span class="faq-arr">+</span></button><div class="faq-a">Да, по всей России. Доставляем через СДЭК. Стоимость доставки берём на себя.</div>
     </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Что значит «Основатель #N из 200»? <span class="faq-arr">+</span></button>
-      <div class="faq-a">Первые 200 покупателей получают именной порядковый номер — навсегда. На email придёт цифровой сертификат и приглашение в закрытый Telegram-канал: фото с производства, голосования за следующий цвет, ранние анонсы.</div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Что значит «Основатель #N из 200»? <span class="faq-arr">+</span></button><div class="faq-a">Первые 200 покупателей получают именной порядковый номер — навсегда. На email придёт цифровой сертификат и приглашение в закрытый Telegram-канал: фото с производства, голосования за следующий цвет, ранние анонсы.</div>
     </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Какой срок возврата? <span class="faq-arr">+</span></button>
-      <div class="faq-a">30 дней с момента получения. Без объяснений, без вопросов. Напишите на hello@cityphase.ru — все решим.</div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Какой срок возврата? <span class="faq-arr">+</span></button><div class="faq-a">30 дней с момента получения. Без объяснений, без вопросов. Напишите на hello@cityphase.ru — все решим.</div>
     </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Будет ли вторая партия? <span class="faq-arr">+</span></button>
-      <div class="faq-a">Да. Серый и тёмно-синий цвета, расширенная сетка размеров. Первые 200 покупателей получат доступ к предзаказу второй партии за 30 дней до публичного старта.</div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Будет ли вторая партия? <span class="faq-arr">+</span></button><div class="faq-a">Да. Серый и тёмно-синий цвета, расширенная сетка размеров. Первые 200 покупателей получат доступ к предзаказу второй партии за 30 дней до публичного старта.</div>
     </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Могу ли я порекомендовать рубашку коллеге с выгодой? <span class="faq-arr">+</span></button>
-      <div class="faq-a">Да. Через 7 дней после получения мы пришлём персональный промокод. Поделитесь с коллегой — оба получите приятный бонус на следующую покупку. Подробности — в письме.</div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Могу ли я порекомендовать рубашку коллеге с выгодой? <span class="faq-arr">+</span></button><div class="faq-a">Да. Через 7 дней после получения мы пришлём персональный промокод. Поделитесь с коллегой — оба получите приятный бонус на следующую покупку. Подробности — в письме.</div>
     </div>
-    <div class="faq-item" style="border-bottom:none">
-      <button class="faq-q" onclick="toggleFaq(this)">Есть ещё вопросы? <span class="faq-arr">+</span></button>
-      <div class="faq-a">Пишите в Телеграм-канал <a href="https://t.me/cityphase_ru" style="color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mist)">@cityphase_ru</a> или на почту <a href="mailto:hello@cityphase.ru" style="color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mist)">hello@cityphase.ru</a>.</div>
+    <div class="faq-item" style="border-bottom:none"><button class="faq-q" onclick="toggleFaq(this)">Есть ещё вопросы? <span class="faq-arr">+</span></button><div class="faq-a">Пишите в Телеграм-канал <a href="https://t.me/cityphase_ru" style="color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mist)">@cityphase_ru</a> или на почту <a href="mailto:hello@cityphase.ru" style="color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mist)">hello@cityphase.ru</a>.</div>
     </div>
   </div>
 </section>
@@ -960,86 +878,15 @@ const PAGE_HTML = `<!-- NAV -->
 <!-- S8 ORDER + FORM -->
 <section class="sec" id="s8" style="height:auto;min-height:100vh;padding:80px 0 0;overflow:visible">
   <div class="order-wrap">
-    <div class="order-left rl">
-      <div class="order-name-wrap">
-        <h2 class="order-name">12 Hours <span class="order-star">★</span></h2>
-        <span class="order-name-sub">длинный день — один выбор.</span>
-      </div>
-      <p class="order-tagline">Больше не нужно выбирать между статусом и комфортом.</p>
-      <p class="order-price-tag">15 900 ₽</p>
-      <a href="/sizes" class="order-sizes-ref" target="_blank">Таблица размеров →</a>
+    <div class="order-left rl"><div class="order-name-wrap">  <h2 class="order-name">12 Hours <span class="order-star">★</span></h2>  <span class="order-name-sub">длинный день — один выбор.</span></div><p class="order-tagline">Больше не нужно выбирать между статусом и комфортом.</p><p class="order-price-tag">15 900 ₽</p><a href="/sizes" class="order-sizes-ref" target="_blank">Таблица размеров →</a>
     </div>
-    <div id="form" class="form-right rr">
-      <h3 class="form-title">Первая партия — 200 единиц</h3>
-      <p class="form-sub">Каждый покупатель получает именной статус «Основатель #N из 200». Запись открыта до 25 августа. Оплата после подтверждения заявки.</p>
-      <p class="form-sub" style="margin-top:-18px;margin-bottom:28px;opacity:.65;font-size:13px">Примерьте дома 30 дней — не подошло, вернём без вопросов.</p>
-      <div class="form-bar">
-        <div class="bar-track"><div class="bar-fill" id="barFill" style="width:0%"></div></div>
-        <span class="bar-txt" id="barTxt">осталось <span id="spotsLeft">200</span> мест</span>
-      </div>
-      <div class="urg">
-        <div><span class="urg-n" id="urgSpots">200</span><span class="urg-l">мест осталось</span></div>
-        <div><span class="urg-n">25 августа</span><span class="urg-l">дедлайн</span></div>
-      </div>
-      <div class="form-fields" id="ff">
-        <input class="fi" type="text" id="fn" placeholder="Ваше имя" required>
-        <input class="fi" type="email" id="fe" placeholder="Email" required>
-        <div class="form-swatches">
-          <div class="form-sw-item sw-pick on-sw" data-color="Белый" onclick="pickColor(this)">
-            <div class="form-sw-dot" style="background:#fff;border:1px solid var(--mist)"></div>
-            <span class="form-sw-name">Белый</span>
-          </div>
-          <div class="form-sw-item sw-pick" data-color="Голубой" onclick="pickColor(this)">
-            <div class="form-sw-dot" style="background:#A8C4E0"></div>
-            <span class="form-sw-name">Голубой</span>
-          </div>
-        </div>
-        <div class="frow">
-          <select class="fs" id="fz"><option value="" disabled selected>Размер</option><option>M</option><option>L</option><option>XL</option></select>
-          <select class="fs" id="fc"><option value="" disabled selected>Цвет</option><option>Белый</option><option>Голубой</option></select>
-        </div>
-        <a href="/sizes" class="form-sizes-ref" target="_blank">Как определить размер →</a>
-        <button class="fsub" onclick="send()">Предзаказ</button>
-        <!-- TODO: EmailJS — emailjs.send('service','template',{name,email,size,color}) -->
-        <p class="fpriv">Нажимая кнопку, вы соглашаетесь на получение письма с подтверждением заявки.</p>
-        <div class="tg-cta">
-          <a href="https://t.me/cityphase_ru" class="tg-link" target="_blank">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 7.03l-1.69 7.96c-.13.58-.47.72-.95.45l-2.63-1.94-1.27 1.22c-.14.14-.26.26-.53.26l.19-2.68 4.87-4.4c.21-.19-.05-.29-.33-.1L8.42 14.09l-2.59-.81c-.56-.18-.57-.56.12-.83l10.12-3.9c.47-.17.88.11.76.82z" fill="currentColor"/></svg>
-            Следите за нашим проектом в Телеграмм
-          </a>
-        </div>
-      </div>
-      <div class="form-ok" id="fok">Заявка принята. Мы пришлём письмо с вашим именным номером и деталями оплаты. Добро пожаловать в число первых.</div>
+    <div id="form" class="form-right rr"><h3 class="form-title">Первая партия — 200 единиц</h3><p class="form-sub">Каждый покупатель получает именной статус «Основатель #N из 200». Запись открыта до 25 августа. Оплата после подтверждения заявки.</p><p class="form-sub" style="margin-top:-18px;margin-bottom:28px;opacity:.65;font-size:13px">Примерьте дома 30 дней — не подошло, вернём без вопросов.</p><div class="form-bar">  <div class="bar-track"><div class="bar-fill" id="barFill" style="width:0%"></div></div>  <span class="bar-txt" id="barTxt">осталось <span id="spotsLeft">200</span> мест</span></div><div class="urg">  <div><span class="urg-n" id="urgSpots">200</span><span class="urg-l">мест осталось</span></div>  <div><span class="urg-n">25 августа</span><span class="urg-l">дедлайн</span></div></div><div class="form-fields" id="ff">  <input class="fi" type="text" id="fn" placeholder="Ваше имя" required>  <input class="fi" type="email" id="fe" placeholder="Email" required>  <div class="form-swatches">    <div class="form-sw-item sw-pick on-sw" data-color="Белый" onclick="pickColor(this)">      <div class="form-sw-dot" style="background:#fff;border:1px solid var(--mist)"></div>      <span class="form-sw-name">Белый</span>    </div>    <div class="form-sw-item sw-pick" data-color="Голубой" onclick="pickColor(this)">      <div class="form-sw-dot" style="background:#A8C4E0"></div>      <span class="form-sw-name">Голубой</span>    </div>  </div>  <div class="frow">    <select class="fs" id="fz"><option value="" disabled selected>Размер</option><option>M</option><option>L</option><option>XL</option></select>    <select class="fs" id="fc"><option value="" disabled selected>Цвет</option><option>Белый</option><option>Голубой</option></select>  </div>  <a href="/sizes" class="form-sizes-ref" target="_blank">Как определить размер →</a>  <button class="fsub" onclick="send()">Предзаказ</button>  <!-- TODO: EmailJS — emailjs.send('service','template',{name,email,size,color}) -->  <p class="fpriv">Нажимая кнопку, вы соглашаетесь на получение письма с подтверждением заявки.</p>  <div class="tg-cta">    <a href="https://t.me/cityphase_ru" class="tg-link" target="_blank">      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 7.03l-1.69 7.96c-.13.58-.47.72-.95.45l-2.63-1.94-1.27 1.22c-.14.14-.26.26-.53.26l.19-2.68 4.87-4.4c.21-.19-.05-.29-.33-.1L8.42 14.09l-2.59-.81c-.56-.18-.57-.56.12-.83l10.12-3.9c.47-.17.88.11.76.82z" fill="currentColor"/></svg>      Следите за нашим проектом в Телеграмм    </a>  </div></div><div class="form-ok" id="fok">Заявка принята. Мы пришлём письмо с вашим именным номером и деталями оплаты. Добро пожаловать в число первых.</div>
     </div>
   </div>
   <footer style="background:#0F2240;padding:56px 60px 32px;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:48px;flex-wrap:wrap;gap:32px;">
-      <div style="flex:1;min-width:200px;">
-        <div style="font-family:'Raleway',sans-serif;font-size:15px;font-weight:500;letter-spacing:0.22em;color:#fff;margin-bottom:12px;">CITYPHASE</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6;max-width:220px;">Деловая одежда для длинного дня. Право не выбирать между комфортом и статусом.</p>
-      </div>
-      <div style="display:flex;gap:64px;flex-wrap:wrap;">
-        <div style="display:flex;flex-direction:column;gap:12px;">
-          <span style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);">Продукт</span>
-          <a href="/12-hours" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">12 Hours ★</a>
-          <a href="/technology" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">Ткань LYONEX</a>
-          <a href="/sizes" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">Каталог</a>
-        </div>
-        <div style="display:flex;flex-direction:column;gap:12px;">
-          <span style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);">Бренд</span>
-          <a href="/about" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">О бренде</a>
-          <a href="/about#how" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">Как мы делаем одежду</a>
-        </div>
-        <div style="display:flex;flex-direction:column;gap:12px;">
-          <span style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);">Контакты</span>
-          <a href="mailto:hello@cityphase.ru" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">hello@cityphase.ru</a>
-          <a href="https://t.me/cityphase_ru" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">Telegram @cityphase_ru</a>
-        </div>
-      </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:48px;flex-wrap:wrap;gap:32px;"><div style="flex:1;min-width:200px;">  <div style="font-family:'Raleway',sans-serif;font-size:15px;font-weight:500;letter-spacing:0.22em;color:#fff;margin-bottom:12px;">CITYPHASE</div>  <p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6;max-width:220px;">Деловая одежда для длинного дня. Право не выбирать между комфортом и статусом.</p></div><div style="display:flex;gap:64px;flex-wrap:wrap;">  <div style="display:flex;flex-direction:column;gap:12px;">    <span style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);">Продукт</span>    <a href="/12-hours" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">12 Hours ★</a>    <a href="/technology" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">Ткань LYONEX</a>    <a href="/sizes" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">Каталог</a>  </div>  <div style="display:flex;flex-direction:column;gap:12px;">    <span style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);">Бренд</span>    <a href="/about" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">О бренде</a>    <a href="/about#how" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">Как мы делаем одежду</a>  </div>  <div style="display:flex;flex-direction:column;gap:12px;">    <span style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);">Контакты</span>    <a href="mailto:hello@cityphase.ru" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">hello@cityphase.ru</a>    <a href="https://t.me/cityphase_ru" style="font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;">Telegram @cityphase_ru</a>  </div></div>
     </div>
-    <div style="border-top:0.5px solid rgba(255,255,255,0.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;">
-      <span style="font-size:12px;color:rgba(255,255,255,0.3);">© 2026 CityPhase</span>
-      <span style="font-size:12px;color:rgba(255,255,255,0.3);">cityphase.ru</span>
+    <div style="border-top:0.5px solid rgba(255,255,255,0.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;"><span style="font-size:12px;color:rgba(255,255,255,0.3);">© 2026 CityPhase</span><span style="font-size:12px;color:rgba(255,255,255,0.3);">cityphase.ru</span>
     </div>
   </footer>
 </section>
@@ -1053,19 +900,9 @@ const scta=document.getElementById('scta');
 
 const obs=new IntersectionObserver(e=>{
   e.forEach(en=>{
-    if(en.target.classList.contains('r')||en.target.classList.contains('r2')||
-       en.target.classList.contains('r3')||en.target.classList.contains('rl')||
-       en.target.classList.contains('rr')){
-      if(en.isIntersecting) en.target.classList.add('in');
-      return;
+    if(en.target.classList.contains('r')||en.target.classList.contains('r2')|| en.target.classList.contains('r3')||en.target.classList.contains('rl')|| en.target.classList.contains('rr')){if(en.isIntersecting) en.target.classList.add('in');return;
     }
-    if(en.isIntersecting){
-      const i=secs.indexOf(en.target);
-      if(i>=0){
-        dots.forEach(d=>d.classList.remove('on'));
-        if(dots[i]) dots[i].classList.add('on');
-        scta.classList.toggle('on',i>0&&i<secs.length-1);
-      }
+    if(en.isIntersecting){const i=secs.indexOf(en.target);if(i>=0){  dots.forEach(d=>d.classList.remove('on'));  if(dots[i]) dots[i].classList.add('on');  scta.classList.toggle('on',i>0&&i<secs.length-1);}
     }
   });
 },{threshold:0.25});
@@ -1203,8 +1040,7 @@ window.send=async function(){
     const fd=new FormData();
     fd.append('name',n);fd.append('email',e);
     fd.append('size',z);fd.append('color',c);
-    await fetch('https://formspree.io/f/mykldvkv',{
-      method:'POST',body:fd,headers:{Accept:'application/json'}
+    await fetch('https://formspree.io/f/mykldvkv',{method:'POST',body:fd,headers:{Accept:'application/json'}
     });
     document.getElementById('ff').style.display='none';
     document.getElementById('fok').style.display='block';
@@ -1220,19 +1056,9 @@ const scta=document.getElementById('scta');
 
 const obs=new IntersectionObserver(e=>{
   e.forEach(en=>{
-    if(en.target.classList.contains('r')||en.target.classList.contains('r2')||
-       en.target.classList.contains('r3')||en.target.classList.contains('rl')||
-       en.target.classList.contains('rr')){
-      if(en.isIntersecting) en.target.classList.add('in');
-      return;
+    if(en.target.classList.contains('r')||en.target.classList.contains('r2')|| en.target.classList.contains('r3')||en.target.classList.contains('rl')|| en.target.classList.contains('rr')){if(en.isIntersecting) en.target.classList.add('in');return;
     }
-    if(en.isIntersecting){
-      const i=secs.indexOf(en.target);
-      if(i>=0){
-        dots.forEach(d=>d.classList.remove('on'));
-        if(dots[i]) dots[i].classList.add('on');
-        scta.classList.toggle('on',i>0&&i<secs.length-1);
-      }
+    if(en.isIntersecting){const i=secs.indexOf(en.target);if(i>=0){  dots.forEach(d=>d.classList.remove('on'));  if(dots[i]) dots[i].classList.add('on');  scta.classList.toggle('on',i>0&&i<secs.length-1);}
     }
   });
 },{threshold:0.25});
@@ -1295,9 +1121,7 @@ dots.forEach((d,i)=>{
   }, []);
 
   return (
-    <>
-      <style dangerouslySetInnerHTML={{__html: PAGE_CSS}} />
-      <div dangerouslySetInnerHTML={{__html: PAGE_HTML}} />
+    <><style dangerouslySetInnerHTML={{__html: PAGE_CSS}} /><div dangerouslySetInnerHTML={{__html: PAGE_HTML}} />
     </>
   );
 }
