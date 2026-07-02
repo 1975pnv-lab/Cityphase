@@ -850,7 +850,7 @@ const PAGE_HTML = `<!-- NAV -->
 
 <!-- S7 FAQ -->
 <section class="sec" id="s7" style="height:auto;min-height:100vh;overflow:visible">
-  <h2 class="sh r">Частые <em>вопросы.</em></h2>
+  <h2 class="sh r" style="padding-top:40px;">Частые <em>вопросы.</em></h2>
   <div class="faq-list r">
     <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Когда будет готова рубашка? <span class="faq-arr">+</span></button><div class="faq-a">Первая партия — 200 единиц. Производство планируется завершить к сентябрю 2026. За всеми этапами производства и доставки можно следить в нашем Телеграм-канале: <a href="https://t.me/cityphase_ru" style="color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mist)">@cityphase_ru</a>. После поступления товара на склад вы получите счёт на оплату.</div>
     </div>
@@ -864,7 +864,7 @@ const PAGE_HTML = `<!-- NAV -->
     </div>
     <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Что значит «Основатель #N из 200»? <span class="faq-arr">+</span></button><div class="faq-a">Первые 200 покупателей получают именной порядковый номер — навсегда. На email придёт цифровой сертификат и приглашение в закрытый Telegram-канал: фото с производства, голосования за следующий цвет, ранние анонсы.</div>
     </div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Какой срок возврата? <span class="faq-arr">+</span></button><div class="faq-a">30 дней, чтобы убедиться самому. Мы уверены в своём продукте. Поэтому даём вам 30 дней с момента получения — поносите, постирайте, возьмите в командировку. Если по любой причине не подойдёт — напишите на hello@cityphase.ru. Вернём полную стоимость в течение 3 рабочих дней после получения его нами. Без объяснений и без бюрократии.</div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Какой срок возврата? <span class="faq-arr">+</span></button><div class="faq-a">Мы уверены в своём продукте. Поэтому даём вам 30 дней с момента получения — поносите, постирайте, возьмите в командировку. Если по любой причине не подойдёт — напишите на hello@cityphase.ru. Вернём полную стоимость в течение 3 рабочих дней после получения его нами. Без объяснений и без бюрократии.</div>
     </div>
     <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Будет ли вторая партия? <span class="faq-arr">+</span></button><div class="faq-a">Да. Серый и тёмно-синий цвета, расширенная сетка размеров. Первые 200 покупателей получат доступ к предзаказу второй партии за 30 дней до публичного старта.</div>
     </div>
