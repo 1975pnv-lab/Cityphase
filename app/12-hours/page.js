@@ -214,7 +214,7 @@ nav{
 ────────────────────────────── */
 #s2{padding:0;display:grid;grid-template-columns:1fr 1fr}
 .proof-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);
+  display:grid;grid-template-columns:repeat(3,1fr);
   gap:0;background:var(--fg);
   border-top:1px solid var(--mist);
   border-bottom:1px solid var(--mist);
@@ -475,7 +475,7 @@ nav{
 #s6 .sh{padding-left:48px}
 .det-wrap{display:flex;flex-direction:column;flex:1}
 .det-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);
+  display:grid;grid-template-columns:repeat(3,1fr);
   flex:1;
   gap:0;background:var(--mist);
   border-top:1px solid var(--mist);border-bottom:1px solid var(--mist);
@@ -892,12 +892,11 @@ const PAGE_HTML = `<!-- NAV -->
 <!-- S6 DETAILS -->
 <section class="sec" id="s6">
   <h2 class="sh r">Каждая деталь — <em>решение.</em></h2>
-  <p class="sh r" style="padding-top:0;font-size:clamp(13px,1.4vw,17px);color:var(--ink);font-weight:400;letter-spacing:0;margin-bottom:0">Ничего декоративного. Каждый элемент — ответ на вопрос «зачем».</p>
   <div class="det-wrap r">
     <div class="det-grid">
-      <div class="det"><div class="det-text"><p class="det-t">Состав ткани</p><p class="det-d">LYONEX: нейлон + лиоцелл + эластан. Лиоцелл ощущается как натуральный материал — матовая поверхность, мягкость, дышимость.</p></div><div class="det-ph">фото</div></div>
-      <div class="det"><div class="det-text"><p class="det-t">Трикотажное плетение</p><p class="det-d">Петельная структура — не плотный слой нити, а система петель с воздухом между ними. Воздух свободно циркулирует, рубашка тянется в любом направлении. Проверяется тестом с зеркалом.</p></div><div class="det-ph">фото</div></div>
-      <div class="det"><div class="det-text"><p class="det-t">Воротник</p><p class="det-d">Spread collar — не валится без галстука, не душит в застёгнутом виде.</p></div><div class="det-ph">фото</div></div>
+      <div class="det"><div class="det-text"><p class="det-t">Ткань</p><p class="det-d">LYONEX: нейлон + лиоцелл + эластан. Лиоцелл ощущается как натуральный материал — не блестит, мягкий, прекрасно дышит.</p></div><div class="det-ph">фото</div></div>
+      <div class="det"><div class="det-text"><p class="det-t">Трикотажное плетение</p><p class="det-d">Петельная структура — не плотный слой нити, а система петель с воздухом между ними. Воздух свободно циркулирует, рубашка тянется в любом направлении.</p></div><div class="det-ph">фото</div></div>
+      <div class="det"><div class="det-text"><p class="det-t">Воротник</p><p class="det-d">Semi Spread — не валится без галстука, не душит в застёгнутом виде.</p></div><div class="det-ph">фото</div></div>
       <div class="det"><div class="det-text"><p class="det-t">Манжеты</p><p class="det-d">Одинарные манжеты — комфортно облегают запястье, не ограничивают движения.</p></div><div class="det-ph">фото</div></div>
       <div class="det"><div class="det-text"><p class="det-t">Планка</p><p class="det-d">Аккуратная ровная планка, сохраняет форму в течение дня.</p></div><div class="det-ph">фото</div></div>
       <div class="det"><div class="det-text"><p class="det-t">Пуговицы</p><p class="det-d">Логотип CityPhase. Запасная пуговица в комплекте.</p></div><div class="det-ph">фото</div></div>
