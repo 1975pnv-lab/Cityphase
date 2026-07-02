@@ -214,7 +214,7 @@ nav{
 ────────────────────────────── */
 #s2{padding:0;display:grid;grid-template-columns:1fr 1fr}
 .proof-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);
+  display:grid;grid-template-columns:repeat(4,1fr);
   gap:0;background:var(--fg);
   border-top:1px solid var(--mist);
   border-bottom:1px solid var(--mist);
@@ -900,7 +900,6 @@ const PAGE_HTML = `<!-- NAV -->
       <div class="det"><div class="det-text"><p class="det-t">Манжеты</p><p class="det-d">Одинарные манжеты — комфортно облегают запястье, не ограничивают движения.</p></div><div class="det-ph">фото</div></div>
       <div class="det"><div class="det-text"><p class="det-t">Планка</p><p class="det-d">Аккуратная ровная планка, сохраняет форму в течение дня.</p></div><div class="det-ph">фото</div></div>
       <div class="det"><div class="det-text"><p class="det-t">Пуговицы</p><p class="det-d">Логотип CityPhase. Запасная пуговица в комплекте.</p></div><div class="det-ph">фото</div></div>
-      <div class="det"><div class="det-text"><p class="det-t">Тейп</p><p class="det-d">Жаккардовый тейп внутри стойки — белый логотип CITYPHASE на тёмно-синем фоне.</p></div><div class="det-ph">фото</div></div>
       <div class="det"><div class="det-text"><p class="det-t">Петля</p><p class="det-d">Зелёная тканая петля для вешалки. Фирменный акцент, который видите только вы.</p></div><div class="det-ph">фото</div></div>
     </div>
     <div style="padding:20px 24px;border-top:1px solid var(--mist);font-family:var(--body);font-size:14px;font-weight:400;color:var(--ink);line-height:1.6">
