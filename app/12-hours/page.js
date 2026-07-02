@@ -775,7 +775,8 @@ const PAGE_HTML = `<!-- NAV -->
 
 
 <!-- S1.5 PROBLEM — dark, mirrors S1 style -->
-<section class="sec" id="s1b" style="background:linear-gradient(135deg,#0a1628 0%,#0d1f3c 60%,#0f2a4a 100%);display:flex;flex-direction:column;justify-content:center;padding:clamp(40px,6vw,80px) clamp(24px,6vw,80px)">
+<section class="sec" id="s1b" style="background:linear-gradient(135deg,#0a1628 0%,#0d1f3c 60%,#0f2a4a 100%);display:flex;flex-direction:column;justify-content:center;padding:clamp(40px,6vw,80px) clamp(24px,6vw,80px);position:relative;overflow:hidden;">
+  <span style="position:absolute;right:-2vw;bottom:-5vw;font-family:var(--display);font-size:clamp(200px,28vw,380px);font-weight:800;color:rgba(255,255,255,0.04);line-height:1;user-select:none;pointer-events:none;letter-spacing:-0.05em;">12</span>
   <p style="font-family:var(--body);font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--teal);margin-bottom:24px" class="r">ПРОБЛЕМА</p>
   <p class="s2-text r" style="max-width:820px;margin-bottom:48px;color:#fff">Как выглядеть по-деловому<br>и чувствовать себя <span style="color:var(--teal)">комфортно?</span></p>
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;max-width:900px" class="r">
@@ -805,10 +806,12 @@ const PAGE_HTML = `<!-- NAV -->
 
 <!-- S2 FOR WHOM — portrait left, scenarios right -->
 <section class="sec" id="s2">
-  <div class="whom-banner rl">
-    <h2 class="whom-headline">Один человек.<br>Несколько форматов.<br><span style="color:var(--teal);font-style:normal;">Двенадцать часов.</span></h2>
-    <p style="font-family:var(--body);font-size:clamp(15px,1.4vw,18px);font-weight:400;color:#fff;line-height:1.6;margin-top:24px;">Статус или комфорт? И то и другое...</p>
-  </div>
+  <div class="whom-banner rl" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+    <h2 class="whom-headline" style="font-size:clamp(28px,3.5vw,52px);line-height:1.2;margin-bottom:32px;">
+      Один человек.<br>Несколько форматов.<br><em style="color:var(--teal);font-style:normal;">Двенадцать часов.</em>
+    </h2>
+    <p style="font-family:var(--body);font-size:clamp(15px,1.4vw,18px);font-weight:400;color:#fff;line-height:1.6;position:relative;z-index:1;">Статус или комфорт? И то и другое...</p>
+  </div>  </div>
   <div class="whom-right rr">
     <div class="scenario">
       <span class="sc-time">08:15 — Аэропорт</span>
@@ -836,7 +839,7 @@ const PAGE_HTML = `<!-- NAV -->
       <div class="proof-body">
         <p class="proof-num">Тест 01</p>
         <p class="proof-title">«Пар»</p>
-        <p class="proof-desc">Стакан с горячей водой. Накрываете тканью рубашки, сверху — зеркало. Рядом — обычная рубашка. Зеркало над рубашкой 12 Hours от CityPhase запотеет. Над обычной — нет.<br><br><em>Почему: трикотаж лучше дышит.</em></p>
+        <p class="proof-desc">Стакан с горячей водой. Накрываете тканью рубашки, сверху — зеркало. Рядом — обычная рубашка. Зеркало над рубашкой 12 Hours от CityPhase запотеет. Над обычной — нет.<br><br><em>Почему: трикотаж пропускает воздух.</em></p>
       </div>
     </div>
     <div class="proof-card">
@@ -846,7 +849,7 @@ const PAGE_HTML = `<!-- NAV -->
       <div class="proof-body">
         <p class="proof-num">Тест 02</p>
         <p class="proof-title">«Чемодан»</p>
-        <p class="proof-desc">Складываете рубашку в чемодан на 3 часа. Достаёте. Рубашка 12 Hours от CityPhase — почти не помялась.<br><br><em>Почему: нейлон + эластан возвращают форму.</em></p>
+        <p class="proof-desc">Складываете рубашку в чемодан на 3 часа. Достаёте. Рубашка 12 Hours от CityPhase — почти без заломов. Обычная — гармошка.<br><br><em>Почему: нейлон + эластан возвращают форму.</em></p>
       </div>
     </div>
     <div class="proof-card">
@@ -856,7 +859,7 @@ const PAGE_HTML = `<!-- NAV -->
       <div class="proof-body">
         <p class="proof-num">Тест 03</p>
         <p class="proof-title">«Стирка»</p>
-        <p class="proof-desc">Стираете в раковине, вешаете на плечики, засекаете время. Рубашка 12 Hours от CityPhase готова к носке через час. Обычная — мокрая полдня.<br><br><em>Почему: лиоцелл быстрее отводит влагу.</em></p>
+        <p class="proof-desc">Стираете в раковине, вешаете на плечики, засекаете время. Рубашка 12 Hours от CityPhase готова к носке через час. Обычная — мокрая полдня.<br><br><em>Почему: лиоцелл отводит влагу быстрее хлопка.</em></p>
       </div>
     </div>
     <div class="proof-card">
@@ -876,12 +879,12 @@ const PAGE_HTML = `<!-- NAV -->
 <!-- S4 WHAT YOU GET -->
 <section class="sec" id="s4">
   <div style="margin-top:28px"></div>
-  <h2 class="sh r">Трикотажная рубашка <em style="color:var(--teal)">12 Hours ★</em></h2>
+  <h2 class="sh r">Что вы <em>получаете.</em></h2>
   <div class="props-wrap r">
     <div class="prop-list">
-      <div class="prop-row"><span class="prop-dash">01</span><div class="prop-body"><p class="prop-name">Отличная паропроницаемость — трикотажная структура лучше пропускает воздух</p><p class="prop-desc">Трикотажное плетение — это петельная структура, а не плотный слой нити. Воздух свободно циркулирует.</p></div></div>
+      <div class="prop-row"><span class="prop-dash">01</span><div class="prop-body"><p class="prop-name">Отличная паропроницаемость — трикотажная структура лучше пропускает воздух</p><p class="prop-desc">Трикотажное плетение — это петельная структура, а не плотный слой нити. Воздух свободно циркулирует. Обычная рубашка так не работает — можно проверить тестом с зеркалом.</p></div></div>
       <div class="prop-row"><span class="prop-dash">02</span><div class="prop-body"><p class="prop-name">Достали из чемодана — надели.</p><p class="prop-desc">Рубашка едет в сложенном виде. Достали — выглядит отлично. Гладить не нужно.</p></div></div>
-      <div class="prop-row"><span class="prop-dash">03</span><div class="prop-body"><p class="prop-name">Никакой скованности. Тянется в четырёх направлениях.</p><p class="prop-desc">Эластан обеспечивает свободу движений.</p></div></div>
+      <div class="prop-row"><span class="prop-dash">03</span><div class="prop-body"><p class="prop-name">Никакой скованности.</p><p class="prop-desc">Эластан обеспечивает свободу движений.</p></div></div>
       <div class="prop-row"><span class="prop-dash">04</span><div class="prop-body"><p class="prop-name">Постирали вечером — надели утром.</p><p class="prop-desc">Постирали руками, повесили на плечики. Через час рубашка готова к носке — без сушки и глажки.</p></div></div>
       <div class="prop-row"><span class="prop-dash">05</span><div class="prop-body"><p class="prop-name">К вечеру выглядит как утром.</p><p class="prop-desc">Лиоцелл не накапливает запахи в течение дня. Деловой ужин после рабочего дня — и выглядите уверенно.</p></div></div>
     </div>
@@ -889,6 +892,43 @@ const PAGE_HTML = `<!-- NAV -->
 </section>
 
 <!-- S5 LYONEX -->
+<section class="sec" id="s5">
+  <h2 class="sh r" style="padding-top:104px">LYONEX — три компонента,<br><em>каждый со своей задачей.</em></h2>
+  <p class="sh r" style="padding-top:0;font-size:clamp(14px,1.5vw,18px);color:var(--ink);font-weight:400;letter-spacing:0">Инженерный подход: каждый компонент решает одну задачу</p>
+  <div class="lyonex-pairs r">
+    <div class="lp-col">
+      <span class="lp-plabel">Задача</span>
+      <p class="lp-ptext"><strong>Не перегреваться в длинный день</strong></p>
+      <div class="lp-ph ph"><span>фото</span></div>
+      <div class="lp-divider"></div>
+      <p class="lp-comp-name">Трикотажное плетение</p>
+      <p class="lp-comp-desc">Воздух свободно циркулирует между петлями. Обычная рубашка так не умеет.</p>
+    </div>
+    <div class="lp-col">
+      <span class="lp-plabel">Задача</span>
+      <p class="lp-ptext"><strong>Не терять форму после многих стирок</strong></p>
+      <div class="lp-ph ph"><span>фото</span></div>
+      <div class="lp-divider"></div>
+      <p class="lp-comp-name">Нейлон</p>
+      <p class="lp-comp-desc">Держит форму там, где хлопок вытягивается и рвётся.</p>
+    </div>
+    <div class="lp-col">
+      <span class="lp-plabel">Задача</span>
+      <p class="lp-ptext"><strong>Не впитывать запахи к концу дня</strong></p>
+      <div class="lp-ph ph"><span>фото</span></div>
+      <div class="lp-divider"></div>
+      <p class="lp-comp-name">Лиоцелл</p>
+      <p class="lp-comp-desc">Отводит влагу — рубашка остаётся свежей дольше. Матовая поверхность, мягкость натурального волокна.</p>
+    </div>
+  </div>
+  <!-- ФОТО: макросъёмка текстуры ткани — будет добавлено после съёмки -->
+  <div class="lyonex-foot r">
+    <p class="lyonex-note">Никаких пропиток. Только физика. Проверяется тестами.</p>
+    <a href="/technology" class="lyonex-link">Подробнее о LYONEX →</a>
+  </div>
+</section>
+
+
 <!-- S6 DETAILS -->
 <section class="sec" id="s6">
   <h2 class="sh r">Каждая деталь — <em>решение.</em></h2>
