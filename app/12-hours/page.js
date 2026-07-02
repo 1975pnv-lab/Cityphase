@@ -876,7 +876,7 @@ const PAGE_HTML = `<!-- NAV -->
 <!-- S4 WHAT YOU GET -->
 <section class="sec" id="s4">
   <div style="margin-top:28px"></div>
-  <h2 class="sh r" style="padding-top:18vh;">Трикотажная рубашка <em style="color:var(--teal)">12 Hours ★</em></h2>
+  <h2 class="sh r" style="padding-top:8vh;">Трикотажная рубашка <em style="color:var(--teal)">12 Hours ★</em></h2>
   <div class="props-wrap r">
     <div class="prop-list">
       <div class="prop-row"><span class="prop-dash">01</span><div class="prop-body"><p class="prop-name">Отличная паропроницаемость — трикотажная структура лучше пропускает воздух</p><p class="prop-desc">Трикотажное плетение — это петельная структура, а не плотный слой нити. Воздух свободно циркулирует.</p></div></div>
