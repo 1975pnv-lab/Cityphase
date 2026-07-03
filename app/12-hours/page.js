@@ -848,7 +848,7 @@ const PAGE_HTML = `<!-- NAV -->
 
 <!-- S7 FAQ -->
 <section class="sec" id="s7" style="height:auto;min-height:100vh;overflow:visible">
-  <h2 class="sh r" style="padding-top:40px;">Частые <em>вопросы.</em></h2>
+  <h2 class="sh r" style="padding-top:8px;">Частые <em>вопросы.</em></h2>
   <div class="faq-list r">
     <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Когда будет готова рубашка? <span class="faq-arr">+</span></button><div class="faq-a">Первая партия — 200 единиц. Производство планируется завершить к сентябрю 2026. За всеми этапами производства и доставки можно следить в нашем Телеграм-канале: <a href="https://t.me/cityphase_ru" style="color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mist)">@cityphase_ru</a>. После поступления товара на склад вы получите счёт на оплату.</div>
     </div>
