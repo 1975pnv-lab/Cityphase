@@ -824,8 +824,7 @@ const PAGE_HTML = `<!-- NAV -->
 
 <!-- S4 WHAT YOU GET -->
 <section class="sec" id="s4">
-  <div style="margin-top:28px"></div>
-  <h2 class="sh r" style="padding-top:8vh;margin-bottom:48px;">Трикотажная рубашка <em style="color:var(--teal)">12 Hours ★</em></h2>
+  <h2 class="sh r" style="padding-top:clamp(32px,8vh,80px);margin-bottom:clamp(32px,8vh,80px);">Трикотажная рубашка <em style="color:var(--teal)">12 Hours ★</em></h2>
   <div class="props-wrap r">
     <div class="prop-list"><div class="prop-row"><span class="prop-dash">01</span><div class="prop-body"><p class="prop-name">Отличная паропроницаемость — трикотажная структура лучше пропускает воздух</p><p class="prop-desc">Трикотажное плетение — это петельная структура, а не плотный слой нити. Воздух свободно циркулирует.</p></div></div><div class="prop-row"><span class="prop-dash">02</span><div class="prop-body"><p class="prop-name">Достали из чемодана — надели.</p><p class="prop-desc">Рубашка едет в сложенном виде. Достали — выглядит отлично. Гладить не нужно.</p></div></div><div class="prop-row"><span class="prop-dash">03</span><div class="prop-body"><p class="prop-name">Никакой скованности. Тянется в четырёх направлениях.</p><p class="prop-desc">Эластан обеспечивает свободу движений.</p></div></div><div class="prop-row"><span class="prop-dash">04</span><div class="prop-body"><p class="prop-name">Постирали вечером — надели утром.</p><p class="prop-desc">Постирали руками, повесили на плечики. Через час рубашка готова к носке — без сушки и глажки.</p></div></div><div class="prop-row"><span class="prop-dash">05</span><div class="prop-body"><p class="prop-name">К вечеру выглядит как утром.</p><p class="prop-desc">Лиоцелл не накапливает запахи в течение дня. Деловой ужин после рабочего дня — и выглядите уверенно.</p></div></div>
     </div>
