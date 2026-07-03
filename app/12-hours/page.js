@@ -74,6 +74,18 @@ nav{
 .sec{height:100vh;display:flex;flex-direction:column;justify-content:flex-start;border-bottom:1px solid var(--mist);position:relative;scroll-snap-align:start;scroll-snap-stop:always;overflow:hidden;flex-shrink:0}
 .sec:last-child{border-bottom:none}
 
+
+.opt-btn{
+  font-family:var(--body);font-size:14px;font-weight:400;
+  padding:8px 18px;border:1.5px solid var(--mist);border-radius:4px;
+  background:#fff;color:var(--fg);cursor:pointer;transition:all .15s;
+}
+.opt-btn:hover{border-color:var(--navy);color:var(--navy);}
+.opt-btn.selected{border-color:var(--navy);background:var(--navy);color:#fff;}
+.opt-btn:disabled,.opt-btn.sold-out{
+  opacity:0.35;cursor:not-allowed;text-decoration:line-through;
+  border-color:var(--mist);background:#f5f5f5;color:var(--ink);
+}
 /* ── PHOTO PLACEHOLDER ── */
 .ph{
   background:linear-gradient(135deg,#e8ecf2 0%,#d4dbe6 100%);
@@ -881,7 +893,29 @@ const PAGE_HTML = `<!-- NAV -->
         <p style="font-family:var(--body);font-size:13px;color:var(--ink);line-height:1.7;">Мы уверены в своём продукте. Поэтому даём вам 30 дней с момента получения, чтобы убедиться в этом самому — примерьте, проверьте посадку и качество. Если не подошло — напишите на hello@cityphase.ru. Вернём полную стоимость при возврате товара с сохранёнными этикетками в течение 3 рабочих дней после получения его нами. Без объяснений.</p>
       </div>
     </div>
-<div id="form" class="form-right rr"><h3 class="form-title">Первая партия — 200 единиц</h3><p class="form-sub">Каждый покупатель получает именной статус «Основатель #N из 200». Запись открыта до 25 августа. Оплата после подтверждения заявки.</p><div class="form-bar">  <div class="bar-track"><div class="bar-fill" id="barFill" style="width:0%"></div></div>  <span class="bar-txt" id="barTxt">осталось <span id="spotsLeft">200</span> мест</span></div><div class="urg">  <div><span class="urg-n" id="urgSpots">200</span><span class="urg-l">мест осталось</span></div>  <div><span class="urg-n">25 августа</span><span class="urg-l">дедлайн</span></div></div><div class="form-fields" id="ff">  <input class="fi" type="text" id="fn" placeholder="Ваше имя" required>  <input class="fi" type="email" id="fe" placeholder="Email" required>  <div class="form-swatches">    <div class="form-sw-item sw-pick on-sw" data-color="Белый" onclick="pickColor(this)">      <div class="form-sw-dot" style="background:#fff;border:1px solid var(--mist)"></div>      <span class="form-sw-name">Белый</span>    </div>    <div class="form-sw-item sw-pick" data-color="Голубой" onclick="pickColor(this)">      <div class="form-sw-dot" style="background:#A8C4E0"></div>      <span class="form-sw-name">Голубой</span>    </div>  </div>  <div class="frow">    <select class="fs" id="fz"><option value="" disabled selected>Размер</option><option>M</option><option>L</option><option>XL</option></select>    <select class="fs" id="fc"><option value="" disabled selected>Цвет</option><option>Белый</option><option>Голубой</option></select>  </div>  <a href="/sizes" class="form-sizes-ref" target="_blank">Как определить размер →</a>  <button class="fsub" onclick="send()">Предзаказ</button>  <!-- TODO: EmailJS — emailjs.send('service','template',{name,email,size,color}) -->  <p class="fpriv">Нажимая кнопку, вы соглашаетесь на получение письма с подтверждением заявки.</p>  <div class="tg-cta">    <a href="https://t.me/cityphase_ru" class="tg-link" target="_blank">      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 7.03l-1.69 7.96c-.13.58-.47.72-.95.45l-2.63-1.94-1.27 1.22c-.14.14-.26.26-.53.26l.19-2.68 4.87-4.4c.21-.19-.05-.29-.33-.1L8.42 14.09l-2.59-.81c-.56-.18-.57-.56.12-.83l10.12-3.9c.47-.17.88.11.76.82z" fill="currentColor"/></svg>      Следите за нашим проектом в Телеграмм    </a>  </div></div><div class="form-ok" id="fok">Заявка принята. Мы пришлём письмо с вашим именным номером и деталями оплаты. Добро пожаловать в число первых.</div>
+<div id="form" class="form-right rr"><h3 class="form-title">Первая партия — 200 единиц</h3><p class="form-sub">Каждый покупатель получает именной статус «Основатель #N из 200». Запись открыта до 25 августа. Оплата после подтверждения заявки.</p><div class="form-bar">  <div class="bar-track"><div class="bar-fill" id="barFill" style="width:0%"></div></div>  <span class="bar-txt" id="barTxt">осталось <span id="spotsLeft">200</span> мест</span></div><div class="urg">  <div><span class="urg-n" id="urgSpots">200</span><span class="urg-l">мест осталось</span></div>  <div><span class="urg-n">25 августа</span><span class="urg-l">дедлайн</span></div></div><div class="form-fields" id="ff">  <input class="fi" type="text" id="fn" placeholder="Ваше имя" required>  <input class="fi" type="email" id="fe" placeholder="Email" required>  <div class="form-swatches">    <div class="form-sw-item sw-pick on-sw" data-color="Белый" onclick="pickColor(this)">      <div class="form-sw-dot" style="background:#fff;border:1px solid var(--mist)"></div>      <span class="form-sw-name">Белый</span>    </div>    <div class="form-sw-item sw-pick" data-color="Голубой" onclick="pickColor(this)">      <div class="form-sw-dot" style="background:#A8C4E0"></div>      <span class="form-sw-name">Голубой</span>    </div>  </div>  <div class="frow" style="flex-direction:column;gap:16px;">
+    <div>
+      <p style="font-size:12px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink);margin-bottom:8px;">Цвет</p>
+      <div style="display:flex;gap:8px;" id="colorBtns">
+        <button type="button" class="opt-btn" onclick="selectColor(this,'Белый')" data-color="Белый" style="display:flex;align-items:center;gap:8px;">
+          <span style="width:16px;height:16px;border-radius:50%;background:#f0f0f0;border:1px solid #ccc;flex-shrink:0;"></span>Белый
+        </button>
+        <button type="button" class="opt-btn" onclick="selectColor(this,'Голубой')" data-color="Голубой" style="display:flex;align-items:center;gap:8px;">
+          <span style="width:16px;height:16px;border-radius:50%;background:#a8c4d4;border:1px solid #8aacbe;flex-shrink:0;"></span>Голубой
+        </button>
+      </div>
+    </div>
+    <div>
+      <p style="font-size:12px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink);margin-bottom:8px;">Размер <span id="stockHint" style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--teal);font-size:11px;"></span></p>
+      <div style="display:flex;gap:8px;" id="sizeBtns">
+        <button type="button" class="opt-btn" onclick="selectSize(this,'M')" data-size="M">M</button>
+        <button type="button" class="opt-btn" onclick="selectSize(this,'L')" data-size="L">L</button>
+        <button type="button" class="opt-btn" onclick="selectSize(this,'XL')" data-size="XL">XL</button>
+      </div>
+    </div>
+    <input type="hidden" id="fc" value="">
+    <input type="hidden" id="fz" value="">
+  </div>  <a href="/sizes" class="form-sizes-ref" target="_blank">Как определить размер →</a>  <button class="fsub" onclick="send()">Предзаказ</button>  <!-- TODO: EmailJS — emailjs.send('service','template',{name,email,size,color}) -->  <p class="fpriv">Нажимая кнопку, вы соглашаетесь на получение письма с подтверждением заявки.</p>  <div class="tg-cta">    <a href="https://t.me/cityphase_ru" class="tg-link" target="_blank">      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 7.03l-1.69 7.96c-.13.58-.47.72-.95.45l-2.63-1.94-1.27 1.22c-.14.14-.26.26-.53.26l.19-2.68 4.87-4.4c.21-.19-.05-.29-.33-.1L8.42 14.09l-2.59-.81c-.56-.18-.57-.56.12-.83l10.12-3.9c.47-.17.88.11.76.82z" fill="currentColor"/></svg>      Следите за нашим проектом в Телеграмм    </a>  </div></div><div class="form-ok" id="fok">Заявка принята. Мы пришлём письмо с вашим именным номером и деталями оплаты. Добро пожаловать в число первых.</div>
     </div>
   </div>
   <footer style="background:#0F2240;padding:56px 60px 32px;">
@@ -944,6 +978,56 @@ function toggleFaq(btn){
   if(!isOpen){a.classList.add('open');btn.classList.add('open');}
 }
 
+
+// ── ОСТАТКИ ──────────────────────────────────────────
+const STOCK = {
+  'Белый':   { M: 37, L: 45, XL: 28 },
+  'Голубой': { M: 31, L: 36, XL: 23 }
+};
+let selColor = '', selSize = '';
+
+function selectColor(btn, color) {
+  document.querySelectorAll('#colorBtns .opt-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  selColor = color;
+  document.getElementById('fc').value = color;
+  updateSizeBtns();
+}
+
+function selectSize(btn, size) {
+  if (btn.disabled || btn.classList.contains('sold-out')) return;
+  document.querySelectorAll('#sizeBtns .opt-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  selSize = size;
+  document.getElementById('fz').value = size;
+  if (selColor && STOCK[selColor][size] !== undefined) {
+    const left = STOCK[selColor][size];
+    document.getElementById('stockHint').textContent = left > 0 ? 'осталось ' + left + ' шт.' : '';
+  }
+}
+
+function updateSizeBtns() {
+  const sizes = ['M','L','XL'];
+  sizes.forEach(s => {
+    const btn = document.querySelector('#sizeBtns [data-size="' + s + '"]');
+    if (!btn) return;
+    const qty = selColor ? STOCK[selColor][s] : 1;
+    if (qty === 0) {
+      btn.disabled = true;
+      btn.classList.add('sold-out');
+      btn.classList.remove('selected');
+      if (selSize === s) { selSize = ''; document.getElementById('fz').value = ''; }
+    } else {
+      btn.disabled = false;
+      btn.classList.remove('sold-out');
+    }
+  });
+  document.getElementById('stockHint').textContent = '';
+  selSize = '';
+  document.getElementById('fz').value = '';
+  document.querySelectorAll('#sizeBtns .opt-btn').forEach(b => b.classList.remove('selected'));
+}
+// ─────────────────────────────────────────────────────
 function send(){
   const n=document.getElementById('fn').value.trim();
   const e=document.getElementById('fe').value.trim();
