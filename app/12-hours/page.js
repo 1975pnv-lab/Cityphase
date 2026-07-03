@@ -794,7 +794,7 @@ const PAGE_HTML = `<!-- NAV -->
 <section class="sec" id="s2">
   <div class="whom-banner rl">
     <h2 class="whom-headline">Один человек.<br>Несколько форматов.<br><span style="color:var(--teal);font-style:normal;">Двенадцать часов.</span></h2>
-    <p style="font-family:var(--body);font-size:clamp(15px,1.4vw,18px);font-weight:400;color:#fff;line-height:1.6;margin-top:24px;">Статус или комфорт? И то и другое...</p>
+    <p style="font-family:var(--body);font-size:clamp(15px,1.4vw,18px);font-weight:400;color:#fff;line-height:1.6;margin-top:24px;">Статус или комфорт? И то и другое!</p>
   </div>
   <div class="whom-right rr">
     <div class="scenario"><span class="sc-time">08:15 — Аэропорт</span><p class="mtext">Утренний рейс. Переговоры в 12:00. Рубашка провела несколько часов в чемодане — достали, надели.</p>
