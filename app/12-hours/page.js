@@ -793,8 +793,8 @@ const PAGE_HTML = `<!-- NAV -->
 <!-- S2 FOR WHOM — portrait left, scenarios right -->
 <section class="sec" id="s2">
   <div class="whom-banner rl">
-    <h2 class="whom-headline"><span style="display:block;padding-left:0;margin-bottom:1.4em;">Один человек.</span><span style="display:block;padding-left:2em;margin-bottom:1.4em;">Несколько форматов.</span><span style="display:block;padding-left:4em;color:var(--teal);">Двенадцать часов.</span></h2>
-    <p style="font-family:var(--body);font-size:clamp(15px,1.4vw,18px);font-weight:400;color:#fff;line-height:1.6;margin-top:24px;">Статус или комфорт? И то и другое!</p>
+    <h2 class="whom-headline"><span style="display:block;padding-left:0;margin-bottom:1.4em;">Один человек.</span><span style="display:block;padding-left:2em;margin-bottom:1.4em;">Несколько форматов.</span><span style="display:block;padding-left:6em;color:var(--teal);">Двенадцать часов.</span></h2>
+    <p style="font-family:var(--body);font-size:clamp(15px,1.4vw,18px);font-weight:400;color:#fff;line-height:1.6;margin-top:80px;">Статус или комфорт? И то и другое!</p>
   </div>
   <div class="whom-right rr">
     <div class="scenario"><span class="sc-time">08:15 — Аэропорт</span><p class="mtext">Утренний рейс. Переговоры в 12:00. Рубашка провела несколько часов в чемодане — достали, надели.</p>
