@@ -522,7 +522,7 @@ nav{
 ────────────────────────────── */
 #s7{padding:64px 0 0;min-height:100vh;justify-content:flex-start}
 .order-wrap{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--mist)}
-.order-left{padding:32px 52px 40px;border-right:1px solid var(--mist);display:flex;flex-direction:column;justify-content:flex-start;gap:16px}
+.order-left{padding:32px 52px 40px;border-right:1px solid var(--mist);display:flex;flex-direction:column;justify-content:space-between}
 .order-name{
   font-family:var(--display);font-size:clamp(36px,4.5vw,56px);
   font-weight:400;color:var(--fg);line-height:1;
@@ -887,8 +887,8 @@ const PAGE_HTML = `<!-- NAV -->
 <!-- S8 ORDER + FORM -->
 <section class="sec" id="s8" style="height:auto;min-height:100vh;padding:57px 0 0;overflow:visible">
   <div class="order-wrap">
-    <div class="order-left rl"><div style="display:flex;flex-direction:column;gap:12px;margin-top:24px;margin-bottom:48px;"><div class="order-name-wrap">  <h2 class="order-name">12 Hours <span class="order-star">★</span></h2>  <span class="order-name-sub">длинный день — один выбор.</span></div><p class="order-tagline">Больше не нужно выбирать между статусом и комфортом.</p><p class="order-price-tag">15 900 ₽</p></div>
-<div style="padding-top:0;border-top:none;">
+    <div class="order-left rl"><div style="display:flex;flex-direction:column;gap:12px;margin-top:0;"><div class="order-name-wrap">  <h2 class="order-name">12 Hours <span class="order-star">★</span></h2>  <span class="order-name-sub">длинный день — один выбор.</span></div><p class="order-tagline">Больше не нужно выбирать между статусом и комфортом.</p><p class="order-price-tag">15 900 ₽</p></div><div style="height:1px;background:var(--mist);margin:24px 0;"></div>
+<div style="margin-top:auto;">
         <p style="font-family:var(--display);font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--teal);margin-bottom:12px;">Расширенная гарантия</p>
         <p style="font-family:var(--body);font-size:13px;color:var(--ink);line-height:1.7;">Мы уверены в своём продукте. Поэтому даём вам 30 дней с момента получения, чтобы убедиться в этом самому — примерьте, проверьте посадку и качество. Если не подошло — напишите на hello@cityphase.ru. Вернём полную стоимость при возврате товара с сохранёнными этикетками в течение 3 рабочих дней после получения его нами. Без объяснений.</p>
       </div>
