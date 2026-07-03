@@ -1028,6 +1028,27 @@ function updateSizeBtns() {
   document.querySelectorAll('#sizeBtns .opt-btn').forEach(b => b.classList.remove('selected'));
 }
 // ─────────────────────────────────────────────────────
+
+// Подсчёт общего остатка и обновление индикаторов
+function calcTotalStock() {
+  let total = 0;
+  Object.values(STOCK).forEach(sizes => {
+    Object.values(sizes).forEach(qty => { total += qty; });
+  });
+  return total;
+}
+
+function updateStockIndicators() {
+  const total = calcTotalStock();
+  const maxStock = 200;
+  const el1 = document.getElementById('spotsLeft');
+  const el2 = document.getElementById('urgSpots');
+  const bar = document.getElementById('barFill');
+  if (el1) el1.textContent = total;
+  if (el2) el2.textContent = total;
+  if (bar) bar.style.width = ((maxStock - total) / maxStock * 100) + '%';
+}
+
 function send(){
   const n=document.getElementById('fn').value.trim();
   const e=document.getElementById('fe').value.trim();
