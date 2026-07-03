@@ -885,7 +885,7 @@ const PAGE_HTML = `<!-- NAV -->
 </section>
 
 <!-- S8 ORDER + FORM -->
-<section class="sec" id="s8" style="height:auto;min-height:100vh;padding:0;overflow:visible">
+<section class="sec" id="s8" style="height:auto;min-height:100vh;padding:57px 0 0;overflow:visible">
   <div class="order-wrap">
     <div class="order-left rl"><div class="order-name-wrap">  <h2 class="order-name">12 Hours <span class="order-star">★</span></h2>  <span class="order-name-sub">длинный день — один выбор.</span></div><p class="order-tagline">Больше не нужно выбирать между статусом и комфортом.</p><p class="order-price-tag">15 900 ₽</p><a href="/sizes" class="order-sizes-ref" target="_blank">Таблица размеров →</a>
 <div style="margin-top:auto;padding-top:32px;border-top:1px solid var(--mist);">
