@@ -522,7 +522,7 @@ nav{
 ────────────────────────────── */
 #s7{padding:64px 0 0;min-height:100vh;justify-content:flex-start}
 .order-wrap{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--mist)}
-.order-left{padding:32px 52px 40px;border-right:1px solid var(--mist);display:flex;flex-direction:column;justify-content:center;gap:16px}
+.order-left{padding:32px 52px 40px;border-right:1px solid var(--mist);display:flex;flex-direction:column;justify-content:flex-start;gap:16px}
 .order-name{
   font-family:var(--display);font-size:clamp(36px,4.5vw,56px);
   font-weight:400;color:var(--fg);line-height:1;
