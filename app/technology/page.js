@@ -90,7 +90,7 @@ export default function Technology() {
 {/* FOOTER */}
       <footer style={{ background: '#0F2240', padding: '56px 40px 32px' }}>
         <div>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 32, marginBottom: 48 }} style={{ marginBottom: 48 }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 64, marginBottom: 48 }}>
             <div style={{ flex: 1 }}>
               <div style={{ fontSize: 14, fontWeight: 500, letterSpacing: '0.18em', color: '#fff', marginBottom: 12 }}>
                 CITYPHASE
