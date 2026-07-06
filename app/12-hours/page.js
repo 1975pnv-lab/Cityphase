@@ -915,7 +915,7 @@ const PAGE_HTML = `<!-- NAV -->
     </div>
     <input type="hidden" id="fc" value="">
     <input type="hidden" id="fz" value="">
-  </div>  <a href="/sizes" class="form-sizes-ref" target="_blank">Как определить размер →</a>  <button class="fsub" onclick="send()">Предзаказ</button>  <!-- TODO: EmailJS — emailjs.send('service','template',{name,email,size,color}) -->  <p class="fpriv">Нажимая кнопку, вы соглашаетесь на получение письма с подтверждением заявки.</p>  <div class="tg-cta">    <a href="https://t.me/cityphase_ru" class="tg-link" target="_blank">      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 7.03l-1.69 7.96c-.13.58-.47.72-.95.45l-2.63-1.94-1.27 1.22c-.14.14-.26.26-.53.26l.19-2.68 4.87-4.4c.21-.19-.05-.29-.33-.1L8.42 14.09l-2.59-.81c-.56-.18-.57-.56.12-.83l10.12-3.9c.47-.17.88.11.76.82z" fill="currentColor"/></svg>      Следите за нашим проектом в Телеграмм    </a>  </div></div><div class="form-ok" id="fok">Заявка принята. Мы пришлём письмо с вашим именным номером и деталями оплаты. Добро пожаловать в число первых.</div>
+  </div>  <a href="/sizes" class="form-sizes-ref" target="_blank">Как определить размер →</a>  <input class="fi" type="text" id="fpromo" placeholder="Промокод (если есть)">  <button class="fsub" onclick="send()">Предзаказ</button>  <!-- TODO: EmailJS — emailjs.send('service','template',{name,email,size,color,promo}) -->  <p class="fpriv">Нажимая кнопку, вы соглашаетесь на получение письма с подтверждением заявки.</p>  <div class="tg-cta">    <a href="https://t.me/cityphase_ru" class="tg-link" target="_blank">      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 7.03l-1.69 7.96c-.13.58-.47.72-.95.45l-2.63-1.94-1.27 1.22c-.14.14-.26.26-.53.26l.19-2.68 4.87-4.4c.21-.19-.05-.29-.33-.1L8.42 14.09l-2.59-.81c-.56-.18-.57-.56.12-.83l10.12-3.9c.47-.17.88.11.76.82z" fill="currentColor"/></svg>      Следите за нашим проектом в Телеграмм    </a>  </div></div><div class="form-ok" id="fok">Заявка принята. Мы пришлём письмо с вашим именным номером и деталями оплаты. Добро пожаловать в число первых.</div>
     </div>
   </div>
   <footer style="background:#0F2240;padding:56px 60px 32px;">
@@ -1054,6 +1054,7 @@ function send(){
   const e=document.getElementById('fe').value.trim();
   const z=document.getElementById('fz').value;
   const c=document.getElementById('fc').value;
+  const promo=document.getElementById('fpromo').value.trim();
   if(!n||!e||!z||!c){alert('Пожалуйста, заполните все поля.');return;}
   document.getElementById('ff').style.display='none';
   document.getElementById('fok').style.display='block';
