@@ -10,6 +10,9 @@ export default function Home() {
         .footer-col { display: flex; flex-direction: column; gap: 12px; }
         .footer-link { font-size: 13px; color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.2s; }
         .footer-link:hover { color: #fff; }
+        @media (max-width: 600px) {
+          .footer-cols { flex-direction: column !important; gap: 24px !important; }
+        }
         .product-card { display: flex; border: 0.5px solid #DDE1E9; border-radius: 12px; overflow: hidden; background: #fff; max-width: 860px; margin: 0 auto; }
         .philosophy-text { font-size: 26px; font-weight: 400; color: #1B3A6B; line-height: 1.6; max-width: 720px; letter-spacing: -0.01em; }
         @media (max-width: 768px) {
@@ -203,7 +206,7 @@ export default function Home() {
                 Деловая одежда для длинного дня. Право не выбирать между комфортом и статусом.
               </p>
             </div>
-            <div style={{ display: 'flex', gap: 32, flexWrap: 'wrap' }}>
+            <div className="footer-cols" style={{ display: 'flex', gap: 32, flexWrap: 'wrap' }}>
               <div className="footer-col">
                 <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
                   Продукт
