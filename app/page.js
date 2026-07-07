@@ -12,6 +12,10 @@ export default function Home() {
         .footer-link:hover { color: #fff; }
         .product-card { display: flex; border: 0.5px solid #DDE1E9; border-radius: 12px; overflow: hidden; background: #fff; max-width: 860px; margin: 0 auto; }
         .philosophy-text { font-size: 26px; font-weight: 400; color: #1B3A6B; line-height: 1.6; max-width: 720px; letter-spacing: -0.01em; }
+        @media (max-width: 768px) {
+          .footer-inner { flex-direction: column !important; gap: 32px !important; }
+          .product-card { flex-direction: column !important; }
+        }
         @media (max-width: 860px) {
           .nav-links { display: none; }
           .hero-section { flex-direction: column; }
@@ -76,7 +80,7 @@ export default function Home() {
           <div style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', fontWeight: 500, marginBottom: 20 }}>
             Бренд · 2026
           </div>
-          <h1 style={{ fontSize: 38, fontWeight: 600, color: '#fff', lineHeight: 1.15, marginBottom: 12, letterSpacing: '-0.02em', whiteSpace: 'nowrap' }}>
+          <h1 style={{ fontSize: 'clamp(22px, 5vw, 38px)', fontWeight: 600, color: '#fff', lineHeight: 1.15, marginBottom: 12, letterSpacing: '-0.02em' }}>
             Деловая одежда для длинного дня.
           </h1>
           <p style={{ fontSize: 22, fontWeight: 400, color: 'rgba(255,255,255,0.8)', lineHeight: 1.4, marginBottom: 36 }}>

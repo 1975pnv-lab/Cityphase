@@ -581,6 +581,7 @@ nav{
 .fi,.fs{
   width:100%;padding:13px 16px;
   border:1.5px solid var(--mist);background:#fff;
+  font-size:16px;
   font-family:var(--display);font-size:14px;font-weight:400;
   color:var(--fg);outline:none;appearance:none;-webkit-appearance:none;
   transition:border-color .2s;
@@ -674,14 +675,16 @@ nav{
   .prob-q{padding:24px 32px 40px}
   .prob-photo{display:none}
   .s2-inner{padding:72px 32px}
-  .proof-grid{grid-template-columns:1fr 1fr}
+  .proof-grid{grid-template-columns:1fr}
   .proof-card{border-right:none;border-bottom:1px solid rgba(255,255,255,.06)}
   .prop-list{padding:24px 32px}
   .lyonex-3col,.lyonex-comp{grid-template-columns:1fr}
   .lstmt,.comp{border-right:none;border-bottom:1px solid var(--mist)}
   .lyonex-foot{padding:16px 32px}
   #s2{grid-template-columns:1fr;min-height:auto}
-  .whom-banner{padding:60px 32px}
+  .whom-banner{padding:48px 24px;height:auto}
+  .whom-headline span{padding-left:0!important;margin-bottom:0.6em!important}
+  .whom-right{padding:40px 24px}
   .marker{padding:20px 32px}
   .det-wrap{grid-template-columns:1fr}
   .det-photo{display:none}
@@ -690,9 +693,10 @@ nav{
   .sz-wrap{grid-template-columns:1fr}
   .sz-diagram{border-right:none;border-bottom:1px solid var(--mist)}
   .order-wrap{grid-template-columns:1fr}
-  .order-left,.form-right{padding:40px 32px}
+  .order-left,.form-right{padding:28px 20px}
   .order-left{border-right:none}
   .frow{grid-template-columns:1fr}
+  .opt-btn{padding:8px 12px;font-size:13px}
   .footer-inner{padding:28px 32px;flex-direction:column;align-items:flex-start}
   .proof-note{padding:16px 32px}
 }
