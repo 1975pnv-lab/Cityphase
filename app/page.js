@@ -24,7 +24,7 @@ export default function Home() {
           .btn-row a { text-align: center; }
           .footer-inner { flex-direction: column; align-items: flex-start; gap: 32px; }
           .product-card { flex-direction: column; }
-          .product-card-photo { width: 100% !important; height: 240px !important; }
+          .product-card-photo { width: 100% !important; height: 200px !important; }
           .philosophy-text { font-size: 22px; }
         }
         @media (max-width: 640px) {
@@ -76,7 +76,7 @@ export default function Home() {
           position: 'absolute', inset: 0,
           background: 'linear-gradient(to right, rgba(0,0,0,0.65) 40%, rgba(0,0,0,0.1) 100%)'
         }} />
-        <div style={{ position: 'relative', zIndex: 1, padding: '0 40px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: 'calc(100vh - 57px)' }}>
+        <div style={{ position: 'relative', zIndex: 1, padding: '0 clamp(20px, 5vw, 40px)', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: 'calc(100vh - 57px)' }}>
           <div style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', fontWeight: 500, marginBottom: 20 }}>
             Бренд · 2026
           </div>
@@ -109,7 +109,7 @@ export default function Home() {
       </section>
 
       {/* ФИЛОСОФИЯ */}
-      <section style={{ padding: '80px 40px', background: '#fff' }}>
+      <section style={{ padding: 'clamp(40px, 6vw, 80px) clamp(20px, 5vw, 40px)', background: '#fff' }}>
         <div style={{ maxWidth: 860, margin: '0 auto' }}>
         <div style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', fontWeight: 500, marginBottom: 24 }}>
           Философия
@@ -123,8 +123,8 @@ export default function Home() {
       </section>
 
       {/* КАК МЫ ДЕЛАЕМ ОДЕЖДУ */}
-      <section style={{ padding: '80px 40px', background: '#F2F3F6' }}>
-        <div style={{ display: 'flex', gap: 40, alignItems: 'center', maxWidth: 860, margin: '0 auto' }}>
+      <section style={{ padding: 'clamp(40px, 6vw, 80px) clamp(20px, 5vw, 40px)', background: '#F2F3F6' }}>
+        <div style={{ display: 'flex', gap: 40, alignItems: 'center', maxWidth: 860, margin: '0 auto', flexWrap: 'wrap' }}>
           <div style={{ flex: 1 }}>
             <div style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', fontWeight: 500, marginBottom: 16 }}>
               Как мы делаем одежду
@@ -150,7 +150,7 @@ export default function Home() {
       </section>
 
       {/* КАРТОЧКА ПРОДУКТА */}
-      <section style={{ padding: '80px 40px', background: '#fff' }}>
+      <section style={{ padding: 'clamp(40px, 6vw, 80px) clamp(20px, 5vw, 40px)', background: '#fff' }}>
         <div className="product-card">
           <div className="product-card-photo" style={{
             width: 360, flexShrink: 0, background: '#E8EAED',
@@ -203,7 +203,7 @@ export default function Home() {
                 Деловая одежда для длинного дня. Право не выбирать между комфортом и статусом.
               </p>
             </div>
-            <div style={{ display: 'flex', gap: 64 }}>
+            <div style={{ display: 'flex', gap: 32, flexWrap: 'wrap' }}>
               <div className="footer-col">
                 <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
                   Продукт
