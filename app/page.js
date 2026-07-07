@@ -209,7 +209,7 @@ export default function Home() {
                 Деловая одежда для длинного дня. Право не выбирать между комфортом и статусом.
               </p>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, width: '100%', textAlign: 'center', justifyItems: 'center' }}>
+            <div id="footer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, width: '100%' }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 12, textAlign: 'center' }}>
                 <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
                   Продукт

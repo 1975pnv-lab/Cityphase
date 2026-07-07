@@ -103,22 +103,20 @@ section {
 html {
   scroll-behavior: smooth;
 }
+
 /* ── Футер мобиле ── */
-@media (max-width: 600px) {
-  .footer-cols {
-    flex-direction: column !important;
-    gap: 40px !important;
-    align-items: center !important;
+#footer-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 640px) {
+  #footer-grid {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    justify-items: center;
   }
-  .footer-col {
-    align-items: center !important;
-    text-align: center !important;
-    width: 100% !important;
-  }
-  .footer-col span,
-  .footer-col a {
-    text-align: center !important;
-    display: block !important;
-    width: 100% !important;
+  #footer-grid a,
+  #footer-grid span {
+    display: block;
+    text-align: center;
   }
 }
