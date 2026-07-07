@@ -11,8 +11,9 @@ export default function Home() {
         .footer-link { font-size: 13px; color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.2s; }
         .footer-link:hover { color: #fff; }
         @media (max-width: 600px) {
-          .footer-cols { flex-direction: column !important; gap: 40px !important; text-align: center; }
-          .footer-col { align-items: center; }
+          .footer-cols { flex-direction: column !important; gap: 40px !important; }
+          .footer-col { align-items: center !important; text-align: center !important; width: 100% !important; }
+          .footer-link { text-align: center !important; }
         }
         .product-card { display: flex; border: 0.5px solid #DDE1E9; border-radius: 12px; overflow: hidden; background: #fff; max-width: 860px; margin: 0 auto; }
         .philosophy-text { font-size: 26px; font-weight: 400; color: #1B3A6B; line-height: 1.6; max-width: 720px; letter-spacing: -0.01em; }
