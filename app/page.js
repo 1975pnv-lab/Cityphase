@@ -11,6 +11,7 @@ export default function Home() {
         .footer-link { font-size: 13px; color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.2s; }
         .footer-link:hover { color: #fff; }
         @media (max-width: 600px) {
+          .footer-grid { grid-template-columns: 1fr !important; text-align: center !important; }
           .footer-cols { flex-direction: column !important; gap: 40px !important; align-items: center !important; }
           .footer-col { align-items: center !important; text-align: center !important; width: 100% !important; }
           .footer-col span, .footer-col a { text-align: center !important; display: block !important; }
@@ -208,7 +209,7 @@ export default function Home() {
                 Деловая одежда для длинного дня. Право не выбирать между комфортом и статусом.
               </p>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 32, width: '100%' }}>
+            <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, width: '100%' }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 12, textAlign: 'center' }}>
                 <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
                   Продукт
