@@ -199,7 +199,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer style={{ background: '#0F2240', padding: '56px 40px 32px' }}>
         <div>
-          <div className="footer-inner" style={{ marginBottom: 48 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 40, marginBottom: 48 }}>
             <div style={{ flex: 1 }}>
               <div style={{ fontSize: 14, fontWeight: 500, letterSpacing: '0.18em', color: '#fff', marginBottom: 12 }}>
                 CITYPHASE
@@ -208,7 +208,7 @@ export default function Home() {
                 Деловая одежда для длинного дня. Право не выбирать между комфортом и статусом.
               </p>
             </div>
-            <div style={{ display: 'flex', gap: 32, flexWrap: 'wrap', flexDirection: 'var(--footer-dir, row)' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 32, width: '100%' }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 12, textAlign: 'center' }}>
                 <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
                   Продукт
