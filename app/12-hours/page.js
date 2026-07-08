@@ -708,6 +708,10 @@ nav{
   #s3 .sh,#s4 .sh,#s6 .sh,#s7 .sh{margin-bottom:clamp(64px,16vh,160px)!important}
   #s3,#s6,#s7{padding-bottom:24px}
   #s7{padding-top:0}
+  #s8{padding-top:0!important}
+  .order-left{padding-top:clamp(64px,16vh,160px)}
+  .order-left > div:first-child{margin-top:0!important}
+  .order-name-wrap{margin-bottom:calc(clamp(64px,16vh,160px) - 12px)}
   .hero-h1{white-space:normal}
   .rl,.rr{transform:translateY(24px)}
   #s7{min-height:auto}
