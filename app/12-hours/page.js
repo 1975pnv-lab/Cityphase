@@ -702,6 +702,8 @@ nav{
   .proof-note{padding:16px 32px}
   #s6 .sh{padding-left:32px}
   .det{padding:24px 32px}
+  #s1b,#s1{min-height:100vh;min-height:100svh}
+  .whom-banner{min-height:100vh;min-height:100svh}
   .hero-h1{white-space:normal}
   .rl,.rr{transform:translateY(24px)}
   #s7{min-height:auto}
