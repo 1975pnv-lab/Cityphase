@@ -704,7 +704,8 @@ nav{
   .det{padding:24px 32px}
   #s1b,#s1{min-height:100vh;min-height:100svh}
   .whom-banner{min-height:100vh;min-height:100svh}
-  #s3 .sh,#s6 .sh,#s7 .sh{padding-top:clamp(64px,16vh,160px)!important;margin-bottom:clamp(32px,8vh,80px)}
+  #s3 .sh,#s6 .sh,#s7 .sh{padding-top:clamp(64px,16vh,160px)!important}
+  #s3 .sh,#s4 .sh,#s6 .sh,#s7 .sh{margin-bottom:clamp(64px,16vh,160px)!important}
   #s3,#s6,#s7{padding-bottom:24px}
   #s7{padding-top:0}
   .hero-h1{white-space:normal}
