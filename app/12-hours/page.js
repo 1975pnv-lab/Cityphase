@@ -664,7 +664,9 @@ nav{
   #pager{height:auto;overflow-y:auto;scroll-snap-type:none}
   .sec{height:auto;overflow-y:visible}
   nav{padding:0 24px}
-  .nav-links{display:none}
+  .nav-cta{display:none}
+  .nav-links{display:flex;position:static;transform:none;gap:20px;margin-left:auto}
+  .nav-links li:first-child{display:none}
   .sdots{display:none}
   .scta{bottom:16px;right:16px;padding:12px 20px;font-size:11px}
   #s0{grid-template-columns:1fr}
