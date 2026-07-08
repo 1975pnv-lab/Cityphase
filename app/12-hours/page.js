@@ -700,6 +700,10 @@ nav{
   .opt-btn{padding:8px 12px;font-size:13px}
   .footer-inner{padding:28px 32px;flex-direction:column;align-items:flex-start}
   .proof-note{padding:16px 32px}
+  #s6 .sh{padding-left:32px}
+  .det{padding:24px 32px}
+  .hero-h1{white-space:normal}
+  .rl,.rr{transform:translateY(24px)}
   #s7{min-height:auto}
   .proof-card-bg{display:none}
   .det-ph{display:none}
@@ -880,7 +884,7 @@ const PAGE_HTML = `<!-- NAV -->
     </div>
     <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Доставка по всей России? <span class="faq-arr">+</span></button><div class="faq-a">Да, по всей России. Доставляем через СДЭК. Стоимость доставки берём на себя.</div>
     </div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Что значит «Основатель #N из 200»? <span class="faq-arr">+</span></button><div class="faq-a">Первые 200 покупателей получают именной порядковый номер — навсегда. На email придёт цифровой сертификат и приглашение в закрытый Telegram-канал «CityPhase — Основатели» — возможность влиять на разработку следующих продуктов CITYPHASE и ранний доступ к новым партиям.</div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Что значит «Основатель #N из 200»? <span class="faq-arr">+</span></button><div class="faq-a">Первые 200 покупателей получают именной порядковый номер — навсегда. На email придёт цифровой сертификат и приглашение в закрытый Telegram-канал «CityPhase — Основатели» — возможность влиять на разработку следующих продуктов CityPhase и ранний доступ к новым партиям.</div>
     </div>
     <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Какой срок возврата? <span class="faq-arr">+</span></button><div class="faq-a">Мы уверены в своём продукте. Поэтому даём вам 30 дней с момента получения, чтобы убедиться в этом самому — примерьте, проверьте посадку и качество. Если не подошло — напишите на hello@cityphase.ru. Вернём полную стоимость при возврате товара с сохранёнными этикетками и упаковкой в течение 3 рабочих дней после получения его нами.</div>
     </div>
@@ -902,7 +906,7 @@ const PAGE_HTML = `<!-- NAV -->
         <p style="font-family:var(--body);font-size:13px;color:var(--ink);line-height:1.7;">Мы уверены в своём продукте. Поэтому даём вам 30 дней с момента получения, чтобы убедиться в этом самому — примерьте, проверьте посадку и качество. Если не подошло — напишите на hello@cityphase.ru. Вернём полную стоимость при возврате товара с сохранёнными этикетками и упаковкой в течение 3 рабочих дней после получения его нами.</p>
       </div>
     </div>
-<div id="form" class="form-right rr"><h3 class="form-title">Первая партия — 200 единиц</h3><p class="form-sub">Каждый покупатель получает именной статус «Основатель #N из 200» и возможность влиять на разработку следующих продуктов CITYPHASE. Запись открыта до 25 августа. Оплата после подтверждения заявки.</p><div class="form-bar">  <div class="bar-track"><div class="bar-fill" id="barFill" style="width:0%"></div></div>  <span class="bar-txt" id="barTxt">осталось <span id="spotsLeft">200</span> мест</span></div><div class="urg">  <div><span class="urg-n" id="urgSpots">200</span><span class="urg-l">мест осталось</span></div>  <div><span class="urg-n">25 августа</span><span class="urg-l">дедлайн</span></div></div><div class="form-fields" id="ff">  <input class="fi" type="text" id="fn" placeholder="Ваше имя" required>  <input class="fi" type="email" id="fe" placeholder="Email" required>    <div class="frow" style="flex-direction:column;gap:16px;">
+<div id="form" class="form-right rr"><h3 class="form-title">Первая партия — 200 единиц</h3><p class="form-sub">Каждый покупатель получает именной статус «Основатель #N из 200» и возможность влиять на разработку следующих продуктов CityPhase. Запись открыта до 25 августа. Оплата после подтверждения заявки.</p><div class="form-bar">  <div class="bar-track"><div class="bar-fill" id="barFill" style="width:0%"></div></div>  <span class="bar-txt" id="barTxt">осталось <span id="spotsLeft">200</span> мест</span></div><div class="urg">  <div><span class="urg-n" id="urgSpots">200</span><span class="urg-l">мест осталось</span></div>  <div><span class="urg-n">25 августа</span><span class="urg-l">дедлайн</span></div></div><div class="form-fields" id="ff">  <input class="fi" type="text" id="fn" placeholder="Ваше имя" required>  <input class="fi" type="email" id="fe" placeholder="Email" required>    <div class="frow" style="flex-direction:column;gap:16px;">
     <div>
       <p style="font-size:12px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink);margin-bottom:8px;">Цвет</p>
       <div style="display:flex;gap:8px;" id="colorBtns">
