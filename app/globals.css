@@ -139,3 +139,12 @@ html {
     text-align: center;
   }
 }
+
+/* ── Мобильный футер (technology, about) ── */
+@media (max-width: 640px) {
+  .f-cols { flex-direction: column !important; gap: 40px !important; }
+  .f-brand { display: flex !important; flex-direction: column !important; align-items: center !important; text-align: center !important; }
+  .f-brand p { margin: 0 auto !important; text-align: center !important; }
+  .f-nav { flex-direction: column !important; gap: 40px !important; width: 100% !important; }
+  .f-col { align-items: center !important; text-align: center !important; width: 100% !important; }
+}
