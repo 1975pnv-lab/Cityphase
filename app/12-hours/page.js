@@ -599,6 +599,7 @@ nav{
 }
 .fsub:hover{background:var(--navy2)}
 .fpriv{font-family:var(--body);font-size:12px;font-weight:400;color:var(--ink);margin-top:10px;line-height:1.6}
+.g-mob{display:none}
 .form-ok{display:none;padding:24px;border-left:3px solid var(--teal);background:#fff;font-family:var(--body);font-size:15px;font-weight:400;color:var(--fg);line-height:1.7}
 
 /* footer */
@@ -699,6 +700,11 @@ nav{
   .opt-btn{padding:8px 12px;font-size:13px}
   .footer-inner{padding:28px 32px;flex-direction:column;align-items:flex-start}
   .proof-note{padding:16px 32px}
+  #s7{min-height:auto}
+  .proof-card-bg{display:none}
+  .det-ph{display:none}
+  .g-desk{display:none}
+  .g-mob{display:block;padding:32px 20px;border-top:1px solid var(--mist)}
 }
 @media(max-width:600px){
   .props-grid{grid-template-columns:1fr}
@@ -835,7 +841,6 @@ const PAGE_HTML = `<!-- NAV -->
     <div class="proof-card"><div class="proof-card-bg ph" style="background:linear-gradient(160deg,var(--navy-dark),#080f1e)">  <div class="play-btn"></div></div><div class="proof-body">  <p class="proof-num">Тест 04</p>  <p class="proof-title">«12 часов»</p>  <p class="proof-desc">Надеваете утром. Снимаете видео в 9 утра и в 9 вечера. Воротник держит форму, ткань не помялась.<br><br><em>Почему: она спроектирована именно для этого.</em></p></div>
     </div>
   </div>
-  <p class="proof-note r">Видео появятся после получения первых образцов ткани.</p>
 </section>
 
 <!-- S4 WHAT YOU GET -->
@@ -862,7 +867,7 @@ const PAGE_HTML = `<!-- NAV -->
 
 
 <!-- S7 FAQ -->
-<section class="sec" id="s7" style="height:auto;min-height:100vh;overflow:visible">
+<section class="sec" id="s7" style="height:auto;overflow:visible">
   <h2 class="sh r" style="padding-top:8px;">Частые <em>вопросы.</em></h2>
   <div class="faq-list r">
     <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Когда будет готова рубашка? <span class="faq-arr">+</span></button><div class="faq-a">Первая партия — 200 единиц. Производство планируется завершить к сентябрю 2026. За всеми этапами производства и доставки можно следить в нашем Телеграм-канале: <a href="https://t.me/cityphase_ru" style="color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mist)">@cityphase_ru</a>. После поступления товара на склад вы получите счёт на оплату.</div>
@@ -875,7 +880,7 @@ const PAGE_HTML = `<!-- NAV -->
     </div>
     <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Доставка по всей России? <span class="faq-arr">+</span></button><div class="faq-a">Да, по всей России. Доставляем через СДЭК. Стоимость доставки берём на себя.</div>
     </div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Что значит «Основатель #N из 200»? <span class="faq-arr">+</span></button><div class="faq-a">Первые 200 покупателей получают именной порядковый номер — навсегда. На email придёт цифровой сертификат и приглашение в закрытый Telegram-канал: фото с производства, голосования за следующий цвет, ранние анонсы.</div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Что значит «Основатель #N из 200»? <span class="faq-arr">+</span></button><div class="faq-a">Первые 200 покупателей получают именной порядковый номер — навсегда. На email придёт цифровой сертификат и приглашение в закрытый Telegram-канал «CityPhase — Основатели» — возможность влиять на разработку следующих продуктов CITYPHASE и ранний доступ к новым партиям.</div>
     </div>
     <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Какой срок возврата? <span class="faq-arr">+</span></button><div class="faq-a">Мы уверены в своём продукте. Поэтому даём вам 30 дней с момента получения, чтобы убедиться в этом самому — примерьте, проверьте посадку и качество. Если не подошло — напишите на hello@cityphase.ru. Вернём полную стоимость при возврате товара с сохранёнными этикетками и упаковкой в течение 3 рабочих дней после получения его нами.</div>
     </div>
@@ -883,7 +888,7 @@ const PAGE_HTML = `<!-- NAV -->
     </div>
     <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Могу ли я порекомендовать рубашку коллеге с выгодой? <span class="faq-arr">+</span></button><div class="faq-a">Да. Через 7 дней после получения мы пришлём персональный промокод. Поделитесь с коллегой — оба получите приятный бонус на следующую покупку. Подробности — в письме.</div>
     </div>
-    <div class="faq-item" style="border-bottom:none"><button class="faq-q" onclick="toggleFaq(this)">Есть ещё вопросы? <span class="faq-arr">+</span></button><div class="faq-a">Пишите в Телеграм-канал <a href="https://t.me/cityphase_ru" style="color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mist)">@cityphase_ru</a> или на почту <a href="mailto:hello@cityphase.ru" style="color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mist)">hello@cityphase.ru</a>.</div>
+    <div class="faq-item" style="border-bottom:none"><button class="faq-q" onclick="toggleFaq(this)">Есть ещё вопросы? <span class="faq-arr">+</span></button><div class="faq-a">Пишите нам на почту <a href="mailto:hello@cityphase.ru" style="color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mist)">hello@cityphase.ru</a></div>
     </div>
   </div>
 </section>
@@ -892,12 +897,12 @@ const PAGE_HTML = `<!-- NAV -->
 <section class="sec" id="s8" style="height:auto;min-height:100vh;padding:57px 0 0;overflow:visible">
   <div class="order-wrap">
     <div class="order-left rl"><div style="display:flex;flex-direction:column;gap:12px;margin-top:40px;margin-bottom:40px;flex:0 0 auto;"><div class="order-name-wrap">  <h2 class="order-name">12 Hours <span class="order-star">★</span></h2>  <span class="order-name-sub">длинный день — один выбор.</span></div><p class="order-tagline">Больше не нужно выбирать между статусом и комфортом.</p><p class="order-price-tag">15 900 ₽</p></div><div style="height:1px;background:var(--mist);margin:24px 0;"></div>
-<div style="margin-top:auto;">
+<div class="g-desk" style="margin-top:auto;">
         <p style="font-family:var(--display);font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--teal);margin-bottom:12px;">Расширенная гарантия</p>
         <p style="font-family:var(--body);font-size:13px;color:var(--ink);line-height:1.7;">Мы уверены в своём продукте. Поэтому даём вам 30 дней с момента получения, чтобы убедиться в этом самому — примерьте, проверьте посадку и качество. Если не подошло — напишите на hello@cityphase.ru. Вернём полную стоимость при возврате товара с сохранёнными этикетками и упаковкой в течение 3 рабочих дней после получения его нами.</p>
       </div>
     </div>
-<div id="form" class="form-right rr"><h3 class="form-title">Первая партия — 200 единиц</h3><p class="form-sub">Каждый покупатель получает именной статус «Основатель #N из 200». Запись открыта до 25 августа. Оплата после подтверждения заявки.</p><div class="form-bar">  <div class="bar-track"><div class="bar-fill" id="barFill" style="width:0%"></div></div>  <span class="bar-txt" id="barTxt">осталось <span id="spotsLeft">200</span> мест</span></div><div class="urg">  <div><span class="urg-n" id="urgSpots">200</span><span class="urg-l">мест осталось</span></div>  <div><span class="urg-n">25 августа</span><span class="urg-l">дедлайн</span></div></div><div class="form-fields" id="ff">  <input class="fi" type="text" id="fn" placeholder="Ваше имя" required>  <input class="fi" type="email" id="fe" placeholder="Email" required>    <div class="frow" style="flex-direction:column;gap:16px;">
+<div id="form" class="form-right rr"><h3 class="form-title">Первая партия — 200 единиц</h3><p class="form-sub">Каждый покупатель получает именной статус «Основатель #N из 200» и возможность влиять на разработку следующих продуктов CITYPHASE. Запись открыта до 25 августа. Оплата после подтверждения заявки.</p><div class="form-bar">  <div class="bar-track"><div class="bar-fill" id="barFill" style="width:0%"></div></div>  <span class="bar-txt" id="barTxt">осталось <span id="spotsLeft">200</span> мест</span></div><div class="urg">  <div><span class="urg-n" id="urgSpots">200</span><span class="urg-l">мест осталось</span></div>  <div><span class="urg-n">25 августа</span><span class="urg-l">дедлайн</span></div></div><div class="form-fields" id="ff">  <input class="fi" type="text" id="fn" placeholder="Ваше имя" required>  <input class="fi" type="email" id="fe" placeholder="Email" required>    <div class="frow" style="flex-direction:column;gap:16px;">
     <div>
       <p style="font-size:12px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink);margin-bottom:8px;">Цвет</p>
       <div style="display:flex;gap:8px;" id="colorBtns">
@@ -920,6 +925,10 @@ const PAGE_HTML = `<!-- NAV -->
     <input type="hidden" id="fc" value="">
     <input type="hidden" id="fz" value="">
   </div>  <a href="/sizes" class="form-sizes-ref" target="_blank">Как определить размер →</a>  <input class="fi" type="text" id="fpromo" placeholder="Промокод (если есть)">  <button class="fsub" onclick="send()">Предзаказ</button>  <!-- TODO: EmailJS — emailjs.send('service','template',{name,email,size,color,promo}) -->  <p class="fpriv">Нажимая кнопку, вы соглашаетесь на получение письма с подтверждением заявки.</p>  <div class="tg-cta">    <a href="https://t.me/cityphase_ru" class="tg-link" target="_blank">      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 7.03l-1.69 7.96c-.13.58-.47.72-.95.45l-2.63-1.94-1.27 1.22c-.14.14-.26.26-.53.26l.19-2.68 4.87-4.4c.21-.19-.05-.29-.33-.1L8.42 14.09l-2.59-.81c-.56-.18-.57-.56.12-.83l10.12-3.9c.47-.17.88.11.76.82z" fill="currentColor"/></svg>      Следите за нашим проектом в Телеграмм    </a>  </div></div><div class="form-ok" id="fok">Заявка принята. Мы пришлём письмо с вашим именным номером и деталями оплаты. Добро пожаловать в число первых.</div>
+    </div>
+    <div class="g-mob">
+        <p style="font-family:var(--display);font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--teal);margin-bottom:12px;">Расширенная гарантия</p>
+        <p style="font-family:var(--body);font-size:13px;color:var(--ink);line-height:1.7;">Мы уверены в своём продукте. Поэтому даём вам 30 дней с момента получения, чтобы убедиться в этом самому — примерьте, проверьте посадку и качество. Если не подошло — напишите на hello@cityphase.ru. Вернём полную стоимость при возврате товара с сохранёнными этикетками и упаковкой в течение 3 рабочих дней после получения его нами.</p>
     </div>
   </div>
   <footer style="background:#0F2240;padding:56px 60px 32px;">
