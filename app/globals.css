@@ -30,7 +30,6 @@ body {
 .btn-row { display: flex; gap: 12px; }
 
 @media (max-width: 860px) {
-  .nav-links { display: none; }
   .hero-section { flex-direction: column; }
   .hero-photo { width: 100% !important; height: 220px !important; }
   .btn-row { flex-direction: column; }
@@ -39,9 +38,29 @@ body {
   .footer-inner { flex-direction: column; align-items: center; gap: 12px; text-align: center; }
 }
 @media (max-width: 640px) {
-  .nav-links {
-    display: none !important;
+  /* Мобильная шапка: ссылки LYONEX + О бренде, без зелёного Предзаказа */
+  nav .nav-links {
+    display: flex !important;
+    position: static !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 0 0 0 auto !important;
+    gap: 18px !important;
   }
+  nav .nav-links li:first-child { display: none !important; }
+  nav > a:last-child { display: none !important; }
+}
+@media (max-width: 860px) {
+  nav .nav-links {
+    display: flex !important;
+    position: static !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 0 0 0 auto !important;
+    gap: 18px !important;
+  }
+  nav .nav-links li:first-child { display: none !important; }
+  nav > a:last-child { display: none !important; }
 }
 /* ── Sticky навбар ── */
 nav {

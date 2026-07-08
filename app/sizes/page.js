@@ -200,7 +200,9 @@ footer{
 
 @media(max-width:900px){
   nav{padding:0 24px}
-  .nav-links{display:none}
+  nav .nav-links{display:flex!important;gap:18px;margin-left:auto}
+  nav .nav-links li:first-child{display:none!important}
+  nav .nav-back{display:none!important}
   .page-wrap{padding:40px 24px 72px}
   .sz-wrap{grid-template-columns:1fr}
   .sz-diagram{border-right:none;border-bottom:1px solid var(--mist);min-height:auto}
@@ -212,8 +214,8 @@ const PAGE_HTML = `<!-- NAV -->
 <nav>
   <a href="/" class="nav-logo">CityPhase</a>
   <ul class="nav-links">
-    <li><a href="/12-hours">Коллекция</a></li>
-    <li><a href="/technology">Технология</a></li>
+    <li><a href="/12-hours">Рубашка 12 Hours ★</a></li>
+    <li><a href="/technology">Ткань LYONEX</a></li>
     <li><a href="/about">О бренде</a></li>
   </ul>
   <a href="/12-hours#s9" class="nav-back">← Вернуться к заказу</a>

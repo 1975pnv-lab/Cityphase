@@ -664,9 +664,10 @@ nav{
   #pager{height:auto;overflow-y:auto;scroll-snap-type:none}
   .sec{height:auto;overflow-y:visible}
   nav{padding:0 24px}
-  .nav-cta{display:none}
-  .nav-links{display:flex;position:static;transform:none;gap:20px;margin-left:auto}
-  .nav-links li:first-child{display:none}
+  nav .nav-cta{display:none!important}
+  nav .nav-links{display:flex!important;position:static!important;left:auto!important;transform:none!important;gap:18px!important;margin-left:auto!important}
+  nav .nav-links li:first-child{display:none!important}
+  nav .nav-links a{font-size:13px!important;opacity:.75}
   .sdots{display:none}
   .scta{bottom:16px;right:16px;padding:12px 20px;font-size:11px}
   #s0{grid-template-columns:1fr}
