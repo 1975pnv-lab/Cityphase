@@ -15,8 +15,6 @@ export default function Home() {
           .footer-cols { flex-direction: column !important; gap: 40px !important; align-items: center !important; }
           .footer-col { align-items: center !important; text-align: center !important; width: 100% !important; }
           .footer-col span, .footer-col a { text-align: center !important; display: block !important; }
-          .footer-brand { flex: none !important; width: 100% !important; display: flex !important; flex-direction: column !important; align-items: center !important; text-align: center !important; }
-          .footer-brand p { margin: 0 auto !important; text-align: center !important; }
         }
         .product-card { display: flex; border: 0.5px solid #DDE1E9; border-radius: 12px; overflow: hidden; background: #fff; max-width: 860px; margin: 0 auto; }
         .philosophy-text { font-size: 26px; font-weight: 400; color: #1B3A6B; line-height: 1.6; max-width: 720px; letter-spacing: -0.01em; }
@@ -202,8 +200,8 @@ export default function Home() {
       {/* FOOTER */}
       <footer style={{ background: '#0F2240', padding: '56px 40px 32px' }}>
         <div>
-          <div className="footer-cols" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 40, marginBottom: 48 }}>
-            <div className="footer-brand" style={{ flex: 1 }}>
+          <div className="f-cols" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 64, marginBottom: 48 }}>
+            <div className="f-brand" style={{ flex: 1 }}>
               <div style={{ fontSize: 14, fontWeight: 500, letterSpacing: '0.18em', color: '#fff', marginBottom: 12 }}>
                 CITYPHASE
               </div>
@@ -211,28 +209,28 @@ export default function Home() {
                 Деловая одежда для длинного дня. Право не выбирать между комфортом и статусом.
               </p>
             </div>
-            <div id="footer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, width: '100%' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 12, textAlign: 'center' }}>
+            <div className="f-nav" style={{ display: 'flex', gap: 64 }}>
+              <div className="f-col" style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
                   Продукт
                 </span>
-                <a href="/12-hours" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none", textAlign: "center", display: "block" }}>12 Hours ★</a>
-                <a href="/technology" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none", textAlign: "center", display: "block" }}>Ткань LYONEX</a>
-                <a href="/sizes" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none", textAlign: "center", display: "block" }}>Каталог</a>
+                <a href="/12-hours" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>12 Hours ★</a>
+                <a href="/technology" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Ткань LYONEX</a>
+                <a href="/sizes" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Каталог</a>
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 12, textAlign: 'center' }}>
+              <div className="f-col" style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
                   Бренд
                 </span>
-                <a href="/about" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none", textAlign: "center", display: "block" }}>О бренде</a>
-                <a href="/about#how" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none", textAlign: "center", display: "block" }}>Как мы делаем одежду</a>
+                <a href="/about" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>О бренде</a>
+                <a href="/about#how" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Как мы делаем одежду</a>
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 12, textAlign: 'center' }}>
+              <div className="f-col" style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
                   Контакты
                 </span>
-                <a href="mailto:hello@cityphase.ru" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none", textAlign: "center", display: "block" }}>hello@cityphase.ru</a>
-                <a href="https://t.me/cityphase_ru" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none", textAlign: "center", display: "block" }}>Telegram @cityphase_ru</a>
+                <a href="mailto:hello@cityphase.ru" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>hello@cityphase.ru</a>
+                <a href="https://t.me/cityphase_ru" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Telegram @cityphase_ru</a>
               </div>
             </div>
           </div>
