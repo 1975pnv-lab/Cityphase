@@ -19,7 +19,7 @@ export default function Technology() {
         </a>
       </nav>
 
-            {/* S1 LYONEX BANNER */}
+      {/* S0 HERO */}
       <section style={{ background: '#1B3A6B', padding: '80px 40px' }}>
         <div style={{ maxWidth: 860, margin: '0 auto' }}>
           <p style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 16 }}>
@@ -29,63 +29,109 @@ export default function Technology() {
             LYONEX
           </h1>
           <p style={{ fontSize: 17, color: 'rgba(255,255,255,0.75)', lineHeight: 1.65, maxWidth: 620 }}>
-            Одна платформа волокна — нейлон, лиоцелл и эластан. Дифференциация линеек через структуру плетения и граммаж, не через химический состав.
+            LYONEX — ткань из трёх волокон: лиоцелла, нейлона и эластана. Именно такой состав позволяет ей выдержать 12-часовой рабочий день.
           </p>
         </div>
       </section>
 
-      {/* S2 ТРИ СВОЙСТВА */}
+      {/* S2 ПОЧЕМУ НЕ НАТУРАЛЬНЫЕ ТКАНИ */}
       <section style={{ background: '#F2F3F6', padding: '80px 40px' }}>
-        <div style={{ maxWidth: 640, margin: '0 auto' }}>
-          <p style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 40 }}>
-            ТОЛЬКО ТО, ЧТО МОЖНО ПРОВЕРИТЬ
-          </p>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 40 }}>
-            <div>
-              <h3 style={{ fontSize: 20, fontWeight: 600, color: '#1B3A6B', marginBottom: 12 }}>
-                Почти не мнётся
-              </h3>
-              <p style={{ fontSize: 15, color: '#3D4558', lineHeight: 1.7 }}>
-                Сложите рубашку, уберите в чемодан на ночь — достаньте утром. Складки расправляются без утюга. Трикотажная структура LYONEX возвращает форму самостоятельно.
-              </p>
-            </div>
-            <div>
-              <h3 style={{ fontSize: 20, fontWeight: 600, color: '#1B3A6B', marginBottom: 12 }}>
-                Сохнет за час
-              </h3>
-              <p style={{ fontSize: 15, color: '#3D4558', lineHeight: 1.7 }}>
-                После стирки или интенсивного дня — 60–90 минут при комнатной температуре. Лиоцелл отводит влагу быстро, нейлон не удерживает воду в структуре полотна.
-              </p>
-            </div>
-            <div>
-              <h3 style={{ fontSize: 20, fontWeight: 600, color: '#1B3A6B', marginBottom: 12 }}>
-                4-way stretch
-              </h3>
-              <p style={{ fontSize: 15, color: '#3D4558', lineHeight: 1.7 }}>
-                Тянется во всех направлениях. Можно поднять руки, сесть, наклониться — рубашка не тянет и не выбивается из брюк.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* S3 ПОЧЕМУ НЕ ХЛОПОК */}
-      <section style={{ background: '#fff', padding: '80px 40px' }}>
         <div style={{ maxWidth: 640, margin: '0 auto' }}>
           <p style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 24 }}>
             СРАВНЕНИЕ
           </p>
           <h2 style={{ fontSize: 28, fontWeight: 600, color: '#1B3A6B', marginBottom: 32, lineHeight: 1.3 }}>
-            Почему не хлопок
+            Почему не натуральные ткани
           </h2>
           <p style={{ fontSize: 16, color: '#3D4558', lineHeight: 1.7, marginBottom: 20 }}>
-            Хлопок мнётся — и эффект non-iron у обработанного хлопка вымывается после 30–50 стирок. LYONEX не требует химической обработки: свойства заложены в структуру волокна и не деградируют со временем.
+            Традиционные натуральные ткани хороши сами по себе, но длинный деловой день — непростое испытание. К обеду появляются заломы, после стирки нужна глажка, а поддержание вида требует химчистки. Обработка против сминания помогает недолго — со временем она вымывается, и ткань возвращается к своей природе.
           </p>
           <p style={{ fontSize: 16, color: '#3D4558', lineHeight: 1.7 }}>
-            Хлопок сохнет медленно. Лиоцелл в составе LYONEX сохнет в разы быстрее — это физика волокна, а не маркетинговое утверждение.
+            Мы не отказались от натурального. Мы взяли у него главное — мягкость и ощущение на коже — и убрали слабые стороны. Как именно, объясняет состав LYONEX.
           </p>
         </div>
       </section>
+
+      {/* S3 ТРИ ВОЛОКНА */}
+      <section style={{ background: '#fff', padding: '80px 40px' }}>
+        <div style={{ maxWidth: 640, margin: '0 auto' }}>
+          <p style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 24 }}>
+            СОСТАВ
+          </p>
+          <h2 style={{ fontSize: 28, fontWeight: 600, color: '#1B3A6B', marginBottom: 40, lineHeight: 1.3 }}>
+            Три волокна — три задачи
+          </h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 36 }}>
+            <div>
+              <h3 style={{ fontSize: 20, fontWeight: 600, color: '#1B3A6B', marginBottom: 12 }}>
+                Лиоцелл
+              </h3>
+              <p style={{ fontSize: 15, color: '#3D4558', lineHeight: 1.7 }}>
+                Новое, современное волокно из древесной целлюлозы. Отвечает за то, как ткань ощущается: мягкая, приятная на коже, как натуральный материал. Отводит влагу от тела, не накапливает запах и даёт матовую поверхность без блеска.
+              </p>
+            </div>
+            <div>
+              <h3 style={{ fontSize: 20, fontWeight: 600, color: '#1B3A6B', marginBottom: 12 }}>
+                Нейлон
+              </h3>
+              <p style={{ fontSize: 15, color: '#3D4558', lineHeight: 1.7 }}>
+                Держит форму. Именно нейлон отвечает за то, что рубашка почти не мнётся и восстанавливается после стирки. Он же даёт прочность и долговечность.
+              </p>
+            </div>
+            <div>
+              <h3 style={{ fontSize: 20, fontWeight: 600, color: '#1B3A6B', marginBottom: 12 }}>
+                Эластан
+              </h3>
+              <p style={{ fontSize: 15, color: '#3D4558', lineHeight: 1.7 }}>
+                Свобода движений. Ткань тянется во всех направлениях — можно поднять руки, сесть, наклониться, и рубашка не сковывает и не тянет.
+              </p>
+            </div>
+          </div>
+          <p style={{ fontSize: 16, color: '#1B3A6B', lineHeight: 1.7, marginTop: 40, fontWeight: 500 }}>
+            Лиоцелл — то, что отличает LYONEX от обычных рубашек из синтетики. Это он даёт ткани ощущение натурального материала.
+          </p>
+        </div>
+      </section>
+
+      {/* S4 СВОЙСТВА ТРИКОТАЖНОГО ПОЛОТНА */}
+      <section style={{ background: '#F2F3F6', padding: '80px 40px' }}>
+        <div style={{ maxWidth: 640, margin: '0 auto' }}>
+          <p style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 24 }}>
+            СВОЙСТВА
+          </p>
+          <h2 style={{ fontSize: 28, fontWeight: 600, color: '#1B3A6B', marginBottom: 32, lineHeight: 1.3 }}>
+            Свойства трикотажного полотна
+          </h2>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 16 }}>
+            {[
+              'Ощущается на теле как натуральная ткань',
+              'Почти не мнётся, держит форму',
+              'Матовая поверхность, без блеска',
+              'Ноская и прочная, не образует катышков',
+              'Не удерживает влагу и запах',
+              'Тянется в 4 направлениях',
+            ].map((item, i) => (
+              <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 14, fontSize: 16, color: '#3D4558', lineHeight: 1.6 }}>
+                <span style={{ color: '#1D9E75', fontWeight: 600, flexShrink: 0 }}>—</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* S6 CTA */}
+      <section style={{ background: '#fff', padding: '80px 40px' }}>
+        <div style={{ maxWidth: 640, margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ fontSize: 28, fontWeight: 600, color: '#1B3A6B', marginBottom: 28, lineHeight: 1.3 }}>
+            Тесты рубашки из ткани LYONEX
+          </h2>
+          <a href="/12-hours" style={{ display: 'inline-block', background: '#1B3A6B', color: '#fff', fontSize: 15, fontWeight: 500, padding: '16px 36px', borderRadius: 4, textDecoration: 'none' }}>
+            Смотреть 12 Hours ★ →
+          </a>
+        </div>
+      </section>
+
 
 {/* FOOTER */}
       <footer style={{ background: '#0F2240', padding: '56px 40px 32px' }}>
