@@ -142,14 +142,12 @@ export default function About() {
                 </span>
                 <a href="/12-hours" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>12 Hours ★</a>
                 <a href="/technology" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Ткань LYONEX</a>
-                <a href="/sizes" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Каталог</a>
               </div>
               <div className="f-col" style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
                   Бренд
                 </span>
                 <a href="/about" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>О бренде</a>
-                <a href="/about#how" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Как мы делаем одежду</a>
               </div>
               <div className="f-col" style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)', marginBottom: 4 }}>
