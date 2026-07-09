@@ -20,7 +20,8 @@ export default function Technology() {
       </nav>
 
       {/* S0 HERO */}
-      <section style={{ background: 'linear-gradient(135deg,#0a1628 0%,#0d1f3c 60%,#0f2a4a 100%)', padding: '80px 40px' }}>
+      <section className="hero-band" style={{ background: 'linear-gradient(135deg,#0a1628 0%,#0d1f3c 60%,#0f2a4a 100%)', padding: '80px 40px' }}>
+        <span className="hero-12" aria-hidden="true">12</span>
         <div style={{ maxWidth: 640 }}>
           <p style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1D9E75', marginBottom: 16 }}>
             ТКАНЬ

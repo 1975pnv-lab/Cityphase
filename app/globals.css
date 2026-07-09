@@ -148,3 +148,39 @@ html {
   .f-nav { flex-direction: column !important; align-items: center !important; gap: 40px !important; width: 100% !important; }
   .f-col { align-items: center !important; text-align: center !important; width: 100% !important; }
 }
+
+/* ── Watermark «12» + teal-свечение на синих Hero (technology, about) ── */
+.hero-band {
+  position: relative;
+  overflow: hidden;
+}
+.hero-band > * {
+  position: relative;
+  z-index: 1;
+}
+.hero-band::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(ellipse at 80% 50%, rgba(29,158,117,.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero-12 {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 400px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -20px;
+  color: rgba(255,255,255,.03);
+  pointer-events: none;
+  user-select: none;
+}
+@media (max-width: 640px) {
+  .hero-12 { display: none; }
+}
