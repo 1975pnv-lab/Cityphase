@@ -15,6 +15,8 @@ export default function Home() {
           .footer-cols { flex-direction: column !important; gap: 40px !important; align-items: center !important; }
           .footer-col { align-items: center !important; text-align: center !important; width: 100% !important; }
           .footer-col span, .footer-col a { text-align: center !important; display: block !important; }
+          .footer-brand { flex: none !important; width: 100% !important; display: flex !important; flex-direction: column !important; align-items: center !important; text-align: center !important; }
+          .footer-brand p { margin: 0 auto !important; text-align: center !important; }
         }
         .product-card { display: flex; border: 0.5px solid #DDE1E9; border-radius: 12px; overflow: hidden; background: #fff; max-width: 860px; margin: 0 auto; }
         .philosophy-text { font-size: 26px; font-weight: 400; color: #1B3A6B; line-height: 1.6; max-width: 720px; letter-spacing: -0.01em; }
@@ -200,8 +202,8 @@ export default function Home() {
       {/* FOOTER */}
       <footer style={{ background: '#0F2240', padding: '56px 40px 32px' }}>
         <div>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 40, marginBottom: 48 }}>
-            <div style={{ flex: 1 }}>
+          <div className="footer-cols" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 40, marginBottom: 48 }}>
+            <div className="footer-brand" style={{ flex: 1 }}>
               <div style={{ fontSize: 14, fontWeight: 500, letterSpacing: '0.18em', color: '#fff', marginBottom: 12 }}>
                 CITYPHASE
               </div>
