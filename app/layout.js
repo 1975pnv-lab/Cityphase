@@ -10,7 +10,7 @@ const onest = Onest({
 
 export const metadata = {
   metadataBase: new URL("https://cityphase.ru"),
-  verification: { yandex: "303362c84aaec23e" },
+  verification: { yandex: "23a2fa5d07197aac" },
   title: "CityPhase — деловая одежда для длинного дня",
   description: "Деловая одежда для длинного рабочего дня: не мнётся, тянется, быстро сохнет, не удерживает запах. Российский бренд, первая партия — предзаказ.",
 };
