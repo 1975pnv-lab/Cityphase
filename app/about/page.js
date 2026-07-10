@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "О бренде CityPhase — деловая одежда для длинного дня",
+  description: "CityPhase — российский бренд деловой одежды для длинного рабочего дня. Каждое решение обосновано. Начинаем с рубашки 12 Hours.",
+  alternates: { canonical: "https://cityphase.ru/about" },
+};
+
 export default function About() {
   return (
     <main style={{ background: '#fff', minHeight: '100vh' }}>

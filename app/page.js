@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "CityPhase — деловая одежда для длинного дня",
+  description: "Рубашки для длинного рабочего дня: не мнутся, тянутся, быстро сохнут, не удерживают запах. Российский бренд. Первая партия — предзаказ.",
+  alternates: { canonical: "https://cityphase.ru/" },
+};
+
 export default function Home() {
   return (
     <main>

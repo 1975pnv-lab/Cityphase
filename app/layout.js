@@ -9,8 +9,9 @@ const onest = Onest({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://cityphase.ru"),
   title: "CityPhase — деловая одежда для длинного дня",
-  description: "Деловая одежда, созданная инженерами. Не мнётся, тянется, сохнет за час.",
+  description: "Деловая одежда для длинного рабочего дня: не мнётся, тянется, быстро сохнет, не удерживает запах. Российский бренд, первая партия — предзаказ.",
 };
 
 export default function RootLayout({ children }) {

@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Ткань LYONEX — состав и свойства | CityPhase",
+  description: "LYONEX — трикотаж из лиоцелла, нейлона и эластана. Не мнётся, тянется в 4 направлениях, не удерживает влагу и запах, матовая поверхность.",
+  alternates: { canonical: "https://cityphase.ru/technology" },
+};
+
 export default function Technology() {
   return (
     <main style={{ background: '#fff', minHeight: '100vh' }}>
