@@ -944,7 +944,7 @@ const PAGE_HTML = `<!-- NAV -->
     </div>
     <input type="hidden" id="fc" value="">
     <input type="hidden" id="fz" value="">
-  </div>  <a href="/sizes" class="form-sizes-ref" target="_blank">Как определить размер →</a>  <input class="fi" type="text" id="fpromo" placeholder="Промокод (если есть)">  <button class="fsub" onclick="send()">Предзаказ</button>  <!-- TODO: EmailJS — emailjs.send('service','template',{name,email,size,color,promo}) -->  <p class="fpriv">Нажимая кнопку, вы соглашаетесь на получение письма с подтверждением заявки.</p>  <div class="tg-cta">    <a href="https://t.me/cityphase_ru" class="tg-link" target="_blank">      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 7.03l-1.69 7.96c-.13.58-.47.72-.95.45l-2.63-1.94-1.27 1.22c-.14.14-.26.26-.53.26l.19-2.68 4.87-4.4c.21-.19-.05-.29-.33-.1L8.42 14.09l-2.59-.81c-.56-.18-.57-.56.12-.83l10.12-3.9c.47-.17.88.11.76.82z" fill="currentColor"/></svg>      Следите за нашим проектом в Телеграмм    </a>  </div></div><div class="form-ok" id="fok">Заявка принята. Мы пришлём письмо с вашим именным номером и деталями оплаты. Добро пожаловать в число первых.</div>
+  </div>  <a href="/sizes" class="form-sizes-ref" target="_blank">Как определить размер →</a>  <input class="fi" type="text" id="fpromo" placeholder="Промокод (если есть)">  <button class="fsub" id="fsubmit" onclick="send()">Предзаказ</button>  <!-- TODO: EmailJS — emailjs.send('service','template',{name,email,size,color,promo}) -->  <p class="fpriv">Нажимая кнопку, вы соглашаетесь на получение письма с подтверждением заявки.</p>  <div class="tg-cta">    <a href="https://t.me/cityphase_ru" class="tg-link" target="_blank">      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 7.03l-1.69 7.96c-.13.58-.47.72-.95.45l-2.63-1.94-1.27 1.22c-.14.14-.26.26-.53.26l.19-2.68 4.87-4.4c.21-.19-.05-.29-.33-.1L8.42 14.09l-2.59-.81c-.56-.18-.57-.56.12-.83l10.12-3.9c.47-.17.88.11.76.82z" fill="currentColor"/></svg>      Следите за нашим проектом в Телеграмм    </a>  </div></div><div class="form-ok" id="fok">Заявка принята. Мы пришлём письмо с вашим именным номером и деталями оплаты. Добро пожаловать в число первых.</div>
     </div>
     <div class="g-mob">
         <p style="font-family:var(--display);font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--teal);margin-bottom:12px;">Расширенная гарантия</p>
@@ -1019,12 +1019,46 @@ const STOCK = {
 };
 let selColor = '', selSize = '';
 
+function colorSoldOut(color) {
+  const sizes = STOCK[color];
+  if (!sizes) return true;
+  return Object.values(sizes).every(q => q === 0);
+}
+
+function updateColorBtns() {
+  document.querySelectorAll('#colorBtns .opt-btn').forEach(b => {
+    const color = b.dataset.color;
+    if (colorSoldOut(color)) {
+      b.disabled = true;
+      b.classList.add('sold-out');
+      b.classList.remove('selected');
+      if (selColor === color) {
+        selColor = '';
+        document.getElementById('fc').value = '';
+      }
+    } else {
+      b.disabled = false;
+      b.classList.remove('sold-out');
+    }
+  });
+}
+
 function selectColor(btn, color) {
+  if (btn.disabled || btn.classList.contains('sold-out')) return;
   document.querySelectorAll('#colorBtns .opt-btn').forEach(b => b.classList.remove('selected'));
   btn.classList.add('selected');
   selColor = color;
   document.getElementById('fc').value = color;
   updateSizeBtns();
+}
+
+// Если партия распродана полностью — закрываем форму
+function checkSoldOutAll() {
+  if (calcTotalStock() > 0) return;
+  const form = document.getElementById('ff');
+  if (!form) return;
+  form.innerHTML = '<p style="font-size:16px;color:var(--navy);font-weight:600;margin-bottom:8px;">Первая партия распродана</p>'
+    + '<p style="font-size:14px;color:var(--ink);line-height:1.6;">Все 200 рубашек нашли своих владельцев. Подпишитесь на <a href="https://t.me/cityphase_ru" target="_blank" style="color:var(--navy);">Telegram-канал</a> — там объявим о следующей партии.</p>';
 }
 
 function selectSize(btn, size) {
@@ -1082,27 +1116,15 @@ function updateStockIndicators() {
   if (bar) bar.style.width = ((maxStock - total) / maxStock * 100) + '%';
 }
 
-function send(){
-  const n=document.getElementById('fn').value.trim();
-  const e=document.getElementById('fe').value.trim();
-  const z=document.getElementById('fz').value;
-  const c=document.getElementById('fc').value;
-  const promo=document.getElementById('fpromo').value.trim();
-  if(!n||!e||!z||!c){alert('Пожалуйста, заполните все поля.');return;}
-  document.getElementById('ff').style.display='none';
-  document.getElementById('fok').style.display='block';
-}
+// (устаревший send() удалён — рабочая версия объявлена ниже как window.send)
 
-// ── BAR INIT (заявки пока 0) ──
+// ── INIT: индикаторы и блокировки считаются из STOCK ──
 (function(){
-  const total=200,filled=0;
-  const pct=Math.round(filled/total*100);
-  const bar=document.getElementById('barFill');
-  const left=document.getElementById('spotsLeft');
-  const urg=document.getElementById('urgSpots');
-  if(bar) bar.style.width=pct+'%';
-  if(left) left.textContent=(total-filled);
-  if(urg) urg.textContent=(total-filled);
+  if (typeof STOCK === 'undefined') return;
+  updateStockIndicators();
+  updateColorBtns();
+  updateSizeBtns();
+  checkSoldOutAll();
 })();
 
 // ── WHEEL SNAP FALLBACK ──
@@ -1173,19 +1195,28 @@ window.send=async function(){
   const e=document.getElementById('fe').value.trim();
   const z=document.getElementById('fz').value;
   const c=document.getElementById('fc').value;
+  const promoEl=document.getElementById('fpromo');
+  const promo=promoEl?promoEl.value.trim():'';
   if(!n||!e||!z||!c){alert('Пожалуйста, заполните все поля.');return;}
+  // Проверка остатка перед отправкой
+  if(typeof STOCK==='undefined'||!STOCK[c]||!(STOCK[c][z]>0)){
+    alert('К сожалению, этот размер в выбранном цвете закончился. Выберите другой размер или цвет.');
+    if(typeof updateSizeBtns==='function')updateSizeBtns();
+    return;
+  }
   const btn=document.getElementById('fsubmit');
   if(btn){btn.disabled=true;btn.textContent='Отправляем...';}
   try{
     const fd=new FormData();
     fd.append('name',n);fd.append('email',e);
     fd.append('size',z);fd.append('color',c);
+    if(promo)fd.append('promo',promo);
     await fetch('https://formspree.io/f/mykldvkv',{method:'POST',body:fd,headers:{Accept:'application/json'}
     });
     document.getElementById('ff').style.display='none';
     document.getElementById('fok').style.display='block';
   }catch(err){
-    if(btn){btn.disabled=false;btn.textContent='Записаться';}
+    if(btn){btn.disabled=false;btn.textContent='Предзаказ';}
     alert('Ошибка отправки. Попробуйте ещё раз.');
   }
 };
@@ -1213,16 +1244,13 @@ dots.forEach((d,i)=>{
   }});
 });
 
-// ── BAR INIT (заявки пока 0) ──
+// ── INIT: индикаторы и блокировки считаются из STOCK ──
 (function(){
-  const total=200,filled=0;
-  const pct=Math.round(filled/total*100);
-  const bar=document.getElementById('barFill');
-  const left=document.getElementById('spotsLeft');
-  const urg=document.getElementById('urgSpots');
-  if(bar) bar.style.width=pct+'%';
-  if(left) left.textContent=(total-filled);
-  if(urg) urg.textContent=(total-filled);
+  if (typeof STOCK === 'undefined') return;
+  updateStockIndicators();
+  updateColorBtns();
+  updateSizeBtns();
+  checkSoldOutAll();
 })();
 
 // ── WHEEL SNAP FALLBACK ──
