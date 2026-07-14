@@ -160,7 +160,7 @@ export default function About() {
                   Контакты
                 </span>
                 <a href="mailto:hello@cityphase.ru" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>hello@cityphase.ru</a>
-                <a href="https://t.me/cityphase_ru" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Telegram @cityphase_ru</a>
+                <a href="https://telegram.me/cityphase_ru" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Telegram @cityphase_ru</a>
               </div>
             </div>
           </div>
